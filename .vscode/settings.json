@@ -5,6 +5,10 @@
     "*.sma": "amxxpawn",
     "lstd_types.h": "c",
     "lstd_hw_regs.h": "c",
-    "lstd_values.h": "c"
+    "lstd_values.h": "c",
+    "lstd_bitmath.h": "c",
+    "gpio_private.h": "c",
+    "gpio_interface.h": "c",
+    "testinggpio_main.h": "c"
   }
 }
