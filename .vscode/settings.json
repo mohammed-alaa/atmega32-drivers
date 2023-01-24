@@ -1,0 +1,10 @@
+{
+  "files.associations": {
+    "*.embeddedhtml": "html",
+    "*.inc": "amxxpawn",
+    "*.sma": "amxxpawn",
+    "lstd_types.h": "c",
+    "lstd_hw_regs.h": "c",
+    "lstd_values.h": "c"
+  }
+}
