@@ -40,35 +40,4 @@
 
 /** @} */
 
-/**
- * @defgroup bitmathgroup Bit Group Manipulation Math Macros
- * @{
- */
-
-/**
- * @def SET_BITs(REG, BITS, BITNUM, FACTOR)
- * Sets the values of a group of bits
- */
-// #define SET_BITs(REG, BITS, BITNUM, FACTOR) (REG) |= ((BITS)<<(BITNUM * FACTOR))
-
-/**
- * @def CLEAR_BITs(REG, bits, BITNUM, FACTOR)
- * Clears the value of a group of bits
- */
-// #define CLEAR_BITs(REG, BITS, BITNUM, FACTOR) (REG) &= ~((BITS)<<(BITNUM * FACTOR))
-
-/**
- * @def TOGGLE_BITs(REG, bits, BITNUM, FACTOR)
- * Toggle the value of a group of bits
- */
-// #define TOGGLE_BITs(REG, BITS, BITNUM, FACTOR) (REG) ^= ((BITS)<<(BITNUM * FACTOR))
-
-/**
- * @def GET_BITs(REG, bits, BITNUM, FACTOR)
- * Return the value of a group of bits
- */
-// #define GET_BITs(REG, BITS, BITNUM, FACTOR) (((REG)>>(BITNUM * FACTOR)) & (BITS))
-
-/** @} */
-
 #endif /* _LSTD_BITMATH_H_ */
