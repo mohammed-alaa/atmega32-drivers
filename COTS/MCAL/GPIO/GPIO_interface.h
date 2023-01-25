@@ -148,26 +148,26 @@
 /**
  * @brief Apply a certain direction on a certain pin
  *
- * @param L_u8Port[in] The port that the pin belongs to, @see gpio_ports
- * @param L_u8Pin[in] The pin to update its direction, @see gpio_pins
- * @param L_u8Direction[in] The direction to apply on the pin, @see gpio_directions
+ * @param[in] L_u8Port The port that the pin belongs to, @see gpio_ports
+ * @param[in] L_u8Pin The pin to update its direction, @see gpio_pins
+ * @param[in] L_u8Direction The direction to apply on the pin, @see gpio_directions
  */
 void MGPIO_vSetPinDirection(u8_t L_u8Port, u8_t L_u8Pin, u8_t L_u8Direction);
 
 /**
  * @brief Apply a certain value on a certain pin
  *
- * @param L_u8Port[in] The port that the pin belongs to, @see gpio_ports
- * @param L_u8Pin[in] The pin to update its value, @see gpio_pins
- * @param L_u8PinValue[in] The value to apply on the pin, @see gpio_values
+ * @param[in] L_u8Port The port that the pin belongs to, @see gpio_ports
+ * @param[in] L_u8Pin The pin to update its value, @see gpio_pins
+ * @param[in] L_u8PinValue The value to apply on the pin, @see gpio_values
  */
 void MGPIO_vSetPinValue(u8_t L_u8Port, u8_t L_u8Pin, u8_t L_u8PinValue);
 
 /**
  * @brief Retrieve the current applied value on a certain pin
  *
- * @param L_u8Port[in] The port that the pin belongs to, @see gpio_ports
- * @param L_u8Pin[in] The pin to retrieve its current value, @see gpio_pins
+ * @param[in] L_u8Port The port that the pin belongs to, @see gpio_ports
+ * @param[in] L_u8Pin The pin to retrieve its current value, @see gpio_pins
  * @return Returns the current value applied on a certain pin
  */
 u8_t MGPIO_vGetPinValue(u8_t L_u8Port, u8_t L_u8Pin);
