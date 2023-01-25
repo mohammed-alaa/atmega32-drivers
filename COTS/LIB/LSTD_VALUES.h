@@ -9,6 +9,8 @@
 #ifndef _LSTD_VALUES_H_
 #define _LSTD_VALUES_H_
 
+#include "LSTD_COMPILER.h"
+
 /**
  * @defgroup standardvalues Standard values
  * @{
@@ -17,8 +19,7 @@
 #ifndef TRUE
 /**
  * @def TRUE
- * Type definition for TRUE
- *
+ * @brief Type definition for TRUE
  */
 #define TRUE (1)
 #endif /* ifndef TRUE */
@@ -26,8 +27,7 @@
 #ifndef FALSE
 /**
  * @def FALSE
- * Type definition for FALSE
- *
+ * @brief Type definition for FALSE
  */
 #define FALSE (0)
 #endif /* ifndef FALSE */
@@ -35,8 +35,7 @@
 #ifndef NULL
 /**
  * @def NULL
- * Type definition for NULL
- *
+ * @brief Type definition for NULL
  */
 #define NULL ((P2VAR(void)) 0)
 #endif /* ifndef NULL */

@@ -5,6 +5,7 @@ var modules =
     [ "Hardware registers macro-functions", "group__hw__registers.html", "group__hw__registers" ],
     [ "Standard data types", "group__typedefs.html", "group__typedefs" ],
     [ "Standard values", "group__standardvalues.html", "group__standardvalues" ],
+    [ "EXTI Registers", "group__exti__registers.html", "group__exti__registers" ],
     [ "GPIO Ports", "group__gpio__ports.html", "group__gpio__ports" ],
     [ "GPIO Pins", "group__gpio__pins.html", "group__gpio__pins" ],
     [ "GPIO Directions", "group__gpio__directions.html", "group__gpio__directions" ],

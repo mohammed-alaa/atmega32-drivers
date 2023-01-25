@@ -21,26 +21,26 @@
  */
 
 /**
- * @typedef GPIO_PORTA
- * GPIO Port A
+ * @def GPIO_PORTA
+ * @brief GPIO Port A
  */
 #define GPIO_PORTA (0)
 
 /**
- * @typedef GPIO_PORTB
- * GPIO Port B
+ * @def GPIO_PORTB
+ * @brief GPIO Port B
  */
 #define GPIO_PORTB (1)
 
 /**
- * @typedef GPIO_PORTC
- * GPIO Port C
+ * @def GPIO_PORTC
+ * @brief GPIO Port C
  */
 #define GPIO_PORTC (2)
 
 /**
- * @typedef GPIO_PORTD
- * GPIO Port D
+ * @def GPIO_PORTD
+ * @brief GPIO Port D
  */
 #define GPIO_PORTD (3)
 
@@ -52,50 +52,50 @@
  */
 
 /**
- * @typedef GPIO_PIN0
- * GPIO Pin 0
+ * @def GPIO_PIN0
+ * @brief GPIO Pin 0
  */
 #define GPIO_PIN0 (0)
 
 /**
- * @typedef GPIO_PIN1
- * GPIO Pin 1
+ * @def GPIO_PIN1
+ * @brief GPIO Pin 1
  */
 #define GPIO_PIN1 (1)
 
 /**
- * @typedef GPIO_PIN2
- * GPIO Pin 2
+ * @def GPIO_PIN2
+ * @brief GPIO Pin 2
  */
 #define GPIO_PIN2 (2)
 
 /**
- * @typedef GPIO_PIN3
- * GPIO Pin 3
+ * @def GPIO_PIN3
+ * @brief GPIO Pin 3
  */
 #define GPIO_PIN3 (3)
 
 /**
- * @typedef GPIO_PIN4
- * GPIO Pin 4
+ * @def GPIO_PIN4
+ * @brief GPIO Pin 4
  */
 #define GPIO_PIN4 (4)
 
 /**
- * @typedef GPIO_PIN5
- * GPIO Pin 5
+ * @def GPIO_PIN5
+ * @brief GPIO Pin 5
  */
 #define GPIO_PIN5 (5)
 
 /**
- * @typedef GPIO_PIN6
- * GPIO Pin 6
+ * @def GPIO_PIN6
+ * @brief GPIO Pin 6
  */
 #define GPIO_PIN6 (6)
 
 /**
- * @typedef GPIO_PIN7
- * GPIO Pin 7
+ * @def GPIO_PIN7
+ * @brief GPIO Pin 7
  */
 #define GPIO_PIN7 (7)
 
@@ -107,20 +107,20 @@
  */
 
 /**
- * @typedef INPUT_PULLDOWN
- * GPIO input direction with pull-down resistor
+ * @def INPUT_PULLDOWN
+ * @brief GPIO input direction with pull-down resistor
  */
 #define INPUT_PULLDOWN (0)
 
 /**
- * @typedef INPUT_PULLUP
- * GPIO input direction with pull-up resistor
+ * @def INPUT_PULLUP
+ * @brief GPIO input direction with pull-up resistor
  */
 #define INPUT_PULLUP (1)
 
 /**
- * @typedef OUTPUT
- * GPIO output direction
+ * @def OUTPUT
+ * @brief GPIO output direction
  */
 #define OUTPUT (2)
 
@@ -132,14 +132,14 @@
  */
 
 /**
- * @typedef LOW
- * GPIO low values to be applied on a certain pin
+ * @def LOW
+ * @brief GPIO low values to be applied on a certain pin
  */
 #define LOW (0)
 
 /**
- * @typedef HIGH
- * GPIO high values to be applied on a certain pin
+ * @def HIGH
+ * @brief GPIO high values to be applied on a certain pin
  */
 #define HIGH (1)
 

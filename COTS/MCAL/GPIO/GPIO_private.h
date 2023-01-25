@@ -22,20 +22,20 @@
  */
 
 /**
- * @typedef PORTA
- * Port A Data Register
+ * @def PORTA
+ * @brief Port A Data Register
  */
 #define PORTA REGISTER(0x3B)
 
 /**
- * @typedef DDRA
- * Port A Data Direction Register
+ * @def DDRA
+ * @brief Port A Data Direction Register
  */
 #define DDRA REGISTER(0x3A)
 
 /**
- * @typedef PINA
- * Port A Input Pins Address
+ * @def PINA
+ * @brief Port A Input Pins Address
  */
 #define PINA REGISTER(0x39)
 
@@ -47,20 +47,20 @@
  */
 
 /**
- * @typedef PORTB
- * Port B Data Register
+ * @def PORTB
+ * @brief Port B Data Register
  */
 #define PORTB REGISTER(0x38)
 
 /**
- * @typedef DDRB
- * Port B Data Direction Register
+ * @def DDRB
+ * @brief Port B Data Direction Register
  */
 #define DDRB REGISTER(0x37)
 
 /**
- * @typedef PINB
- * Port B Input Pins Address
+ * @def PINB
+ * @brief Port B Input Pins Address
  */
 #define PINB REGISTER(0x36)
 
@@ -72,20 +72,20 @@
  */
 
 /**
- * @typedef PORTC
- * Port C Data Register
+ * @def PORTC
+ * @brief Port C Data Register
  */
 #define PORTC REGISTER(0x35)
 
 /**
- * @typedef DDRC
- * Port C Data Direction Register
+ * @def DDRC
+ * @brief Port C Data Direction Register
  */
 #define DDRC REGISTER(0x34)
 
 /**
- * @typedef PINC
- * Port C Input Pins Address
+ * @def PINC
+ * @brief Port C Input Pins Address
  */
 #define PINC REGISTER(0x33)
 
@@ -97,20 +97,20 @@
  */
 
 /**
- * @typedef PORTD
- * Port D Data Register
+ * @def PORTD
+ * @brief Port D Data Register
  */
 #define PORTD REGISTER(0x32)
 
 /**
- * @typedef DDRD
- * Port D Data Direction Register
+ * @def DDRD
+ * @brief Port D Data Direction Register
  */
 #define DDRD REGISTER(0x31)
 
 /**
- * @typedef PIND
- * Port D Input Pins Address
+ * @def PIND
+ * @brief Port D Input Pins Address
  */
 #define PIND REGISTER(0x30)
 

@@ -97,28 +97,28 @@ $(document).ready(function(){initNavTree('_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.h
 <div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#ifndef _LSTD_COMPILER_H_</span></div>
 <div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#define _LSTD_COMPILER_H_</span></div>
 <div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno"><a class="line" href="group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1.html#ga30c6e83ff2cac859ff6d852ea99fa3f1">   22</a></span><span class="preprocessor">#define P2VAR(ptrtype) ptrtype *</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno"><a class="line" href="group__compiler_ga6a5331902e985468785893e55a26df67.html#ga6a5331902e985468785893e55a26df67">   29</a></span><span class="preprocessor">#define P2CONST(ptrtype) const ptrtype *</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span> </div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group__compiler_gab5fd09ff387aec5366fd5b10301c8520.html#gab5fd09ff387aec5366fd5b10301c8520">   36</a></span><span class="preprocessor">#define CONSTP2VAR(ptrtype) ptrtype *const</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="group__compiler_ga6282e9404278fd614583a4ff57e65b15.html#ga6282e9404278fd614583a4ff57e65b15">   43</a></span><span class="preprocessor">#define CONSTP2CONST(ptrtype) const ptrtype *const</span></div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span> </div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno"><a class="line" href="group__compiler_ga93522904f3ee5ba154d6688d847f73b1.html#ga93522904f3ee5ba154d6688d847f73b1">   50</a></span><span class="preprocessor">#define P2FUNC(rettype, fctname) rettype(*fctname)</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span> </div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno"><a class="line" href="group__compiler_ga69d9ea05cf6f223b225c937e8a375395.html#ga69d9ea05cf6f223b225c937e8a375395">   56</a></span><span class="preprocessor">#define CONST(consttype) const consttype</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span> </div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno"><a class="line" href="group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb.html#ga10b2d890d871e1489bb02b7e70d9bdfb">   62</a></span><span class="preprocessor">#define STATIC static</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span><span class="preprocessor">#endif </span><span class="comment">/* _LSTD_COMPILER_H_ */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno"><a class="line" href="group__compiler_ga0c33b494a68ce28497e7ce8e5e95feff.html#ga0c33b494a68ce28497e7ce8e5e95feff">   21</a></span><span class="preprocessor">#define CONST const</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span> </div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno"><a class="line" href="group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb.html#ga10b2d890d871e1489bb02b7e70d9bdfb">   27</a></span><span class="preprocessor">#define STATIC static</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span> </div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno"><a class="line" href="group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1.html#ga30c6e83ff2cac859ff6d852ea99fa3f1">   33</a></span><span class="preprocessor">#define P2VAR(ptrtype) ptrtype *</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span> </div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno"><a class="line" href="group__compiler_ga6a5331902e985468785893e55a26df67.html#ga6a5331902e985468785893e55a26df67">   39</a></span><span class="preprocessor">#define P2CONST(ptrtype) CONST ptrtype *</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span> </div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno"><a class="line" href="group__compiler_gab5fd09ff387aec5366fd5b10301c8520.html#gab5fd09ff387aec5366fd5b10301c8520">   45</a></span><span class="preprocessor">#define CONSTP2VAR(ptrtype) ptrtype *CONST</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span> </div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno"><a class="line" href="group__compiler_ga6282e9404278fd614583a4ff57e65b15.html#ga6282e9404278fd614583a4ff57e65b15">   51</a></span><span class="preprocessor">#define CONSTP2CONST(ptrtype) CONST ptrtype *CONST</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span> </div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno"><a class="line" href="group__compiler_ga93522904f3ee5ba154d6688d847f73b1.html#ga93522904f3ee5ba154d6688d847f73b1">   57</a></span><span class="preprocessor">#define P2FUNC(rettype, fctname) rettype(*fctname)</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span> </div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#endif </span><span class="comment">/* _LSTD_COMPILER_H_ */</span><span class="preprocessor"></span></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c49787b21523dfcd643eafa322448430.html">LIB</a></li><li class="navelem"><a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">LSTD_COMPILER.h</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 13:30:42 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Wed Jan 25 2023 14:26:55 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

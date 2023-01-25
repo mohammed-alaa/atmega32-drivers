@@ -16,25 +16,25 @@
 
 /**
  * @def SET_BIT(REG, BITNUM)
- * Set a certain bit's value
+ * @brief Set a certain bit's value
  */
 #define SET_BIT(REG, BITNUM) (REG) |= (1<<(BITNUM))
 
 /**
  * @def CLEAR_BIT(REG, BITNUM)
- * Clear a certain bit's value to
+ * @brief Clear a certain bit's value to
  */
 #define CLEAR_BIT(REG, BITNUM) (REG) &= ~(1<<(BITNUM))
 
 /**
  * @def TOGGLE_BIT(REG, BITNUM)
- * Toggle a bit to `0` if it's `1`, `1` otherwise
+ * @brief Toggle a bit to `0` if it's `1`, `1` otherwise
  */
 #define TOGGLE_BIT(REG, BITNUM) (REG) ^= (1<<(BITNUM))
 
 /**
  * @def GET_BIT(REG, BITNUM)
- * Return the value of the bit whether it's `1` or `0`
+ * @brief Return the value of the bit whether it's `1` or `0`
  */
 #define GET_BIT(REG, BITNUM) (((REG)>>(BITNUM)) & 1)
 

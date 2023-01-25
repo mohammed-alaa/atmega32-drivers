@@ -15,51 +15,46 @@
  */
 
 /**
+ * @def CONST(vartype)
+ * @brief Declare a standard constant variable with the specified type
+ */
+#define CONST const
+
+/**
+ * @def STATIC
+ * @brief Declare a standard static variable
+ */
+#define STATIC static
+
+/**
  * @def P2VAR(vartype)
- * Declare a pointer-to-variable with the specified type
- *
+ * @brief Declare a pointer-to-variable with the specified type
  */
 #define P2VAR(ptrtype) ptrtype *
 
 /**
  * @def P2CONST(vartype)
- * Declare a constant pointer-to-variable with the specified type
- *
+ * @brief Declare a constant pointer-to-variable with the specified type
  */
-#define P2CONST(ptrtype) const ptrtype *
+#define P2CONST(ptrtype) CONST ptrtype *
 
 /**
  * @def CONSTP2VAR(vartype)
- * Declare a pointer-to-variable constant with the specified type
- *
+ * @brief Declare a pointer-to-variable constant with the specified type
  */
-#define CONSTP2VAR(ptrtype) ptrtype *const
+#define CONSTP2VAR(ptrtype) ptrtype *CONST
 
 /**
  * @def CONSTP2CONST(vartype)
- * Declare a constant pointer-to-variable constant with the specified type
- *
+ * @brief Declare a constant pointer-to-variable constant with the specified type
  */
-#define CONSTP2CONST(ptrtype) const ptrtype *const
+#define CONSTP2CONST(ptrtype) CONST ptrtype *CONST
 
 /**
  * @def P2FUNC(vartype)
- * Declare a pointer-to-function with the specified type
- *
+ * @brief Declare a pointer-to-function with the specified type
  */
 #define P2FUNC(rettype, fctname) rettype(*fctname)
-
-/**
- * @def CONST(vartype)
- * Declare a standard constant variable with the specified type
- */
-#define CONST(consttype) const consttype
-
-/**
- * @def STATIC
- * Declare a standard static variable
- */
-#define STATIC static
 
 /** @} */
 

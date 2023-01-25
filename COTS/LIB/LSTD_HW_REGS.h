@@ -20,7 +20,7 @@
 
 /**
  * @def REGISTER(ADDRESS)
- * Map to a certain register by its address in the memory
+ * @brief Map to a certain register by its address in the memory
  */
 #define REGISTER(ADDRESS) (*(volatile P2VAR(u8_t)) (ADDRESS))
 
