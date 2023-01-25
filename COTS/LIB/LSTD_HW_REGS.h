@@ -19,9 +19,8 @@
  */
 
 /**
- * @def REGISTER(BASE_ADDRESS)
+ * @def REGISTER(ADDRESS)
  * Map to a certain register by its address in the memory
- * @example REGISTER(0x00) => Maps to register that its address is 0x00
  */
 #define REGISTER(ADDRESS) (*(volatile P2VAR(u8_t)) (ADDRESS))
 
