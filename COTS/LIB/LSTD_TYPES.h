@@ -90,14 +90,14 @@ typedef signed long int s64_t;
  * Type definition for 32-bit float
  *
  */
-typedef float f32_t;
+typedef float fl32_t;
 
 /**
  * @typedef fl64_t
  * Type definition for 64-bit float
  *
  */
-typedef double f64_t;
+typedef double fl64_t;
 
 /** @} */
 
