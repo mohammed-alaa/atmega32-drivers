@@ -9,6 +9,11 @@
     "lstd_bitmath.h": "c",
     "gpio_private.h": "c",
     "gpio_interface.h": "c",
-    "testinggpio_main.h": "c"
+    "testinggpio_main.h": "c",
+    "lstd_compiler.h": "c",
+    "testingexti_main.h": "c",
+    "exti_interface.h": "c",
+    "exti_private.h": "c",
+    "l_interrupts.h": "c"
   }
 }
