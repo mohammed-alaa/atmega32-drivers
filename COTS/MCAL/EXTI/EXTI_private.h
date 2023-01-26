@@ -28,6 +28,18 @@
  */
 #define MCUCSR REGISTER(0x54)
 
+/**
+ * @def GICR
+ * @brief General Interrupt Control Register
+ */
+#define GICR REGISTER(0x5B)
+
+/**
+ * @def GIFR
+ * @brief General Interrupt Flag Register
+ */
+#define GIFR REGISTER(0x5A)
+
 /** @} */
 
 #endif // _EXTI_PRIVATE_H_
