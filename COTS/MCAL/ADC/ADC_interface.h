@@ -170,8 +170,8 @@
 
 /**
  * @brief This function initializes the ADC peripheral with the given configurations
- * @see ADC_REF_SELECTION @see ADC_RESULT_ADJUSTMENT
- * @return void
+ * @see ADC_REF_SELECTION
+ * @see ADC_RESULT_ADJUSTMENT
  */
 void MADC_vInit(void);
 

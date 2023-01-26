@@ -1,0 +1,25 @@
+var _a_d_c__interface_8h =
+[
+    [ "ADC_VOLTAGE_REFERENCE_AREF", "group__adc__voltage__references_gaed1f921b20c5f30ed286fccc2c61e78f.html#gaed1f921b20c5f30ed286fccc2c61e78f", null ],
+    [ "ADC_VOLTAGE_REFERENCE_AVCC", "group__adc__voltage__references_ga2befef0506952352ae2192ed1a37feed.html#ga2befef0506952352ae2192ed1a37feed", null ],
+    [ "ADC_VOLTAGE_REFERENCE_INTERNAL", "group__adc__voltage__references_ga3abdedb127a8da907c9e5182fb9c450a.html#ga3abdedb127a8da907c9e5182fb9c450a", null ],
+    [ "ADC_RESULT_ADJUSTMENT_RIGHT", "group__adc__result__adjustment__direction_ga7fc5816c575341609af5571519f7fdfc.html#ga7fc5816c575341609af5571519f7fdfc", null ],
+    [ "ADC_RESULT_ADJUSTMENT_LEFT", "group__adc__result__adjustment__direction_gaa0d7884cd717dd34113117b67db615e8.html#gaa0d7884cd717dd34113117b67db615e8", null ],
+    [ "ADC_PRESCALER_2", "group__adc__prescalers_gaeaac601e7fb65dfbfa157c738fd3a1db.html#gaeaac601e7fb65dfbfa157c738fd3a1db", null ],
+    [ "ADC_PRESCALER_4", "group__adc__prescalers_ga7aec4350b204d9c8160ab7419e15d93e.html#ga7aec4350b204d9c8160ab7419e15d93e", null ],
+    [ "ADC_PRESCALER_8", "group__adc__prescalers_gab30c91a0c1d57639fbb9aa2e13719d45.html#gab30c91a0c1d57639fbb9aa2e13719d45", null ],
+    [ "ADC_PRESCALER_16", "group__adc__prescalers_ga56bf388f5fd18903f1d356dd654a9930.html#ga56bf388f5fd18903f1d356dd654a9930", null ],
+    [ "ADC_PRESCALER_32", "group__adc__prescalers_gaaf5c1d488815feb1416a5c9d1710c2c8.html#gaaf5c1d488815feb1416a5c9d1710c2c8", null ],
+    [ "ADC_PRESCALER_64", "group__adc__prescalers_ga51e4e47f4ef2b5f25be89b958a4bb8a8.html#ga51e4e47f4ef2b5f25be89b958a4bb8a8", null ],
+    [ "ADC_PRESCALER_128", "group__adc__prescalers_gac324413055383e702d8a76739dd01664.html#gac324413055383e702d8a76739dd01664", null ],
+    [ "ADC_CHANNEL_0", "group__adc__channels_ga3c5075aee5af4eae02f1a72d6216199c.html#ga3c5075aee5af4eae02f1a72d6216199c", null ],
+    [ "ADC_CHANNEL_1", "group__adc__channels_gaeb119201733a871c94971c51843ffaac.html#gaeb119201733a871c94971c51843ffaac", null ],
+    [ "ADC_CHANNEL_2", "group__adc__channels_gad576132ebd78a3429be34f44e474c914.html#gad576132ebd78a3429be34f44e474c914", null ],
+    [ "ADC_CHANNEL_3", "group__adc__channels_ga56dba5d35f1f7bcad41e4f9a7da3b125.html#ga56dba5d35f1f7bcad41e4f9a7da3b125", null ],
+    [ "ADC_CHANNEL_4", "group__adc__channels_ga66f19737ad81a0a62eb97854d0e41a54.html#ga66f19737ad81a0a62eb97854d0e41a54", null ],
+    [ "ADC_CHANNEL_5", "group__adc__channels_ga716f2836f655c753c629de439ce50ecf.html#ga716f2836f655c753c629de439ce50ecf", null ],
+    [ "ADC_CHANNEL_6", "group__adc__channels_ga418f0223ea88773157638097391716a5.html#ga418f0223ea88773157638097391716a5", null ],
+    [ "ADC_CHANNEL_7", "group__adc__channels_ga03b8138c2d87274f94ba675a7e18e666.html#ga03b8138c2d87274f94ba675a7e18e666", null ],
+    [ "MADC_vInit", "_a_d_c__interface_8h_af1a488a0e8573d75ace08adefec357d8.html#af1a488a0e8573d75ace08adefec357d8", null ],
+    [ "MADC_u16ReadChannel", "_a_d_c__interface_8h_a75969c988cc48efe31662eed64d83ea3.html#a75969c988cc48efe31662eed64d83ea3", null ]
+];

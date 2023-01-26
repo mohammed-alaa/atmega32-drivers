@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['compiler_20standard_20macros_0',['Compiler standard macros',['../group__compiler.html',1,'']]]
+  ['bit_20manipulation_20math_20macros_0',['Bit Manipulation Math Macros',['../group__bitmath.html',1,'']]]
 ];
