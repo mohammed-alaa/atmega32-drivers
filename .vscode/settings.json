@@ -14,6 +14,7 @@
     "testingexti_main.h": "c",
     "exti_interface.h": "c",
     "exti_private.h": "c",
-    "l_interrupts.h": "c"
+    "l_interrupts.h": "c",
+    "madc_interface.h": "c"
   }
 }
