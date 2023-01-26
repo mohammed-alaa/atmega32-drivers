@@ -1,9 +1,5 @@
 var searchData=
 [
-  ['c8_5ft_0',['c8_t',['../group__typedefs_ga4782c2e0e32746464299989e379e14a8.html#ga4782c2e0e32746464299989e379e14a8',1,'LSTD_TYPES.h']]],
-  ['clear_5fbit_1',['CLEAR_BIT',['../group__bitmath_ga1156e408b6aa0fc0d3e2aa0d71e7adcd.html#ga1156e408b6aa0fc0d3e2aa0d71e7adcd',1,'LSTD_BITMATH.h']]],
-  ['compiler_20standard_20macros_2',['Compiler standard macros',['../group__compiler.html',1,'']]],
-  ['const_3',['CONST',['../group__compiler_ga0c33b494a68ce28497e7ce8e5e95feff.html#ga0c33b494a68ce28497e7ce8e5e95feff',1,'LSTD_COMPILER.h']]],
-  ['constp2const_4',['CONSTP2CONST',['../group__compiler_ga6282e9404278fd614583a4ff57e65b15.html#ga6282e9404278fd614583a4ff57e65b15',1,'LSTD_COMPILER.h']]],
-  ['constp2var_5',['CONSTP2VAR',['../group__compiler_gab5fd09ff387aec5366fd5b10301c8520.html#gab5fd09ff387aec5366fd5b10301c8520',1,'LSTD_COMPILER.h']]]
+  ['bit_20manipulation_20math_20macros_0',['Bit Manipulation Math Macros',['../group__bitmath.html',1,'']]],
+  ['bool_5ft_1',['bool_t',['../group__typedefs_ga04dd5074964518403bf944f2b240a5f8.html#ga04dd5074964518403bf944f2b240a5f8',1,'LSTD_TYPES.h']]]
 ];

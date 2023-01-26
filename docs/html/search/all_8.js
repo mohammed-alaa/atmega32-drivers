@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['input_5fpulldown_0',['INPUT_PULLDOWN',['../group__gpio__directions_gacc2f64df093104e4b029d86930fa4b8b.html#gacc2f64df093104e4b029d86930fa4b8b',1,'GPIO_interface.h']]],
-  ['input_5fpullup_1',['INPUT_PULLUP',['../group__gpio__directions_ga6295096662a20dd56186396e535fbe92.html#ga6295096662a20dd56186396e535fbe92',1,'GPIO_interface.h']]]
+  ['hardware_20registers_20macro_2dfunctions_0',['Hardware registers macro-functions',['../group__hw__registers.html',1,'']]],
+  ['high_1',['HIGH',['../group__gpio__values_ga5bb885982ff66a2e0a0a45a8ee9c35e2.html#ga5bb885982ff66a2e0a0a45a8ee9c35e2',1,'GPIO_interface.h']]]
 ];

@@ -1,7 +1,5 @@
 var searchData=
 [
-  ['u16_5ft_0',['u16_t',['../group__typedefs_gac9b933f433c9cde06e3f0467a098556b.html#gac9b933f433c9cde06e3f0467a098556b',1,'LSTD_TYPES.h']]],
-  ['u32_5ft_1',['u32_t',['../group__typedefs_gae9d3c0db71e8dcd5b0393d8b2608f071.html#gae9d3c0db71e8dcd5b0393d8b2608f071',1,'LSTD_TYPES.h']]],
-  ['u64_5ft_2',['u64_t',['../group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8.html#ga3123cc74e9b2376970dc6fafd737eda8',1,'LSTD_TYPES.h']]],
-  ['u8_5ft_3',['u8_t',['../group__typedefs_ga8127f1441872f9f912b20a65f40d4d24.html#ga8127f1441872f9f912b20a65f40d4d24',1,'LSTD_TYPES.h']]]
+  ['toggle_5fbit_0',['TOGGLE_BIT',['../group__bitmath_gaa9086cf5ab28a8036e901439d324b5ab.html#gaa9086cf5ab28a8036e901439d324b5ab',1,'LSTD_BITMATH.h']]],
+  ['true_1',['TRUE',['../group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d',1,'LSTD_VALUES.h']]]
 ];

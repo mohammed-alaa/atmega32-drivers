@@ -1,11 +1,5 @@
 var searchData=
 [
-  ['s16_5ft_0',['s16_t',['../group__typedefs_gadce8fffa87d27a0ffe6eafdc457a2478.html#gadce8fffa87d27a0ffe6eafdc457a2478',1,'LSTD_TYPES.h']]],
-  ['s32_5ft_1',['s32_t',['../group__typedefs_ga9a09c48a77a67721578bfbbd4b63cda5.html#ga9a09c48a77a67721578bfbbd4b63cda5',1,'LSTD_TYPES.h']]],
-  ['s64_5ft_2',['s64_t',['../group__typedefs_ga0c3aba789a99a7cca62e204546c75c9e.html#ga0c3aba789a99a7cca62e204546c75c9e',1,'LSTD_TYPES.h']]],
-  ['s8_5ft_3',['s8_t',['../group__typedefs_ga07906842b175053ae8bc92126c4c81a5.html#ga07906842b175053ae8bc92126c4c81a5',1,'LSTD_TYPES.h']]],
-  ['set_5fbit_4',['SET_BIT',['../group__bitmath_ga2ad4f85fd11dcf5470f14db4fda4aedb.html#ga2ad4f85fd11dcf5470f14db4fda4aedb',1,'LSTD_BITMATH.h']]],
-  ['standard_20data_20types_5',['Standard data types',['../group__typedefs.html',1,'']]],
-  ['standard_20values_6',['Standard values',['../group__standardvalues.html',1,'']]],
-  ['static_7',['STATIC',['../group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb.html#ga10b2d890d871e1489bb02b7e70d9bdfb',1,'LSTD_COMPILER.h']]]
+  ['readme_2emd_0',['README.md',['../_r_e_a_d_m_e_8md.html',1,'']]],
+  ['register_1',['REGISTER',['../group__hw__registers_ga1d7b135d3efe57f364f53689f264de20.html#ga1d7b135d3efe57f364f53689f264de20',1,'LSTD_HW_REGS.h']]]
 ];

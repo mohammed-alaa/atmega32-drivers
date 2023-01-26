@@ -90,16 +90,39 @@ $(document).ready(function(){initNavTree('_e_x_t_i__program_8c.html',''); initRe
 </div>
 
 <div class="header">
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
   <div class="headertitle"><div class="title">EXTI_program.c File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>This file contains the source code of the EXTI peripheral.  
 <a href="#details">More...</a></p>
-<div class="textblock"><code>#include &quot;<a class="el" href="_e_x_t_i__private_8h_source.html">EXTI_private.h</a>&quot;</code><br />
+<div class="textblock"><code>#include &quot;<a class="el" href="_l_s_t_d___t_y_p_e_s_8h_source.html">../../LIB/LSTD_TYPES.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html">../../LIB/LSTD_VALUES.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html">../../LIB/LSTD_BITMATH.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h_source.html">../../LIB/LSTD_COMPILER.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_l___i_n_t_e_r_r_u_p_t_s_8h_source.html">../../LIB/L_INTERRUPTS.h</a>&quot;</code><br />
+<code>#include &quot;<a class="el" href="_e_x_t_i__private_8h_source.html">EXTI_private.h</a>&quot;</code><br />
 <code>#include &quot;<a class="el" href="_e_x_t_i__interface_8h_source.html">EXTI_interface.h</a>&quot;</code><br />
 </div>
 <p><a href="_e_x_t_i__program_8c_source.html">Go to the source code of this file.</a></p>
+<table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a9fe38f4a2747280ab23e09d8e35c9a4d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c_a9fe38f4a2747280ab23e09d8e35c9a4d.html#a9fe38f4a2747280ab23e09d8e35c9a4d">MEXTI_vEnableExternalInterrupt</a> (<a class="el" href="group__typedefs_ga8127f1441872f9f912b20a65f40d4d24.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a> L_u8ExtnalInterruptPin, <a class="el" href="group__typedefs_ga8127f1441872f9f912b20a65f40d4d24.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a> L_u8InterruptMode, void(*P_vExtIntCallback)(void))</td></tr>
+<tr class="memdesc:a9fe38f4a2747280ab23e09d8e35c9a4d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Enable an external interrupt on a certain pin.  <a href="_e_x_t_i__program_8c_a9fe38f4a2747280ab23e09d8e35c9a4d.html#a9fe38f4a2747280ab23e09d8e35c9a4d">More...</a><br /></td></tr>
+<tr class="separator:a9fe38f4a2747280ab23e09d8e35c9a4d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac453efb55b8a053576c241b78f9359f1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c_ac453efb55b8a053576c241b78f9359f1.html#ac453efb55b8a053576c241b78f9359f1">MEXTI_vDisableExternalInterrupt</a> (<a class="el" href="group__typedefs_ga8127f1441872f9f912b20a65f40d4d24.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a> L_u8ExtnalInterruptPin)</td></tr>
+<tr class="memdesc:ac453efb55b8a053576c241b78f9359f1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Disable an external interrupt on a certain pin.  <a href="_e_x_t_i__program_8c_ac453efb55b8a053576c241b78f9359f1.html#ac453efb55b8a053576c241b78f9359f1">More...</a><br /></td></tr>
+<tr class="separator:ac453efb55b8a053576c241b78f9359f1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a63cfe47a79279085ee59b1644cf9ab60"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c_a63cfe47a79279085ee59b1644cf9ab60.html#a63cfe47a79279085ee59b1644cf9ab60">__vector_1</a> (void)</td></tr>
+<tr class="separator:a63cfe47a79279085ee59b1644cf9ab60"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a6ae4ad8192e6928ac4f7e3e59001e53a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c_a6ae4ad8192e6928ac4f7e3e59001e53a.html#a6ae4ad8192e6928ac4f7e3e59001e53a">__vector_2</a> (void)</td></tr>
+<tr class="separator:a6ae4ad8192e6928ac4f7e3e59001e53a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a287f0e224ee5ed08a77ed629c1cf56b3"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="_e_x_t_i__program_8c_a287f0e224ee5ed08a77ed629c1cf56b3.html#a287f0e224ee5ed08a77ed629c1cf56b3">__vector_3</a> (void)</td></tr>
+<tr class="separator:a287f0e224ee5ed08a77ed629c1cf56b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p >This file contains the source code of the EXTI peripheral. </p>
 <dl class="section author"><dt>Author</dt><dd>Mohamed Alaa </dd></dl>
@@ -114,7 +137,7 @@ $(document).ready(function(){initNavTree('_e_x_t_i__program_8c.html',''); initRe
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_aeef58f5a946ad8e66cca46db86d7cf5.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_f2a13628bf56f4fc48e8de879073e0ba.html">EXTI</a></li><li class="navelem"><a class="el" href="_e_x_t_i__program_8c.html">EXTI_program.c</a></li>
-    <li class="footer">Generated on Wed Jan 25 2023 14:26:55 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Thu Jan 26 2023 14:58:01 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

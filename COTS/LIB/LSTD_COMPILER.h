@@ -27,32 +27,32 @@
 #define STATIC static
 
 /**
- * @def P2VAR(vartype)
+ * @def P2VAR(ptrtype)
  * @brief Declare a pointer-to-variable with the specified type
  */
 #define P2VAR(ptrtype) ptrtype *
 
 /**
- * @def P2CONST(vartype)
+ * @def P2CONST(ptrtype)
  * @brief Declare a constant pointer-to-variable with the specified type
  */
 #define P2CONST(ptrtype) CONST ptrtype *
 
 /**
- * @def CONSTP2VAR(vartype)
+ * @def CONSTP2VAR(ptrtype)
  * @brief Declare a pointer-to-variable constant with the specified type
  */
 #define CONSTP2VAR(ptrtype) ptrtype *CONST
 
 /**
- * @def CONSTP2CONST(vartype)
+ * @def CONSTP2CONST(ptrtype)
  * @brief Declare a constant pointer-to-variable constant with the specified type
  */
 #define CONSTP2CONST(ptrtype) CONST ptrtype *CONST
 
 /**
- * @def P2FUNC(vartype)
- * @brief Declare a pointer-to-function with the specified type
+ * @def P2FUNC(rettype, fctname)
+ * @brief Declare a pointer-to-function with the specified return type
  */
 #define P2FUNC(rettype, fctname) rettype(*fctname)
 

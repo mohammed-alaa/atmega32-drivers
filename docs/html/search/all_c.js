@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['output_0',['OUTPUT',['../group__gpio__directions_ga61a3c9a18380aafb6e430e79bf596557.html#ga61a3c9a18380aafb6e430e79bf596557',1,'GPIO_interface.h']]]
+  ['null_0',['NULL',['../group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4',1,'LSTD_VALUES.h']]]
 ];
