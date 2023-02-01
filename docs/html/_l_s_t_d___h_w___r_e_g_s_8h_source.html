@@ -101,9 +101,13 @@ $(document).ready(function(){initNavTree('_l_s_t_d___h_w___r_e_g_s_8h_source.htm
 <div class="line"><a id="l00012" name="l00012"></a><span class="lineno">   12</span><span class="preprocessor">#include &quot;<a class="code" href="_l_s_t_d___t_y_p_e_s_8h.html">LSTD_TYPES.h</a>&quot;</span></div>
 <div class="line"><a id="l00013" name="l00013"></a><span class="lineno">   13</span><span class="preprocessor">#include &quot;<a class="code" href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">LSTD_COMPILER.h</a>&quot;</span></div>
 <div class="line"><a id="l00014" name="l00014"></a><span class="lineno">   14</span> </div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno"><a class="line" href="group__hw__registers_ga1d7b135d3efe57f364f53689f264de20.html#ga1d7b135d3efe57f364f53689f264de20">   25</a></span><span class="preprocessor">#define REGISTER(ADDRESS) (*(volatile P2VAR(u8_t)) (ADDRESS))</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span> </div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#endif </span><span class="comment">/* _LSTD_HW_REGS_H */</span><span class="preprocessor"></span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno"><a class="line" href="group__hw__registers_gad80fa56127fca82e4db2c25973c71e93.html#gad80fa56127fca82e4db2c25973c71e93">   28</a></span><span class="preprocessor">#define REGISTER(SIZE, ADDRESS) (*(volatile P2VAR(SIZE))(ADDRESS))</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span> </div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno"><a class="line" href="group__hw__registers_ga3a920209bbee58161372d617b347e0e4.html#ga3a920209bbee58161372d617b347e0e4">   36</a></span><span class="preprocessor">#define REGISTER_U8(ADDRESS) REGISTER(u8_t, ADDRESS)</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span> </div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno"><a class="line" href="group__hw__registers_ga9c57befced7232a80db0f527cec677e1.html#ga9c57befced7232a80db0f527cec677e1">   44</a></span><span class="preprocessor">#define REGISTER_U16(ADDRESS) REGISTER(u16_t, ADDRESS)</span></div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span> </div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#endif </span><span class="comment">/* _LSTD_HW_REGS_H */</span><span class="preprocessor"></span></div>
 <div class="ttc" id="a_l_s_t_d___c_o_m_p_i_l_e_r_8h_html"><div class="ttname"><a href="_l_s_t_d___c_o_m_p_i_l_e_r_8h.html">LSTD_COMPILER.h</a></div><div class="ttdoc">This file contains the compiler standard macros.</div></div>
 <div class="ttc" id="a_l_s_t_d___t_y_p_e_s_8h_html"><div class="ttname"><a href="_l_s_t_d___t_y_p_e_s_8h.html">LSTD_TYPES.h</a></div><div class="ttdoc">This file contains the standard data types.</div></div>
 </div><!-- fragment --></div><!-- contents -->
@@ -112,7 +116,7 @@ $(document).ready(function(){initNavTree('_l_s_t_d___h_w___r_e_g_s_8h_source.htm
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_c49787b21523dfcd643eafa322448430.html">LIB</a></li><li class="navelem"><a class="el" href="_l_s_t_d___h_w___r_e_g_s_8h.html">LSTD_HW_REGS.h</a></li>
-    <li class="footer">Generated on Sun Jan 29 2023 00:49:14 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Wed Feb 1 2023 03:45:06 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -22,5 +22,12 @@ var modules =
     [ "Port A Registers", "group__port__a__registers.html", "group__port__a__registers" ],
     [ "Port B Registers", "group__port__b__registers.html", "group__port__b__registers" ],
     [ "Port C Registers", "group__port__c__registers.html", "group__port__c__registers" ],
-    [ "Port D Registers", "group__port__d__registers.html", "group__port__d__registers" ]
+    [ "Port D Registers", "group__port__d__registers.html", "group__port__d__registers" ],
+    [ "Timer Modes", "group__timer__modes.html", "group__timer__modes" ],
+    [ "Timer Prescaler", "group__timer__prescaler.html", "group__timer__prescaler" ],
+    [ "Timer Channels", "group__timer__channels.html", "group__timer__channels" ],
+    [ "Timer 0 Registers", "group__timer__0__registers.html", "group__timer__0__registers" ],
+    [ "General Timer Registers", "group__general__timer__registers.html", "group__general__timer__registers" ],
+    [ "Timer 1 Registers", "group__timer__1__registers.html", "group__timer__1__registers" ],
+    [ "Timer 2 Registers", "group__timer__2__registers.html", "group__timer__2__registers" ]
 ];

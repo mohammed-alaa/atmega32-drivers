@@ -99,9 +99,15 @@ $(document).ready(function(){initNavTree('group__hw__registers.html',''); initRe
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="define-members" name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:ga1d7b135d3efe57f364f53689f264de20"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hw__registers_ga1d7b135d3efe57f364f53689f264de20.html#ga1d7b135d3efe57f364f53689f264de20">REGISTER</a>(ADDRESS)&#160;&#160;&#160;(*(volatile <a class="el" href="group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1.html#ga30c6e83ff2cac859ff6d852ea99fa3f1">P2VAR</a>(<a class="el" href="group__typedefs_ga8127f1441872f9f912b20a65f40d4d24.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>)) (ADDRESS))</td></tr>
-<tr class="memdesc:ga1d7b135d3efe57f364f53689f264de20"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map to a certain register by its address in the memory.  <a href="group__hw__registers_ga1d7b135d3efe57f364f53689f264de20.html#ga1d7b135d3efe57f364f53689f264de20">More...</a><br /></td></tr>
-<tr class="separator:ga1d7b135d3efe57f364f53689f264de20"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:gad80fa56127fca82e4db2c25973c71e93"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hw__registers_gad80fa56127fca82e4db2c25973c71e93.html#gad80fa56127fca82e4db2c25973c71e93">REGISTER</a>(SIZE,  ADDRESS)&#160;&#160;&#160;(*(volatile <a class="el" href="group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1.html#ga30c6e83ff2cac859ff6d852ea99fa3f1">P2VAR</a>(SIZE))(ADDRESS))</td></tr>
+<tr class="memdesc:gad80fa56127fca82e4db2c25973c71e93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map to a certain register by its address in the memory.  <a href="group__hw__registers_gad80fa56127fca82e4db2c25973c71e93.html#gad80fa56127fca82e4db2c25973c71e93">More...</a><br /></td></tr>
+<tr class="separator:gad80fa56127fca82e4db2c25973c71e93"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga3a920209bbee58161372d617b347e0e4"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hw__registers_ga3a920209bbee58161372d617b347e0e4.html#ga3a920209bbee58161372d617b347e0e4">REGISTER_U8</a>(ADDRESS)&#160;&#160;&#160;<a class="el" href="group__hw__registers_gad80fa56127fca82e4db2c25973c71e93.html#gad80fa56127fca82e4db2c25973c71e93">REGISTER</a>(<a class="el" href="group__typedefs_ga8127f1441872f9f912b20a65f40d4d24.html#ga8127f1441872f9f912b20a65f40d4d24">u8_t</a>, ADDRESS)</td></tr>
+<tr class="memdesc:ga3a920209bbee58161372d617b347e0e4"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map to a certain register by its 8-bit address in the memory (used for 8-bit registers)  <a href="group__hw__registers_ga3a920209bbee58161372d617b347e0e4.html#ga3a920209bbee58161372d617b347e0e4">More...</a><br /></td></tr>
+<tr class="separator:ga3a920209bbee58161372d617b347e0e4"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ga9c57befced7232a80db0f527cec677e1"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="group__hw__registers_ga9c57befced7232a80db0f527cec677e1.html#ga9c57befced7232a80db0f527cec677e1">REGISTER_U16</a>(ADDRESS)&#160;&#160;&#160;<a class="el" href="group__hw__registers_gad80fa56127fca82e4db2c25973c71e93.html#gad80fa56127fca82e4db2c25973c71e93">REGISTER</a>(<a class="el" href="group__typedefs_gac9b933f433c9cde06e3f0467a098556b.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a>, ADDRESS)</td></tr>
+<tr class="memdesc:ga9c57befced7232a80db0f527cec677e1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Map to a certain register by its 16-bit address in the memory (used for 16-bit registers)  <a href="group__hw__registers_ga9c57befced7232a80db0f527cec677e1.html#ga9c57befced7232a80db0f527cec677e1">More...</a><br /></td></tr>
+<tr class="separator:ga9c57befced7232a80db0f527cec677e1"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <p >These macro-functions help in the mapping of memory addresses of the registers </p>
@@ -110,7 +116,7 @@ Macros</h2></td></tr>
 <!-- start footer part -->
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
-    <li class="footer">Generated on Sun Jan 29 2023 00:49:14 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Wed Feb 1 2023 03:45:06 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
