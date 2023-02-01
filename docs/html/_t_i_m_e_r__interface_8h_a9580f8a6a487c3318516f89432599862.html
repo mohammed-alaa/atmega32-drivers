@@ -150,7 +150,7 @@ $(document).ready(function(){initNavTree('_t_i_m_e_r__interface_8h_a9580f8a6a487
   </table>
   </dd>
 </dl>
-<dl class="section see"><dt>See also</dt><dd><a class="el" href="group__timer__prescaler.html" title="This section contains the Timer Prescaler.">Timer Prescaler</a> </dd></dl>
+<dl class="section see"><dt>See also</dt><dd>timer_prescaler </dd></dl>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
     <tr><td class="paramdir">[in]</td><td class="paramname">u32Ticks</td><td>The number of ticks to be counted </td></tr>
@@ -158,33 +158,33 @@ $(document).ready(function(){initNavTree('_t_i_m_e_r__interface_8h_a9580f8a6a487
   </dd>
 </dl>
 
-<p class="definition">Definition at line <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00149">149</a> of file <a class="el" href="_t_i_m_e_r__program_8c_source.html">TIMER_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  150</span>{</div>
-<div class="line"><span class="lineno">  151</span>    <a class="code hl_function" href="_t_i_m_e_r__program_8c_a8e6e6dd40fe7ed1b8224b067c311a49d.html#a8e6e6dd40fe7ed1b8224b067c311a49d">MTIMER_vInit</a>(u8Channel, u8Mode, <a class="code hl_define" href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
-<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (u8Mode == <a class="code hl_define" href="group__timer__modes_ga18db39a18d517e1cd6611a4688387185.html#ga18db39a18d517e1cd6611a4688387185">TIMER_MODE_CTC</a>)</div>
-<div class="line"><span class="lineno">  153</span>    {</div>
-<div class="line"><span class="lineno">  154</span>        MTIMER_vSetInitialCTCModeValue(u8Channel, u32Ticks);</div>
-<div class="line"><span class="lineno">  155</span>    }</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (u8Mode == <a class="code hl_define" href="group__timer__modes_ga3ac48e883666d37b52232ce5c3f826ed.html#ga3ac48e883666d37b52232ce5c3f826ed">TIMER_MODE_NORMAL</a>)</div>
-<div class="line"><span class="lineno">  157</span>    {</div>
-<div class="line"><span class="lineno">  158</span>        <span class="comment">// MTIMER_vSetInitialNormalModeValue(u8Channel, u32Ticks);</span></div>
-<div class="line"><span class="lineno">  159</span>    }</div>
-<div class="line"><span class="lineno">  160</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  161</span>    {</div>
-<div class="line"><span class="lineno">  162</span>        <span class="comment">/* Do nothing */</span></div>
-<div class="line"><span class="lineno">  163</span>    }</div>
-<div class="line"><span class="lineno">  164</span> </div>
-<div class="line"><span class="lineno">  165</span>    <a class="code hl_function" href="_t_i_m_e_r__program_8c_a84e6b41aaef6bc85766ab373f435e9d4.html#a84e6b41aaef6bc85766ab373f435e9d4">MTIMER_vStartTimerSync</a>(u8Channel, u8Prescaler, u32Ticks);</div>
-<div class="line"><span class="lineno">  166</span>    <a class="code hl_function" href="_t_i_m_e_r__program_8c_a954e61fd8d5d6ab213d81b50ca90fd34.html#a954e61fd8d5d6ab213d81b50ca90fd34">MTIMER_vStopTimer</a>(u8Channel);</div>
-<div class="line"><span class="lineno">  167</span>}</div>
-<div class="ttc" id="a_t_i_m_e_r__program_8c_a84e6b41aaef6bc85766ab373f435e9d4_html_a84e6b41aaef6bc85766ab373f435e9d4"><div class="ttname"><a href="_t_i_m_e_r__program_8c_a84e6b41aaef6bc85766ab373f435e9d4.html#a84e6b41aaef6bc85766ab373f435e9d4">MTIMER_vStartTimerSync</a></div><div class="ttdeci">static void MTIMER_vStartTimerSync(u8_t u8Channel, u8_t u8Prescaler, u32_t u32Delay)</div><div class="ttdoc">This function is used to start the timer in a synchronous mode (blocking)</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__program_8c_source.html#l00026">TIMER_program.c:26</a></div></div>
-<div class="ttc" id="a_t_i_m_e_r__program_8c_a8e6e6dd40fe7ed1b8224b067c311a49d_html_a8e6e6dd40fe7ed1b8224b067c311a49d"><div class="ttname"><a href="_t_i_m_e_r__program_8c_a8e6e6dd40fe7ed1b8224b067c311a49d.html#a8e6e6dd40fe7ed1b8224b067c311a49d">MTIMER_vInit</a></div><div class="ttdeci">static void MTIMER_vInit(u8_t u8Channel, u8_t u8Mode, bool_t bIsSync)</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__program_8c_source.html#l00075">TIMER_program.c:75</a></div></div>
-<div class="ttc" id="a_t_i_m_e_r__program_8c_a954e61fd8d5d6ab213d81b50ca90fd34_html_a954e61fd8d5d6ab213d81b50ca90fd34"><div class="ttname"><a href="_t_i_m_e_r__program_8c_a954e61fd8d5d6ab213d81b50ca90fd34.html#a954e61fd8d5d6ab213d81b50ca90fd34">MTIMER_vStopTimer</a></div><div class="ttdeci">void MTIMER_vStopTimer(u8_t u8Channel)</div><div class="ttdoc">This function is used to stop the timer on a certain channel.</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__program_8c_source.html#l00102">TIMER_program.c:102</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00234">234</a> of file <a class="el" href="_t_i_m_e_r__program_8c_source.html">TIMER_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  235</span>{</div>
+<div class="line"><span class="lineno">  236</span>    <a class="code hl_function" href="_t_i_m_e_r__program_8c_a8e6e6dd40fe7ed1b8224b067c311a49d.html#a8e6e6dd40fe7ed1b8224b067c311a49d">MTIMER_vInit</a>(u8Channel, u8Mode, <a class="code hl_define" href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>);</div>
+<div class="line"><span class="lineno">  237</span>    <span class="keywordflow">if</span> (u8Mode == <a class="code hl_define" href="group__timer__modes_ga18db39a18d517e1cd6611a4688387185.html#ga18db39a18d517e1cd6611a4688387185">TIMER_MODE_CTC</a>)</div>
+<div class="line"><span class="lineno">  238</span>    {</div>
+<div class="line"><span class="lineno">  239</span>        MTIMER_vSetInitialCTCModeValue(u8Channel, u32Ticks);</div>
+<div class="line"><span class="lineno">  240</span>    }</div>
+<div class="line"><span class="lineno">  241</span>    <span class="keywordflow">else</span> <span class="keywordflow">if</span> (u8Mode == <a class="code hl_define" href="group__timer__modes_ga3ac48e883666d37b52232ce5c3f826ed.html#ga3ac48e883666d37b52232ce5c3f826ed">TIMER_MODE_NORMAL</a>)</div>
+<div class="line"><span class="lineno">  242</span>    {</div>
+<div class="line"><span class="lineno">  243</span>        <span class="comment">// MTIMER_vSetInitialNormalModeValue(u8Channel, u32Ticks);</span></div>
+<div class="line"><span class="lineno">  244</span>    }</div>
+<div class="line"><span class="lineno">  245</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  246</span>    {</div>
+<div class="line"><span class="lineno">  247</span>        <span class="comment">/* Do nothing */</span></div>
+<div class="line"><span class="lineno">  248</span>    }</div>
+<div class="line"><span class="lineno">  249</span> </div>
+<div class="line"><span class="lineno">  250</span>    <a class="code hl_function" href="_t_i_m_e_r__program_8c_a5c7827f3b0a97351effdba57e69f9614.html#a5c7827f3b0a97351effdba57e69f9614">MTIMER_vStartTimerCTCSync</a>(u8Channel, u8Prescaler, u32Ticks);</div>
+<div class="line"><span class="lineno">  251</span>    <a class="code hl_function" href="_t_i_m_e_r__program_8c_a954e61fd8d5d6ab213d81b50ca90fd34.html#a954e61fd8d5d6ab213d81b50ca90fd34">MTIMER_vStopTimer</a>(u8Channel);</div>
+<div class="line"><span class="lineno">  252</span>}</div>
+<div class="ttc" id="a_t_i_m_e_r__program_8c_a5c7827f3b0a97351effdba57e69f9614_html_a5c7827f3b0a97351effdba57e69f9614"><div class="ttname"><a href="_t_i_m_e_r__program_8c_a5c7827f3b0a97351effdba57e69f9614.html#a5c7827f3b0a97351effdba57e69f9614">MTIMER_vStartTimerCTCSync</a></div><div class="ttdeci">static void MTIMER_vStartTimerCTCSync(u8_t u8Channel, u8_t u8Prescaler, u32_t u32Delay)</div><div class="ttdoc">This function is used to start the timer in a synchronous mode (blocking)</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__program_8c_source.html#l00026">TIMER_program.c:26</a></div></div>
+<div class="ttc" id="a_t_i_m_e_r__program_8c_a8e6e6dd40fe7ed1b8224b067c311a49d_html_a8e6e6dd40fe7ed1b8224b067c311a49d"><div class="ttname"><a href="_t_i_m_e_r__program_8c_a8e6e6dd40fe7ed1b8224b067c311a49d.html#a8e6e6dd40fe7ed1b8224b067c311a49d">MTIMER_vInit</a></div><div class="ttdeci">static void MTIMER_vInit(u8_t u8Channel, u8_t u8Mode, bool_t bIsSync)</div><div class="ttdoc">This function is used to initiate the timer with a certain mode.</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__program_8c_source.html#l00102">TIMER_program.c:102</a></div></div>
+<div class="ttc" id="a_t_i_m_e_r__program_8c_a954e61fd8d5d6ab213d81b50ca90fd34_html_a954e61fd8d5d6ab213d81b50ca90fd34"><div class="ttname"><a href="_t_i_m_e_r__program_8c_a954e61fd8d5d6ab213d81b50ca90fd34.html#a954e61fd8d5d6ab213d81b50ca90fd34">MTIMER_vStopTimer</a></div><div class="ttdeci">void MTIMER_vStopTimer(u8_t u8Channel)</div><div class="ttdoc">This function is used to stop the timer on a certain channel.</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__program_8c_source.html#l00169">TIMER_program.c:169</a></div></div>
 <div class="ttc" id="agroup__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d_html_gaa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdoc">Type definition for TRUE.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00024">LSTD_VALUES.h:24</a></div></div>
 <div class="ttc" id="agroup__timer__modes_ga18db39a18d517e1cd6611a4688387185_html_ga18db39a18d517e1cd6611a4688387185"><div class="ttname"><a href="group__timer__modes_ga18db39a18d517e1cd6611a4688387185.html#ga18db39a18d517e1cd6611a4688387185">TIMER_MODE_CTC</a></div><div class="ttdeci">#define TIMER_MODE_CTC</div><div class="ttdoc">Clear Timer on Compare Match Mode (CTC)</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__interface_8h_source.html#l00032">TIMER_interface.h:32</a></div></div>
 <div class="ttc" id="agroup__timer__modes_ga3ac48e883666d37b52232ce5c3f826ed_html_ga3ac48e883666d37b52232ce5c3f826ed"><div class="ttname"><a href="group__timer__modes_ga3ac48e883666d37b52232ce5c3f826ed.html#ga3ac48e883666d37b52232ce5c3f826ed">TIMER_MODE_NORMAL</a></div><div class="ttdeci">#define TIMER_MODE_NORMAL</div><div class="ttdoc">Normal Mode (Overflow)</div><div class="ttdef"><b>Definition:</b> <a href="_t_i_m_e_r__interface_8h_source.html#l00026">TIMER_interface.h:26</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00075">MTIMER_vInit()</a>, <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00026">MTIMER_vStartTimerSync()</a>, <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00102">MTIMER_vStopTimer()</a>, <a class="el" href="_t_i_m_e_r__interface_8h_source.html#l00032">TIMER_MODE_CTC</a>, <a class="el" href="_t_i_m_e_r__interface_8h_source.html#l00026">TIMER_MODE_NORMAL</a>, and <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00024">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00102">MTIMER_vInit()</a>, <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00026">MTIMER_vStartTimerCTCSync()</a>, <a class="el" href="_t_i_m_e_r__program_8c_source.html#l00169">MTIMER_vStopTimer()</a>, <a class="el" href="_t_i_m_e_r__interface_8h_source.html#l00032">TIMER_MODE_CTC</a>, <a class="el" href="_t_i_m_e_r__interface_8h_source.html#l00026">TIMER_MODE_NORMAL</a>, and <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00024">TRUE</a>.</p>
 
 </div>
 </div>
@@ -194,7 +194,7 @@ $(document).ready(function(){initNavTree('_t_i_m_e_r__interface_8h_a9580f8a6a487
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_aeef58f5a946ad8e66cca46db86d7cf5.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_df45b9c8aa4f891324236ae216136425.html">TIMER</a></li><li class="navelem"><a class="el" href="_t_i_m_e_r__interface_8h.html">TIMER_interface.h</a></li>
-    <li class="footer">Generated on Wed Feb 1 2023 03:45:06 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Wed Feb 1 2023 22:43:36 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

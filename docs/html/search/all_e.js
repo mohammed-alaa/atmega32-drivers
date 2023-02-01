@@ -14,5 +14,7 @@ var searchData=
   ['porta_11',['PORTA',['../group__port__a__registers_ga7c8a7f98a98d8cb125dd57a66720ab30.html#ga7c8a7f98a98d8cb125dd57a66720ab30',1,'GPIO_private.h']]],
   ['portb_12',['PORTB',['../group__port__b__registers_ga09a0c85cd3da09d9cdf63a5ac4c39f77.html#ga09a0c85cd3da09d9cdf63a5ac4c39f77',1,'GPIO_private.h']]],
   ['portc_13',['PORTC',['../group__port__c__registers_ga68fea88642279a70246e026e7221b0a5.html#ga68fea88642279a70246e026e7221b0a5',1,'GPIO_private.h']]],
-  ['portd_14',['PORTD',['../group__port__d__registers_ga3e6a2517db4f9cb7c9037adf0aefe79b.html#ga3e6a2517db4f9cb7c9037adf0aefe79b',1,'GPIO_private.h']]]
+  ['portd_14',['PORTD',['../group__port__d__registers_ga3e6a2517db4f9cb7c9037adf0aefe79b.html#ga3e6a2517db4f9cb7c9037adf0aefe79b',1,'GPIO_private.h']]],
+  ['prescalers_20for_20timer_200_20and_201_15',['Prescalers for Timer 0 and 1',['../group__timer01__prescaler.html',1,'']]],
+  ['prescalers_20for_20timer_202_16',['Prescalers for Timer 2',['../group__timer2__prescaler.html',1,'']]]
 ];
