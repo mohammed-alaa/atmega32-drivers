@@ -40,52 +40,116 @@
 /** @} */
 
 /**
- * @defgroup timer_prescaler Timer Prescaler
- * @brief This section contains the Timer Prescaler
+ * @defgroup timer01_prescaler Prescalers for Timer 0 and 1
+ * @brief This section contains prescalers for Timer 0 and 1
  * @{
  */
 
 /**
- * @def TIMER_PRESCALER_1
+ * @def TIMER_PRESCALER_TIMER01_1
  * @brief Prescaler = 1
+ * @note This should be used for timer 0 and 1 only
  */
-#define TIMER_PRESCALER_1 (0x01)
+#define TIMER_PRESCALER_TIMER01_1 (0x01)
 
 /**
- * @def TIMER_PRESCALER_8
+ * @def TIMER_PRESCALER_TIMER01_8
  * @brief Prescaler = 8
+ * @note This should be used for timer 0 and 1 only
  */
-#define TIMER_PRESCALER_8 (0x02)
+#define TIMER_PRESCALER_TIMER01_8 (0x02)
 
 /**
- * @def TIMER_PRESCALER_64
+ * @def TIMER_PRESCALER_TIMER01_64
  * @brief Prescaler = 64
+ * @note This should be used for timer 0 and 1 only
  */
-#define TIMER_PRESCALER_64 (0x03)
+#define TIMER_PRESCALER_TIMER01_64 (0x03)
 
 /**
- * @def TIMER_PRESCALER_256
+ * @def TIMER_PRESCALER_TIMER01_256
  * @brief Prescaler = 256
+ * @note This should be used for timer 0 and 1 only
  */
-#define TIMER_PRESCALER_256 (0x04)
+#define TIMER_PRESCALER_TIMER01_256 (0x04)
 
 /**
- * @def TIMER_PRESCALER_1024
+ * @def TIMER_PRESCALER_TIMER01_1024
  * @brief Prescaler = 1024
+ * @note This should be used for timer 0 and 1 only
  */
-#define TIMER_PRESCALER_1024 (0x05)
+#define TIMER_PRESCALER_TIMER01_1024 (0x05)
 
 /**
- * @def TIMER_PRESCALER_EXTERNAL_FALLING
+ * @def TIMER_PRESCALER_TIMER01_EXTERNAL_FALLING
  * @brief External Clock Source on T0 Pin. Clock on Falling Edge
+ * @note This should be used for timer 0 and 1 only
  */
-#define TIMER_PRESCALER_EXTERNAL_FALLING (0x06)
+#define TIMER_PRESCALER_TIMER01_EXTERNAL_FALLING (0x06)
 
 /**
- * @def TIMER_PRESCALER_EXTERNAL_RISING
+ * @def TIMER_PRESCALER_TIMER01_EXTERNAL_RISING
  * @brief External Clock Source on T0 Pin. Clock on Rising Edge
+ * @note This should be used for timer 0 and 1 only
  */
-#define TIMER_PRESCALER_EXTERNAL_RISING (0x07)
+#define TIMER_PRESCALER_TIMER01_EXTERNAL_RISING (0x07)
+
+/** @} */
+
+/**
+ * @defgroup timer2_prescaler Prescalers for Timer 2
+ * @brief This section contains prescalers for Timer 2
+ * @{
+ */
+
+/**
+ * @def TIMER_PRESCALER_TIMER2_1
+ * @brief Prescaler = 1
+ * @note This should be used for timer 2 only
+ */
+#define TIMER_PRESCALER_TIMER2_1 (0x01)
+
+/**
+ * @def TIMER_PRESCALER_TIMER2_8
+ * @brief Prescaler = 8
+ * @note This should be used for timer 2 only
+ */
+#define TIMER_PRESCALER_TIMER2_8 (0x02)
+
+/**
+ * @def TIMER_PRESCALER_TIMER2_32
+ * @brief Prescaler = 32
+ * @note This should be used for timer 2 only
+ */
+#define TIMER_PRESCALER_TIMER2_32 (0x03)
+
+/**
+ * @def TIMER_PRESCALER_TIMER2_64
+ * @brief Prescaler = 64
+ * @note This should be used for timer 2 only
+ */
+#define TIMER_PRESCALER_TIMER2_64 (0x04)
+
+/**
+ * @def TIMER_PRESCALER_TIMER2_128
+ * @brief Prescaler = 128
+ * @note This should be used for timer 2 only
+ */
+#define TIMER_PRESCALER_TIMER2_128 (0x05)
+
+/**
+ * @def TIMER_PRESCALER_TIMER2_256
+ * @brief Prescaler = 256
+ * @note This should be used for timer 2 only
+ */
+#define TIMER_PRESCALER_TIMER2_256 (0x06)
+
+/**
+ * @def TIMER_PRESCALER_TIMER2_1024
+ * @brief Prescaler = 1024
+ * @note This should be used for timer 2 only
+ */
+#define TIMER_PRESCALER_TIMER2_1024 (0x07)
 
 /** @} */
 
@@ -102,16 +166,23 @@
 #define TIMER_CHANNEL_0 (0)
 
 /**
- * @def TIMER_CHANNEL_1
- * @brief Timer Channel 1 (16-bit)
+ * @def TIMER_CHANNEL_1A
+ * @brief Timer Channel 1 A (16-bit)
  */
-#define TIMER_CHANNEL_1 (1)
+#define TIMER_CHANNEL_1A (1)
+
+/**
+ * @def TIMER_CHANNEL_1B
+ * @brief Timer Channel 1 B (16-bit)
+ * @note This channel cannot be used as a delay channel
+ */
+#define TIMER_CHANNEL_1B (2)
 
 /**
  * @def TIMER_CHANNEL_2
  * @brief Timer Channel 2 (8-bit)
  */
-#define TIMER_CHANNEL_2 (2)
+#define TIMER_CHANNEL_2 (3)
 
 /** @} */
 
