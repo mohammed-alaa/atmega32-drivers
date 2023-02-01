@@ -166,10 +166,22 @@
     <Compile Include="APPS\TestingGPIO\TestingGPIO_main.h">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="APPS\TestingTIMER\TestingTIMER_main.c">
+    <Compile Include="APPS\TestingTIMER0DelaySync\TestingTIMER0DelaySync_main.c">
       <SubType>compile</SubType>
     </Compile>
-    <Compile Include="APPS\TestingTIMER\TestingTIMER_main.h">
+    <Compile Include="APPS\TestingTIMER0DelaySync\TestingTIMER0DelaySync_main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER1DelaySync\TestingTIMER1DelaySync_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER1DelaySync\TestingTIMER1DelaySync_main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER2DelaySync\TestingTIMER2DelaySync_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER2DelaySync\TestingTIMER2DelaySync_main.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="COTS\LIB\LSTD_BITMATH.h">
@@ -238,7 +250,9 @@
     <Folder Include="APPS\TestingADC\" />
     <Folder Include="APPS\TestingEXTI\" />
     <Folder Include="APPS\TestingGPIO\" />
-    <Folder Include="APPS\TestingTIMER\" />
+    <Folder Include="APPS\TestingTIMER0DelaySync\" />
+    <Folder Include="APPS\TestingTIMER1DelaySync\" />
+    <Folder Include="APPS\TestingTIMER2DelaySync\" />
     <Folder Include="COTS\" />
     <Folder Include="COTS\HAL\" />
     <Folder Include="COTS\LIB\" />
