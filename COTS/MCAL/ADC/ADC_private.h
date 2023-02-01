@@ -26,25 +26,25 @@
  * @def ADMUX
  * @brief ADC Multiplexer Selection Register
  */
-#define ADMUX REGISTER(0x27)
+#define ADMUX REGISTER_U8(0x27)
 
 /**
  * @def ADCSRA
  * @brief ADC Control and Status Register A
  */
-#define ADCSRA REGISTER(0x26)
+#define ADCSRA REGISTER_U8(0x26)
 
 /**
  * @def ADCH
  * @brief ADC Data Register High
  */
-#define ADCH REGISTER(0x25)
+#define ADCH REGISTER_U8(0x25)
 
 /**
  * @def ADCL
  * @brief ADC Data Register Low
  */
-#define ADCL REGISTER(0x24)
+#define ADCL REGISTER_U8(0x24)
 
 /** @} */
 

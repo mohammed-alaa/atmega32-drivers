@@ -20,25 +20,25 @@
  * @def MCUCR
  * @brief MCU Control Register
  */
-#define MCUCR REGISTER(0x55)
+#define MCUCR REGISTER_U8(0x55)
 
 /**
  * @def MCUCSR
  * @brief MCU Control and Status Register
  */
-#define MCUCSR REGISTER(0x54)
+#define MCUCSR REGISTER_U8(0x54)
 
 /**
  * @def GICR
  * @brief General Interrupt Control Register
  */
-#define GICR REGISTER(0x5B)
+#define GICR REGISTER_U8(0x5B)
 
 /**
  * @def GIFR
  * @brief General Interrupt Flag Register
  */
-#define GIFR REGISTER(0x5A)
+#define GIFR REGISTER_U8(0x5A)
 
 /** @} */
 

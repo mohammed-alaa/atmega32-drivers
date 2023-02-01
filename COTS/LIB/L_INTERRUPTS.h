@@ -12,7 +12,7 @@
 
 #include "LSTD_HW_REGS.h"
 
-#define SREG REGISTER(0x5F)
+#define SREG REGISTER_U8(0x5F)
 
 /**
  * @defgroup interrupts_vector_table External Interrupt Vector Table
