@@ -13,6 +13,26 @@
 #include "../../LIB/LSTD_HW_REGS.h"
 
 /**
+ * @defgroup general_timer_registers General Timer Registers
+ * @brief This section contains the General Timer Registers that are common to all timers
+ * @{
+ */
+
+/**
+ * @def TIMSK
+ * @brief Timer/Counter Interrupt Mask Register
+ */
+#define TIMSK REGISTER_U8(0x59)
+
+/**
+ * @def TIFR
+ * @brief Timer/Counter Interrupt Flag Register
+ */
+#define TIFR REGISTER_U8(0x58)
+
+/** @} */
+
+/**
  * @defgroup timer_0_registers Timer 0 Registers
  * @brief This section contains the Timer 0 Registers
  * @{
@@ -39,36 +59,22 @@
 /** @} */
 
 /**
- * @defgroup general_timer_registers General Timer Registers
- * @brief This section contains the General Timer Registers that are common to all timers
- * @{
- */
-
-/**
- * @def TIMSK
- * @brief Timer/Counter Interrupt Mask Register
- */
-#define TIMSK REGISTER_U8(0x59)
-
-/**
- * @def TIFR
- * @brief Timer/Counter Interrupt Flag Register
- */
-#define TIFR REGISTER_U8(0x58)
-
-/** @} */
-
-/**
  * @defgroup timer_1_registers Timer 1 Registers
  * @brief This section contains the Timer 1 Registers
  * @{
  */
 
 /**
- * @def TCCR1
- * @brief Timer/Counter 1 Control Register
+ * @def TCCR1A
+ * @brief Timer/Counter 1 Control Register A
  */
-#define TCCR1 REGISTER_U16(0x4E)
+#define TCCR1A REGISTER_U8(0x4F)
+
+/**
+ * @def TCCR1B
+ * @brief Timer/Counter 1 Control Register B
+ */
+#define TCCR1B REGISTER_U8(0x4E)
 
 /**
  * @def TCNT1
