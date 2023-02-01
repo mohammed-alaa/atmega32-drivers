@@ -15,6 +15,10 @@
     "exti_interface.h": "c",
     "exti_private.h": "c",
     "l_interrupts.h": "c",
-    "madc_interface.h": "c"
+    "madc_interface.h": "c",
+    "testingadc_main.h": "c",
+    "testingtimer_main.h": "c",
+    "timer_interface.h": "c",
+    "timer_private.h": "c"
   }
 }
