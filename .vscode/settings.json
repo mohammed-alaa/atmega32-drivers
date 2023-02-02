@@ -21,6 +21,7 @@
     "timer_interface.h": "c",
     "timer_private.h": "c",
     "testingtimer1delaysync_main.h": "c",
-    "testingtimer0delaysync_main.h": "c"
+    "testingtimer0delaysync_main.h": "c",
+    "testingtimer2delaysync_main.h": "c"
   }
 }
