@@ -174,7 +174,7 @@
 /**
  * @def TIMER_CHANNEL_1B
  * @brief Timer Channel 1 B (16-bit)
- * @note This channel cannot be used as a delay channel
+ * @note This channel cannot be used as a delay channel and automatically ignored and replaced by TIMER_CHANNEL_1A instead
  */
 #define TIMER_CHANNEL_1B (2)
 
@@ -187,12 +187,18 @@
 /** @} */
 
 /**
+ * @brief This function is used to stop the timer on a certain channel
+ * @param[in] u8Channel The Timer channel to be used @see timer_channels
+ */
+void MTIMER_vStopTimer(u8_t u8Channel);
+
+/**
  * @brief This function is used to delay for a specific time in microseconds (us)
  * @param[in] u8Channel The Timer channel to be used @see timer_channels
  * @param[in] u32Delay The delay time in microseconds (us)
  * @note Use this function for delays < 1ms
  */
-void MTIMER_vSyncDelayUS(u8_t u8Channel, u32_t u32Delay);
+void MTIMER_vDelayUS(u8_t u8Channel, u32_t u32Delay);
 
 /**
  * @brief This function is used to delay for a specific time in milliseconds (ms)
@@ -200,7 +206,7 @@ void MTIMER_vSyncDelayUS(u8_t u8Channel, u32_t u32Delay);
  * @param[in] u32Delay The delay time in milliseconds (ms)
  * @note Use this function for delays < 1s
  */
-void MTIMER_vSyncDelayMS(u8_t u8Channel, u32_t u32Delay);
+void MTIMER_vDelayMS(u8_t u8Channel, u32_t u32Delay);
 
 /**
  * @brief This function is used to delay for a specific time in seconds (s)
@@ -208,21 +214,18 @@ void MTIMER_vSyncDelayMS(u8_t u8Channel, u32_t u32Delay);
  * @param[in] u32Delay The delay time in seconds (s)
  * @note Use this function for delays >= 1s
  */
-void MTIMER_vSyncDelayS(u8_t u8Channel, u32_t u32Delay);
+void MTIMER_vDelaySec(u8_t u8Channel, u32_t u32Delay);
 
 /**
- * @brief This function is used to delay for a specific number of ticks
+ * @brief This is a more of a generic function to delay for a specific time
  * @param[in] u8Channel The Timer channel to be used @see timer_channels
  * @param[in] u8Mode The Timer mode to be used @see timer_modes
  * @param[in] u8Prescaler The Timer prescaler to be used @see timer_prescaler
- * @param[in] u32Ticks The number of ticks to be counted
+ * @param[in] u16InitalValue The initial value of the timer
+ * @param[in] u32Delay The number of ticks to be counted
+ * @note When using this function in normal mode, the u16InitalValue is ignored and the timer is started from 0 instead
+ * @note When using this function in CTC mode, the u16InitalValue is used as the compare value
  */
-void MTIMER_vSyncDelay(u8_t u8Channel, u8_t u8Mode, u8_t u8Prescaler, u32_t u32Ticks);
-
-/**
- * @brief This function is used to stop the timer on a certain channel
- * @param[in] u8Channel The Timer channel to be used @see timer_channels
- */
-void MTIMER_vStopTimer(u8_t u8Channel);
+void MTIMER_vDelay(u8_t u8Channel, u8_t u8Mode, u8_t u8Prescaler, u16_t u16InitalValue, u32_t u32Delay);
 
 #endif /* TIMER_INTERFACE_H_ */
