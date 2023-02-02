@@ -14,5 +14,21 @@ var _t_i_m_e_r__private_8h =
     [ "TCCR2", "group__timer__2__registers_gae0274f99f343c0c5636d7ca10d56a5d5.html#gae0274f99f343c0c5636d7ca10d56a5d5", null ],
     [ "TCNT2", "group__timer__2__registers_ga12a808b752aa26d0256e9002fac53e72.html#ga12a808b752aa26d0256e9002fac53e72", null ],
     [ "OCR2", "group__timer__2__registers_gaa8fa9a2385a2bd96717ab4cc7bc10472.html#gaa8fa9a2385a2bd96717ab4cc7bc10472", null ],
-    [ "ASSR", "group__timer__2__registers_ga7f30b79723a0680c4cab087964d2ea55.html#ga7f30b79723a0680c4cab087964d2ea55", null ]
+    [ "ASSR", "group__timer__2__registers_ga7f30b79723a0680c4cab087964d2ea55.html#ga7f30b79723a0680c4cab087964d2ea55", null ],
+    [ "TIMSK_TOIE0", "group__timsk__bits_ga5827ef45f483374545f1e5e8b7cdcfd4.html#ga5827ef45f483374545f1e5e8b7cdcfd4", null ],
+    [ "TIMSK_OCIE0", "group__timsk__bits_ga0e06e815cc1276e18a7e727e2518b595.html#ga0e06e815cc1276e18a7e727e2518b595", null ],
+    [ "TIMSK_TOIE1", "group__timsk__bits_ga1b4b0d7e8cc1ef2ccbdbf1cf38a7cb89.html#ga1b4b0d7e8cc1ef2ccbdbf1cf38a7cb89", null ],
+    [ "TIMSK_OCIE1B", "group__timsk__bits_gab4c050b8bef1c3a9e3a4925b669db000.html#gab4c050b8bef1c3a9e3a4925b669db000", null ],
+    [ "TIMSK_OCIE1A", "group__timsk__bits_ga7223d1df389b9cad5013082c936d8bfe.html#ga7223d1df389b9cad5013082c936d8bfe", null ],
+    [ "TIMSK_TICIE1", "group__timsk__bits_gad1a628f757a9605e76f1142c8ab9d84a.html#gad1a628f757a9605e76f1142c8ab9d84a", null ],
+    [ "TIMSK_TOIE2", "group__timsk__bits_ga8908cd2b4ec19d2ab223efce9ea52f68.html#ga8908cd2b4ec19d2ab223efce9ea52f68", null ],
+    [ "TIMSK_OCIE2", "group__timsk__bits_gac4e89f93c788b5cf42a8f2d9b38d5923.html#gac4e89f93c788b5cf42a8f2d9b38d5923", null ],
+    [ "TIFR_TOV0", "group__tifr__bits_gab30ed4095946cd31ba9b3b638a542f2d.html#gab30ed4095946cd31ba9b3b638a542f2d", null ],
+    [ "TIFR_OCF0", "group__tifr__bits_gac5e391fc2152b8804159b54d7d956318.html#gac5e391fc2152b8804159b54d7d956318", null ],
+    [ "TIFR_TOV1", "group__tifr__bits_ga176c66542120aa6d20781fedfcb8dd1b.html#ga176c66542120aa6d20781fedfcb8dd1b", null ],
+    [ "TIFR_OCF1B", "group__tifr__bits_gab67f9904db29e88b7d40dd4b2b0f2262.html#gab67f9904db29e88b7d40dd4b2b0f2262", null ],
+    [ "TIFR_OCF1A", "group__tifr__bits_ga0e55f7b84e6c67334a0a49b439204b40.html#ga0e55f7b84e6c67334a0a49b439204b40", null ],
+    [ "TIFR_ICF1", "group__tifr__bits_gafe0e5641d58e6c3a1554a515eca35d67.html#gafe0e5641d58e6c3a1554a515eca35d67", null ],
+    [ "TIFR_TOV2", "group__tifr__bits_gaa942abba67f9909b2ecdace9e08b8b24.html#gaa942abba67f9909b2ecdace9e08b8b24", null ],
+    [ "TIFR_OCF2", "group__tifr__bits_gafdf3f82dff7be6e3f9a5aaaacf768144.html#gafdf3f82dff7be6e3f9a5aaaacf768144", null ]
 ];

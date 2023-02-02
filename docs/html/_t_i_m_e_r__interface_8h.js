@@ -21,9 +21,9 @@ var _t_i_m_e_r__interface_8h =
     [ "TIMER_CHANNEL_1A", "group__timer__channels_ga8ba61fe9f650008d55ae9c62c44977e3.html#ga8ba61fe9f650008d55ae9c62c44977e3", null ],
     [ "TIMER_CHANNEL_1B", "group__timer__channels_gaa2196dddc37817e0dba1df38fc86b22a.html#gaa2196dddc37817e0dba1df38fc86b22a", null ],
     [ "TIMER_CHANNEL_2", "group__timer__channels_ga6c10aa44f759d7ea6f59e46e609bff95.html#ga6c10aa44f759d7ea6f59e46e609bff95", null ],
-    [ "MTIMER_vSyncDelayUS", "_t_i_m_e_r__interface_8h_a3aa4f521e5528bb5b6275153221a91d8.html#a3aa4f521e5528bb5b6275153221a91d8", null ],
-    [ "MTIMER_vSyncDelayMS", "_t_i_m_e_r__interface_8h_af4e8f06272a22e1b5b1c98349bfd6559.html#af4e8f06272a22e1b5b1c98349bfd6559", null ],
-    [ "MTIMER_vSyncDelayS", "_t_i_m_e_r__interface_8h_a2da2a5051eb8ae458494af3e3a52028b.html#a2da2a5051eb8ae458494af3e3a52028b", null ],
-    [ "MTIMER_vSyncDelay", "_t_i_m_e_r__interface_8h_a9580f8a6a487c3318516f89432599862.html#a9580f8a6a487c3318516f89432599862", null ],
-    [ "MTIMER_vStopTimer", "_t_i_m_e_r__interface_8h_a954e61fd8d5d6ab213d81b50ca90fd34.html#a954e61fd8d5d6ab213d81b50ca90fd34", null ]
+    [ "MTIMER_vStopTimer", "_t_i_m_e_r__interface_8h_a954e61fd8d5d6ab213d81b50ca90fd34.html#a954e61fd8d5d6ab213d81b50ca90fd34", null ],
+    [ "MTIMER_vDelayUS", "_t_i_m_e_r__interface_8h_a4412f3b80138c697300e558ef2d37f56.html#a4412f3b80138c697300e558ef2d37f56", null ],
+    [ "MTIMER_vDelayMS", "_t_i_m_e_r__interface_8h_a83d2917ca1918ed6b8b5c2645dbe5dc2.html#a83d2917ca1918ed6b8b5c2645dbe5dc2", null ],
+    [ "MTIMER_vDelaySec", "_t_i_m_e_r__interface_8h_abe9600014aa35a13f6fcd79d327b8790.html#abe9600014aa35a13f6fcd79d327b8790", null ],
+    [ "MTIMER_vDelay", "_t_i_m_e_r__interface_8h_ac2bfb506b7ffbd403ba95233044137f5.html#ac2bfb506b7ffbd403ba95233044137f5", null ]
 ];

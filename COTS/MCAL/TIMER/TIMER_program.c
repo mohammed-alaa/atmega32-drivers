@@ -155,7 +155,6 @@ STATIC void MTIMER_vSetInitialCTCModeValue(u8_t u8Channel, u16_t u16InitialValue
  * @brief This function is used to initiate the timer with a certain mode
  * @param[in] u8Channel The Timer channel to be used @see timer_channels
  * @param[in] u8Mode The Timer mode to be used @see timer_modes
- * @param[in] bIsSync Whether the timer is in synchronous mode or not
  */
 STATIC void MTIMER_vInit(u8_t u8Channel, u8_t u8Mode)
 {

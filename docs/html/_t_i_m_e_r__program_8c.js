@@ -1,10 +1,11 @@
 var _t_i_m_e_r__program_8c =
 [
-    [ "MTIMER_vStartTimerCTCSync", "_t_i_m_e_r__program_8c_a5c7827f3b0a97351effdba57e69f9614.html#a5c7827f3b0a97351effdba57e69f9614", null ],
-    [ "MTIMER_vInit", "_t_i_m_e_r__program_8c_a8e6e6dd40fe7ed1b8224b067c311a49d.html#a8e6e6dd40fe7ed1b8224b067c311a49d", null ],
+    [ "MTIMER_vStartTimerNormal", "_t_i_m_e_r__program_8c_a39d8b2b40f7cf3952b8b7998fcb059d6.html#a39d8b2b40f7cf3952b8b7998fcb059d6", null ],
+    [ "MTIMER_vStartTimerCTC", "_t_i_m_e_r__program_8c_af99dcf3ec6b3545bd0691e5b6d5927cc.html#af99dcf3ec6b3545bd0691e5b6d5927cc", null ],
+    [ "MTIMER_vInit", "_t_i_m_e_r__program_8c_a6d7013cb36fa150f320a53d5739363f4.html#a6d7013cb36fa150f320a53d5739363f4", null ],
     [ "MTIMER_vStopTimer", "_t_i_m_e_r__program_8c_a954e61fd8d5d6ab213d81b50ca90fd34.html#a954e61fd8d5d6ab213d81b50ca90fd34", null ],
-    [ "MTIMER_vSyncDelayUS", "_t_i_m_e_r__program_8c_a3aa4f521e5528bb5b6275153221a91d8.html#a3aa4f521e5528bb5b6275153221a91d8", null ],
-    [ "MTIMER_vSyncDelayMS", "_t_i_m_e_r__program_8c_af4e8f06272a22e1b5b1c98349bfd6559.html#af4e8f06272a22e1b5b1c98349bfd6559", null ],
-    [ "MTIMER_vSyncDelayS", "_t_i_m_e_r__program_8c_a2da2a5051eb8ae458494af3e3a52028b.html#a2da2a5051eb8ae458494af3e3a52028b", null ],
-    [ "MTIMER_vSyncDelay", "_t_i_m_e_r__program_8c_a9580f8a6a487c3318516f89432599862.html#a9580f8a6a487c3318516f89432599862", null ]
+    [ "MTIMER_vDelayUS", "_t_i_m_e_r__program_8c_a4412f3b80138c697300e558ef2d37f56.html#a4412f3b80138c697300e558ef2d37f56", null ],
+    [ "MTIMER_vDelayMS", "_t_i_m_e_r__program_8c_a83d2917ca1918ed6b8b5c2645dbe5dc2.html#a83d2917ca1918ed6b8b5c2645dbe5dc2", null ],
+    [ "MTIMER_vDelaySec", "_t_i_m_e_r__program_8c_abe9600014aa35a13f6fcd79d327b8790.html#abe9600014aa35a13f6fcd79d327b8790", null ],
+    [ "MTIMER_vDelay", "_t_i_m_e_r__program_8c_ac2bfb506b7ffbd403ba95233044137f5.html#ac2bfb506b7ffbd403ba95233044137f5", null ]
 ];

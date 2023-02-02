@@ -30,5 +30,7 @@ var modules =
     [ "General Timer Registers", "group__general__timer__registers.html", "group__general__timer__registers" ],
     [ "Timer 0 Registers", "group__timer__0__registers.html", "group__timer__0__registers" ],
     [ "Timer 1 Registers", "group__timer__1__registers.html", "group__timer__1__registers" ],
-    [ "Timer 2 Registers", "group__timer__2__registers.html", "group__timer__2__registers" ]
+    [ "Timer 2 Registers", "group__timer__2__registers.html", "group__timer__2__registers" ],
+    [ "TIMSK Bits", "group__timsk__bits.html", "group__timsk__bits" ],
+    [ "TIFR Bits", "group__tifr__bits.html", "group__tifr__bits" ]
 ];
