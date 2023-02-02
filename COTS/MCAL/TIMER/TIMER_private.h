@@ -134,4 +134,118 @@
 
 /** @} */
 
+/**
+ * @defgroup timsk_bits TIMSK Bits
+ * @brief This section contains the TIMSK Bits that are common to all timers
+ * @see TIMSK
+ * @{
+ */
+
+/**
+ * @def TIMSK_TOIE0
+ * @brief Timer/Counter0 Overflow Interrupt Enable
+ */
+#define TIMSK_TOIE0 (0)
+
+/**
+ * @def TIMSK_OCIE0
+ * @brief Timer/Counter0 Output Compare Match Interrupt Enable
+ */
+#define TIMSK_OCIE0 (1)
+
+/**
+ * @def TIMSK_TOIE1
+ * @brief Timer/Counter1 Overflow Interrupt Enable
+ */
+#define TIMSK_TOIE1 (2)
+
+/**
+ * @def TIMSK_OCIE1B
+ * @brief Timer/Counter1 Output Compare B Match Interrupt Enable
+ */
+#define TIMSK_OCIE1B (3)
+
+/**
+ * @def TIMSK_OCIE1A
+ * @brief Timer/Counter1 Output Compare A Match Interrupt Enable
+ */
+#define TIMSK_OCIE1A (4)
+
+/**
+ * @def TIMSK_TICIE1
+ * @brief Timer/Counter1 Input Capture Interrupt Enable
+ */
+#define TIMSK_TICIE1 (5)
+
+/**
+ * @def TIMSK_TOIE2
+ * @brief Timer/Counter2 Overflow Interrupt Enable
+ */
+#define TIMSK_TOIE2 (6)
+
+/**
+ * @def TIMSK_OCIE2
+ * @brief Timer/Counter2 Output Compare Match Interrupt Enable
+ */
+#define TIMSK_OCIE2 (7)
+
+/** @} */
+
+/**
+ * @defgroup tifr_bits TIFR Bits
+ * @brief This section contains the TIFR Bits that are common to all timers
+ * @see TIFR
+ * @{
+ */
+
+/**
+ * @def TIFR_TOV0
+ * @brief Timer/Counter0 Overflow Flag
+ */
+#define TIFR_TOV0 (0)
+
+/**
+ * @def TIFR_OCF0
+ * @brief Timer/Counter0 Output Compare Flag
+ */
+#define TIFR_OCF0 (1)
+
+/**
+ * @def TIFR_TOV1
+ * @brief Timer/Counter1 Overflow Flag
+ */
+#define TIFR_TOV1 (2)
+
+/**
+ * @def TIFR_OCF1B
+ * @brief Timer/Counter1 Output Compare B Match Flag
+ */
+#define TIFR_OCF1B (3)
+
+/**
+ * @def TIFR_OCF1A
+ * @brief Timer/Counter1 Output Compare A Match Flag
+ */
+#define TIFR_OCF1A (4)
+
+/**
+ * @def TIFR_ICF1
+ * @brief Timer/Counter1 Input Capture Flag
+ */
+#define TIFR_ICF1 (5)
+
+/**
+ * @def TIFR_TOV2
+ * @brief Timer/Counter2 Overflow Flag
+ */
+#define TIFR_TOV2 (6)
+
+/**
+ * @def TIFR_OCF2
+ * @brief Timer/Counter2 Output Compare Flag
+ */
+#define TIFR_OCF2 (7)
+
+/** @} */
+
 #endif /* TIMER_PRIVATE_H_ */
