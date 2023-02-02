@@ -13,12 +13,10 @@ void vTestingTIMER2DelaySync(void)
     {
         MGPIO_vSetPinValue(GPIO_PORTC, GPIO_PIN2, HIGH);
         MGPIO_vSetPinValue(GPIO_PORTC, GPIO_PIN7, LOW);
-        MTIMER_vSyncDelayMS(TIMER_CHANNEL_2, 5000);
-        // MTIMER_vSyncDelayS(TIMER_CHANNEL_2, 5);
+        MTIMER_vDelayMS(TIMER_CHANNEL_2, 5000);
 
         MGPIO_vSetPinValue(GPIO_PORTC, GPIO_PIN2, LOW);
         MGPIO_vSetPinValue(GPIO_PORTC, GPIO_PIN7, HIGH);
-        MTIMER_vSyncDelayMS(TIMER_CHANNEL_2, 5000);
-        // MTIMER_vSyncDelayS(TIMER_CHANNEL_2, 5);
+        MTIMER_vDelaySec(TIMER_CHANNEL_2, 5);
     }
 }
