@@ -22,6 +22,11 @@
     "timer_private.h": "c",
     "testingtimer1delaysync_main.h": "c",
     "testingtimer0delaysync_main.h": "c",
-    "testingtimer2delaysync_main.h": "c"
+    "testingtimer2delaysync_main.h": "c",
+    "testingtimer0pwm_main.h": "c",
+    "testingtimer1apwm_main.h": "c",
+    "testingtimer2pwm_main.h": "c",
+    "testingtimer1bpwm_main.h": "c",
+    "apps_main.h": "c"
   }
 }

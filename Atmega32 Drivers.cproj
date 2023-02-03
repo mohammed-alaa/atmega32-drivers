@@ -148,6 +148,12 @@
     </ToolchainSettings>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="APPS\APPS_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\APPS_main.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="APPS\TestingADC\TestingADC_main.c">
       <SubType>compile</SubType>
     </Compile>
@@ -172,6 +178,24 @@
     <Compile Include="APPS\TestingTIMER0DelaySync\TestingTIMER0DelaySync_main.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="APPS\TestingTIMER0PWM\TestingTIMER0PWM_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER0PWM\TestingTIMER0PWM_main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER1APWM\TestingTIMER1APWM_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER1APWM\TestingTIMER1APWM_main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER1BPWM\TestingTIMER1BPWM_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER1BPWM\TestingTIMER1BPWM_main.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="APPS\TestingTIMER1DelaySync\TestingTIMER1DelaySync_main.c">
       <SubType>compile</SubType>
     </Compile>
@@ -182,6 +206,12 @@
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="APPS\TestingTIMER2DelaySync\TestingTIMER2DelaySync_main.h">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER2PWM\TestingTIMER2PWM_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingTIMER2PWM\TestingTIMER2PWM_main.h">
       <SubType>compile</SubType>
     </Compile>
     <Compile Include="COTS\LIB\LSTD_BITMATH.h">
@@ -232,6 +262,9 @@
     <Compile Include="COTS\MCAL\GPIO\GPIO_program.c">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="COTS\MCAL\TIMER\TIMER_config.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="COTS\MCAL\TIMER\TIMER_interface.h">
       <SubType>compile</SubType>
     </Compile>
@@ -251,8 +284,12 @@
     <Folder Include="APPS\TestingEXTI\" />
     <Folder Include="APPS\TestingGPIO\" />
     <Folder Include="APPS\TestingTIMER0DelaySync\" />
+    <Folder Include="APPS\TestingTIMER0PWM\" />
+    <Folder Include="APPS\TestingTIMER1APWM\" />
+    <Folder Include="APPS\TestingTIMER1BPWM\" />
     <Folder Include="APPS\TestingTIMER1DelaySync\" />
     <Folder Include="APPS\TestingTIMER2DelaySync\" />
+    <Folder Include="APPS\TestingTIMER2PWM\" />
     <Folder Include="COTS\" />
     <Folder Include="COTS\HAL\" />
     <Folder Include="COTS\LIB\" />
