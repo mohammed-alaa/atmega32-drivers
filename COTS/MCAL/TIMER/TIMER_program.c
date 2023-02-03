@@ -19,7 +19,7 @@
 /**
  * @brief This function is used to set the initial value of TCNTn register in normal mode
  * @param[in] u8Channel The Timer channel to be used @see timer_channels
- * @param[in] u32InitialValue The initial value to be set in the TCNTn register
+ * @param[in] u16InitialValue The initial value to be set in the TCNTn register
  * @note This function should be used only in normal mode
  */
 STATIC void MTIMER_vSetInitialNormalModeValue(u8_t u8Channel, u16_t u16InitialValue)
