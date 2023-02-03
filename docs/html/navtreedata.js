@@ -25,6 +25,20 @@
 var NAVTREE =
 [
   [ "ATMega32 Drivers", "index.html", [
+    [ "Testing applications", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html", [
+      [ "## Applications list", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md1", null ],
+      [ "### TestingGPIO", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md2", null ],
+      [ "### TestingEXTI", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md3", null ],
+      [ "### TestingADC", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md4", null ],
+      [ "### TestingTIMER0DelaySync", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md5", null ],
+      [ "### TestingTIMER0DelaySync", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md6", null ],
+      [ "### TestingTIMER1DelaySync", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md7", null ],
+      [ "### TestingTIMER2DelaySync", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md8", null ],
+      [ "### TestingTIMER0PWM", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md9", null ],
+      [ "### TestingTIMER1APWM", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md10", null ],
+      [ "### TestingTIMER1BPWM", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md11", null ],
+      [ "### TestingTIMER2PWM", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md12", null ]
+    ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
@@ -42,7 +56,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_d_c__config_8h.html",
-"group__interrupts__vector__table_gaa68d2f1c0fc593d40afcd785d233fea0.html#gaa68d2f1c0fc593d40afcd785d233fea0"
+"group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb.html#ga10b2d890d871e1489bb02b7e70d9bdfb"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

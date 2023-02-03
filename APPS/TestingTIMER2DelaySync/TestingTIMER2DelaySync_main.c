@@ -1,3 +1,12 @@
+/**
+ * @file TestingTIMER2DelaySync_main.c
+ * @author Mohamed Alaa
+ * @brief This file contains the source code of the main function that is responsible for running the Timer 2 delay testing application
+ * @version 1.0
+ * @date 2023-02-03
+ * @copyright Copyright (c) 2023
+ */
+
 #include "../../COTS/LIB/LSTD_VALUES.h"
 #include "../../COTS/LIB/LSTD_COMPILER.h"
 #include "../../COTS/MCAL/GPIO/GPIO_interface.h"

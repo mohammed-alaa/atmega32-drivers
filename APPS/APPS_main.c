@@ -1,6 +1,16 @@
-
+/**
+ * @file APPS_main.c
+ * @author Mohamed Alaa
+ * @brief This file contains the source code of the main function that is responsible for running the testing applications
+ * @version 1.0
+ * @date 2023-02-03
+ * @copyright Copyright (c) 2023
+ */
 #include "../COTS/LIB/LSTD_VALUES.h"
 
+/**
+ * @brief Change this to the macro of the desired application to run
+ **/
 #define TestingTIMER2PWM
 
 #ifdef TESTING_GPIO

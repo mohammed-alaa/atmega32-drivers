@@ -1,8 +1,8 @@
 /**
  * @file TestingTIMER0PWM_main.h
  * @author Mohamed Alaa
- * @brief
- * @version 0.1
+ * @brief This file contains the prototype of the main function that is responsible for running the Timer 0 PWM modes testing application
+ * @version 1.0
  * @date 2023-02-03
  * @copyright Copyright (c) 2023
  */

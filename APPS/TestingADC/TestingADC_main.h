@@ -1,7 +1,7 @@
 /**
  * @file TestingADC_main.h
  * @author Mohamed Alaa
- * @brief
+ * @brief This file contains the prototype of the main function that is responsible for running the ADC testing application
  * @version 1.0
  * @date 2023-01-26
  * @copyright Copyright (c) 2023

@@ -2,7 +2,7 @@
  * @file L_INTERRUPTS.h
  * @author Mohamed Alaa
  * @brief This file contains AVR vector table interrupt ISRs
- * @version 0.1
+ * @version 1.0
  * @date 2023-01-25
  * @copyright Copyright (c) 2023
  */

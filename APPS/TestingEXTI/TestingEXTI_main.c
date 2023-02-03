@@ -1,3 +1,12 @@
+/**
+ * @file TestingEXTI_main.c
+ * @author Mohamed Alaa
+ * @brief This file contains the source code of the main function that is responsible for running the EXTI testing application
+ * @version 1.0
+ * @date 2023-02-03
+ * @copyright Copyright (c) 2023
+ */
+
 #include "../../COTS/LIB/LSTD_VALUES.h"
 #include "../../COTS/MCAL/GPIO/GPIO_interface.h"
 #include "../../COTS/MCAL/EXTI/EXTI_interface.h"
