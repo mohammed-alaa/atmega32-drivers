@@ -32,10 +32,16 @@
 #define TIMER_MODE_CTC (0x08)
 
 /**
- * @def TIMER_MODE_PWM
- * @brief Pulse Width Modulation Mode (Phase Correct)
+ * @def TIMER_MODE_PWM_PHASECORRECT
+ * @brief Phase Correct Pulse Width Modulation Mode (Phase Correct PWM)
  */
-#define TIMER_MODE_PWM (0x40)
+#define TIMER_MODE_PWM_PHASECORRECT (0x40)
+
+/**
+ * @def TIMER_MODE_PWM_FAST
+ * @brief Fast Pulse Width Modulation Mode (Fast PWM)
+ */
+#define TIMER_MODE_PWM_FAST (0x48)
 
 /** @} */
 
@@ -187,6 +193,282 @@
 /** @} */
 
 /**
+ * @defgroup timer_timer02_ctc_output_modes Timer 0/2 CTC Output Modes
+ * @brief This section contains the Timer CTC Output Modes for Timer 0 and 2 only (8-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER02_CTC_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC0/OC2 disconnected
+ */
+#define TIMER_TIMER02_CTC_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER02_CTC_OUTPUT_MODE_TOGGLE
+ * @brief Toggle OC0/OC2 on Compare Match
+ */
+#define TIMER_TIMER02_CTC_OUTPUT_MODE_TOGGLE (0x10)
+
+/**
+ * @def TIMER_TIMER02_CTC_OUTPUT_MODE_CLEAR
+ * @brief Clear OC0/OC2 on Compare Match
+ */
+#define TIMER_TIMER02_CTC_OUTPUT_MODE_CLEAR (0x20)
+
+/**
+ * @def TIMER_TIMER02_CTC_OUTPUT_MODE_SET
+ * @brief Set OC0/OC2 on Compare Match
+ */
+#define TIMER_TIMER02_CTC_OUTPUT_MODE_SET (0x30)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer02_fastpwm_output_modes Timer 0/2 Fast PWM Output Modes
+ * @brief This section contains the Timer Fast PWM Output Modes for Timer 0 and 2 only (8-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER02_FASTPWM_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC0/OC2 disconnected
+ */
+#define TIMER_TIMER02_FASTPWM_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER02_FASTPWM_OUTPUT_MODE_NON_INVERTING
+ * @brief Clear OC0/OC2 on Compare Match, set OC0/OC2 at BOTTOM (non-inverting mode)
+ */
+#define TIMER_TIMER02_FASTPWM_OUTPUT_MODE_NON_INVERTING (0x20)
+
+/**
+ * @def TIMER_TIMER02_FASTPWM_OUTPUT_MODE_INVERTING
+ * @brief Set OC0/OC2 on Compare Match, clear OC0/OC2 at BOTTOM (inverting mode)
+ */
+#define TIMER_TIMER02_FASTPWM_OUTPUT_MODE_INVERTING (0x30)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer02_phasecorrectpwm_output_modes Timer 0/2 Phase Correct PWM Output Modes
+ * @brief This section contains the Timer Phase Correct PWM Output Modes for Timer 0 and 2 only (8-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER02_PHASECORRECTPWM_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC0/OC2 disconnected
+ */
+#define TIMER_TIMER02_PHASECORRECTPWM_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER02_PHASECORRECTPWM_OUTPUT_MODE_NON_INVERTING
+ * @brief Clear OC0/OC2 on Compare Match when up-counting, Set OC0/OC2 on Compare Match when down-counting (non-inverting mode)
+ */
+#define TIMER_TIMER02_PHASECORRECTPWM_OUTPUT_MODE_NON_INVERTING (0x20)
+
+/**
+ * @def TIMER_TIMER02_PHASECORRECTPWM_OUTPUT_MODE_INVERTING
+ * @brief Set OC0/OC2 on Compare Match when up-counting, Clear OC0/OC2 on Compare Match when down-counting (inverting mode)
+ */
+#define TIMER_TIMER02_PHASECORRECTPWM_OUTPUT_MODE_INVERTING (0x30)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer1a_ctc_output_modes Timer 1 Channel A CTC Output Modes
+ * @brief This section contains the Timer CTC Output Modes for Timer 1 Channel A only (16-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER1A_CTC_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC1A disconnected
+ */
+#define TIMER_TIMER1A_CTC_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER1A_CTC_OUTPUT_MODE_TOGGLE
+ * @brief Toggle OC1A on Compare Match
+ */
+#define TIMER_TIMER1A_CTC_OUTPUT_MODE_TOGGLE (0x40)
+
+/**
+ * @def TIMER_TIMER1A_CTC_OUTPUT_MODE_CLEAR
+ * @brief Clear OC1A on Compare Match
+ */
+#define TIMER_TIMER1A_CTC_OUTPUT_MODE_CLEAR (0x80)
+
+/**
+ * @def TIMER_TIMER1A_CTC_OUTPUT_MODE_SET
+ * @brief Set OC1A on Compare Match
+ */
+#define TIMER_TIMER1A_CTC_OUTPUT_MODE_SET (0xC0)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer1a_fastpwm_output_modes Timer 1 Channel A Fast PWM Output Modes
+ * @brief This section contains the Timer Fast PWM Output Modes for Timer 1 Channel A only (16-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC1A disconnected
+ */
+#define TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_TOGGLE
+ * @brief Toggle OC1A on Compare Match
+ */
+#define TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_TOGGLE (0x40)
+
+/**
+ * @def TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_NON_INVERTING
+ * @brief Clear OC1A on Compare Match, set OC1A at BOTTOM (non-inverting mode)
+ */
+#define TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_NON_INVERTING (0x80)
+
+/**
+ * @def TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_INVERTING
+ * @brief Set OC1A on Compare Match, clear OC1A at BOTTOM (inverting mode)
+ */
+#define TIMER_TIMER1A_FASTPWM_OUTPUT_MODE_INVERTING (0xC0)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer1a_phasecorrectpwm_output_modes Timer 1 Channel A Phase Correct PWM Output Modes
+ * @brief This section contains the Timer Phase Correct PWM Output Modes for Timer 1 Channel A only (16-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC1A disconnected
+ */
+#define TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_TOGGLE
+ * @brief Toggle OC1A on Compare Match
+ */
+#define TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_TOGGLE (0x40)
+
+/**
+ * @def TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_NON_INVERTING
+ * @brief Clear OC1A on Compare Match when up-counting, Set OC1A on Compare Match when down-counting (non-inverting mode)
+ */
+#define TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_NON_INVERTING (0x80)
+
+/**
+ * @def TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_INVERTING
+ * @brief Set OC1A on Compare Match when up-counting, Clear OC1A on Compare Match when down-counting (inverting mode)
+ */
+#define TIMER_TIMER1A_PHASECORRECTPWM_OUTPUT_MODE_INVERTING (0xC0)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer1b_ctc_output_modes Timer 1 Channel B CTC Output Modes
+ * @brief This section contains the Timer CTC Output Modes for Timer 1 Channel B only (16-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER1B_CTC_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC1B disconnected
+ */
+#define TIMER_TIMER1B_CTC_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER1B_CTC_OUTPUT_MODE_TOGGLE
+ * @brief Toggle OC1B on Compare Match
+ */
+#define TIMER_TIMER1B_CTC_OUTPUT_MODE_TOGGLE (0x10)
+
+/**
+ * @def TIMER_TIMER1B_CTC_OUTPUT_MODE_CLEAR
+ * @brief Clear OC1B on Compare Match
+ */
+#define TIMER_TIMER1B_CTC_OUTPUT_MODE_CLEAR (0x20)
+
+/**
+ * @def TIMER_TIMER1B_CTC_OUTPUT_MODE_SET
+ * @brief Set OC1B on Compare Match
+ */
+#define TIMER_TIMER1B_CTC_OUTPUT_MODE_SET (0x30)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer1b_fastpwm_output_modes Timer 1 Channel B Fast PWM Output Modes
+ * @brief This section contains the Timer Fast PWM Output Modes for Timer 1 Channel B only (16-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC1B disconnected
+ */
+#define TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_TOGGLE
+ * @brief Toggle OC1B on Compare Match
+ */
+#define TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_TOGGLE (0x10)
+
+/**
+ * @def TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_NON_INVERTING
+ * @brief Clear OC1B on Compare Match, set OC1B at BOTTOM (non-inverting mode)
+ */
+#define TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_NON_INVERTING (0x20)
+
+/**
+ * @def TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_INVERTING
+ * @brief Set OC1B on Compare Match, clear OC1B at BOTTOM (inverting mode)
+ */
+#define TIMER_TIMER1B_FASTPWM_OUTPUT_MODE_INVERTING (0x30)
+
+/** @} */
+
+/**
+ * @defgroup timer_timer1b_phasecorrectpwm_output_modes Timer 1 Channel B Phase Correct PWM Output Modes
+ * @brief This section contains the Timer Phase Correct PWM Output Modes for Timer 1 Channel B only (16-bit)
+ * @{
+ */
+
+/**
+ * @def TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_NORMAL
+ * @brief Normal port operation, OC1B disconnected
+ */
+#define TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_NORMAL (0x00)
+
+/**
+ * @def TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_TOGGLE
+ * @brief Toggle OC1B on Compare Match
+ */
+#define TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_TOGGLE (0x10)
+
+/**
+ * @def TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_NON_INVERTING
+ * @brief Clear OC1B on Compare Match when up-counting, Set OC1B on Compare Match when down-counting (non-inverting mode)
+ */
+#define TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_NON_INVERTING (0x20)
+
+/**
+ * @def TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_INVERTING
+ * @brief Set OC1B on Compare Match when up-counting, Clear OC1B on Compare Match when down-counting (inverting mode)
+ */
+#define TIMER_TIMER1B_PHASECORRECTPWM_OUTPUT_MODE_INVERTING (0x30)
+
+/** @} */
+
+/**
  * @brief This function is used to stop the timer on a certain channel
  * @param[in] u8Channel The Timer channel to be used @see timer_channels
  */
@@ -227,5 +509,19 @@ void MTIMER_vDelaySec(u8_t u8Channel, u32_t u32Delay);
  * @note When using this function in CTC mode, the u16InitalValue is used as the compare value
  */
 void MTIMER_vDelay(u8_t u8Channel, u8_t u8Mode, u8_t u8Prescaler, u16_t u16InitalValue, u32_t u32Delay);
+
+/**
+ * @brief This function is used to output a PWM signal in Fast PWM mode on a certain channel with a certain duty cycle
+ * @param[in] u8Channel The Timer channel to be used @see timer_channels
+ * @param[in] u8DutyCycle The duty cycle of the PWM signal (0-255)
+ */
+void MTIMER_vOutputFastPWM(u8_t u8Channel, u8_t u8DutyCycle);
+
+/**
+ * @brief This function is used to output a PWM signal in Phase Correct PWM mode on a certain channel with a certain duty cycle
+ * @param[in] u8Channel The Timer channel to be used @see timer_channels
+ * @param[in] u8DutyCycle The duty cycle of the PWM signal (0-255)
+ */
+void MTIMER_vOutputPhaseCorrectPWM(u8_t u8Channel, u8_t u8DutyCycle);
 
 #endif /* TIMER_INTERFACE_H_ */
