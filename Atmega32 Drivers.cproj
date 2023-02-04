@@ -154,6 +154,12 @@
     <Compile Include="APPS\APPS_main.h">
       <SubType>compile</SubType>
     </Compile>
+    <Compile Include="APPS\TestingADCTIMER\TestingADCTIMER_main.c">
+      <SubType>compile</SubType>
+    </Compile>
+    <Compile Include="APPS\TestingADCTIMER\TestingADCTIMER_main.h">
+      <SubType>compile</SubType>
+    </Compile>
     <Compile Include="APPS\TestingADC\TestingADC_main.c">
       <SubType>compile</SubType>
     </Compile>
@@ -280,6 +286,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="APPS\" />
+    <Folder Include="APPS\TestingADCTIMER\" />
     <Folder Include="APPS\TestingADC\" />
     <Folder Include="APPS\TestingEXTI\" />
     <Folder Include="APPS\TestingGPIO\" />

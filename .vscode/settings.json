@@ -27,6 +27,12 @@
     "testingtimer1apwm_main.h": "c",
     "testingtimer2pwm_main.h": "c",
     "testingtimer1bpwm_main.h": "c",
-    "apps_main.h": "c"
+    "apps_main.h": "c",
+    "adc_interface.h": "c",
+    "testingadctimer_main.h": "c",
+    "madc_private.h": "c",
+    "adc_private.h": "c",
+    "adc_config.h": "c",
+    "hlcd_interface.h": "c"
   }
 }
