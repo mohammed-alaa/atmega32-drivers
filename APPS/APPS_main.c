@@ -11,7 +11,7 @@
 /**
  * @brief Change this to the macro of the desired application to run
  **/
-#define TestingTIMER2PWM
+#define TESTING_ADCTIMER
 
 #ifdef TESTING_GPIO
 #include "TestingGPIO/TestingGPIO_main.h"
@@ -31,8 +31,10 @@
 #include "TestingTIMER1APWM/TestingTIMER1APWM_main.h"
 #elif defined TESTING_TIMER1BPWM
 #include "TestingTIMER1BPWM/TestingTIMER1BPWM_main.h"
-#elif defined TestingTIMER2PWM
+#elif defined TESTING_TIMER2PWM
 #include "TestingTIMER2PWM/TestingTIMER2PWM_main.h"
+#elif defined TESTING_ADCTIMER
+#include "TestingADCTIMER/TestingADCTIMER_main.h"
 #endif
 
 void vAPPS_main(void)
@@ -55,8 +57,10 @@ void vAPPS_main(void)
     vTestingTIMER1APWM();
 #elif defined TESTING_TIMER1BPWM
     vTestingTIMER1BPWM();
-#elif defined TestingTIMER2PWM
+#elif defined TESTING_TIMER2PWM
     vTestingTIMER2PWM();
+#elif defined TESTING_ADCTIMER
+    vTestingADCTIMER();
 #endif
 
     while (TRUE)
