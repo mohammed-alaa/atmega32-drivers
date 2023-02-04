@@ -109,3 +109,11 @@ Name: TestingTIMER2PWM
 Description: Testing the Timer 2 peripheral PWM modes
 Activision Macro: TESTING_TIMER2PWM
 ```
+
+### TestingADCTIMER
+---
+```
+Name: TestingADCTIMER
+Description: Testing the ADC and the Timer peripherals by emitting the LED with a certain value based on the ADC input value
+Activision Macro: TESTING_ADCTIMER
+```
