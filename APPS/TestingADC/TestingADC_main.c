@@ -11,6 +11,7 @@
 #include "../../COTS/LIB/LSTD_VALUES.h"
 #include "../../COTS/MCAL/GPIO/GPIO_interface.h"
 #include "../../COTS/MCAL/ADC/ADC_interface.h"
+#include "TestingADC_main.h"
 
 void vTestingADC(void)
 {
@@ -23,7 +24,7 @@ void vTestingADC(void)
 
     while (TRUE)
     {
-        L_u16Result = MADC_u16ReadChannel(ADC_CHANNEL_1, ADC_PRESCALER_16);
+        L_u16Result = MADC_u16ReadChannel(ADC_CHANNEL_1);
 
         if (L_u16Result >= 250 && L_u16Result < 600)
         {
