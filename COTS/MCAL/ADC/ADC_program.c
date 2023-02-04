@@ -17,30 +17,25 @@
 void MADC_vInit(void)
 {
     ADMUX = (ADC_REF_SELECTION | ADC_RESULT_ADJUSTMENT);
-    ADCSRA = 0;
+    ADCSRA = (0x80 | ADC_PRESCALER);
 }
 
-u16_t MADC_u16ReadChannel(u8_t u8ChannelSelection, u8_t u8ChannelPrescaler)
+u16_t MADC_u16ReadChannel(u8_t u8ChannelSelection)
 {
     u16_t L_u16Result = 0;
-    ADMUX |= ((ADMUX & 0xE0) | u8ChannelSelection);
-    ADCSRA = (0xC0 | ADC_PRESCALER_16);
+    ADMUX &= 0xE0;
+    ADMUX |= (0x1F & u8ChannelSelection);
+    SET_BIT(ADCSRA, 6);
 
     while (GET_BIT(ADCSRA, 6))
-    {
-        /* Wait until the conversion is complete */
-    }
+        ;
 
     SET_BIT(ADCSRA, 4);
-
 #if ADC_RESULT_ADJUSTMENT == ADC_RESULT_ADJUSTMENT_RIGHT
-    L_u16Result = (u16_t)ADCL;
-    L_u16Result |= (u16_t)(ADCH << 8);
+    L_u16Result = (ADCL) + (ADCH << 8);
 #elif ADC_RESULT_ADJUSTMENT == ADC_RESULT_ADJUSTMENT_LEFT
-    L_u16Result = (u16_t)ADCH;
-    L_u16Result |= (u16_t)(ADCL << 8);
+    L_u16Result = (ADCL >> 6) + (ADCH << 2);
 #endif
 
-    ADCSRA = 0;
     return L_u16Result;
 }

@@ -62,6 +62,7 @@
 
 /**
  * @defgroup adc_prescalers ADC Prescalers
+ * @brief ADC Prescaler Selection
  * @{
  */
 
@@ -69,43 +70,43 @@
  * @def ADC_PRESCALER_2
  * @brief ADC Prescaler 2
 */
-#define ADC_PRESCALER_2 (1)
+#define ADC_PRESCALER_2 (0)
 
 /**
  * @def ADC_PRESCALER_4
  * @brief ADC Prescaler 4
 */
-#define ADC_PRESCALER_4 (2)
+#define ADC_PRESCALER_4 (0x02)
 
 /**
  * @def ADC_PRESCALER_8
  * @brief ADC Prescaler 8
 */
-#define ADC_PRESCALER_8 (3)
+#define ADC_PRESCALER_8 (0x03)
 
 /**
  * @def ADC_PRESCALER_16
  * @brief ADC Prescaler 16
 */
-#define ADC_PRESCALER_16 (4)
+#define ADC_PRESCALER_16 (0x04)
 
 /**
  * @def ADC_PRESCALER_32
  * @brief ADC Prescaler 32
 */
-#define ADC_PRESCALER_32 (5)
+#define ADC_PRESCALER_32 (0x05)
 
 /**
  * @def ADC_PRESCALER_64
  * @brief ADC Prescaler 64
 */
-#define ADC_PRESCALER_64 (6)
+#define ADC_PRESCALER_64 (0x06)
 
 /**
  * @def ADC_PRESCALER_128
  * @brief ADC Prescaler 128
 */
-#define ADC_PRESCALER_128 (7)
+#define ADC_PRESCALER_128 (0x07)
 
 /** @} */
 
@@ -172,6 +173,7 @@
  * @brief This function initializes the ADC peripheral with the given configurations
  * @see ADC_REF_SELECTION
  * @see ADC_RESULT_ADJUSTMENT
+ * @see ADC_PRESCALER
  */
 void MADC_vInit(void);
 
@@ -181,6 +183,6 @@ void MADC_vInit(void);
  * @param u8ChannelPrescaler Channel Prescaler @see adc_prescalers
  * @return u16_t ADC value of the selected channel
  */
-u16_t MADC_u16ReadChannel(u8_t u8ChannelSelection, u8_t u8ChannelPrescaler);
+u16_t MADC_u16ReadChannel(u8_t u8ChannelSelection);
 
 #endif // _ADC_INTERFACE_H_
