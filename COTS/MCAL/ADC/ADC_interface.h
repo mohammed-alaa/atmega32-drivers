@@ -180,7 +180,6 @@ void MADC_vInit(void);
 /**
  * @brief This function reads the value of the selected channel
  * @param u8ChannelSelection Channel to be read @see adc_channels
- * @param u8ChannelPrescaler Channel Prescaler @see adc_prescalers
  * @return u16_t ADC value of the selected channel
  */
 u16_t MADC_u16ReadChannel(u8_t u8ChannelSelection);

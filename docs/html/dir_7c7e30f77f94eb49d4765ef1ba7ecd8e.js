@@ -1,6 +1,7 @@
 var dir_7c7e30f77f94eb49d4765ef1ba7ecd8e =
 [
     [ "TestingADC", "dir_caa59be6f8aeef6f780e873cb5111e1b.html", "dir_caa59be6f8aeef6f780e873cb5111e1b" ],
+    [ "TestingADCTIMER", "dir_4d4470f86fbb00a4018e0d57b8068a67.html", "dir_4d4470f86fbb00a4018e0d57b8068a67" ],
     [ "TestingEXTI", "dir_71a47d7584502c9aa80f532c77697b97.html", "dir_71a47d7584502c9aa80f532c77697b97" ],
     [ "TestingGPIO", "dir_49187de8030339a3f962756657a53ac6.html", "dir_49187de8030339a3f962756657a53ac6" ],
     [ "TestingTIMER0DelaySync", "dir_0c6373cade7f88b9a7add56d2af6c40b.html", "dir_0c6373cade7f88b9a7add56d2af6c40b" ],

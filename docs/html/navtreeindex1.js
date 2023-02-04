@@ -1,5 +1,13 @@
 var NAVTREEINDEX1 =
 {
+"group__adc__voltage__references_gaed1f921b20c5f30ed286fccc2c61e78f.html#gaed1f921b20c5f30ed286fccc2c61e78f":[1,7,0],
+"group__bitmath.html":[1,1],
+"group__bitmath_ga1156e408b6aa0fc0d3e2aa0d71e7adcd.html#ga1156e408b6aa0fc0d3e2aa0d71e7adcd":[1,1,1],
+"group__bitmath_ga2ad4f85fd11dcf5470f14db4fda4aedb.html#ga2ad4f85fd11dcf5470f14db4fda4aedb":[1,1,0],
+"group__bitmath_gaa9086cf5ab28a8036e901439d324b5ab.html#gaa9086cf5ab28a8036e901439d324b5ab":[1,1,2],
+"group__bitmath_gac283f5feb229aac661c786bcd0593a8a.html#gac283f5feb229aac661c786bcd0593a8a":[1,1,3],
+"group__compiler.html":[1,2],
+"group__compiler_ga0c33b494a68ce28497e7ce8e5e95feff.html#ga0c33b494a68ce28497e7ce8e5e95feff":[1,2,0],
 "group__compiler_ga10b2d890d871e1489bb02b7e70d9bdfb.html#ga10b2d890d871e1489bb02b7e70d9bdfb":[1,2,1],
 "group__compiler_ga30c6e83ff2cac859ff6d852ea99fa3f1.html#ga30c6e83ff2cac859ff6d852ea99fa3f1":[1,2,2],
 "group__compiler_ga6282e9404278fd614583a4ff57e65b15.html#ga6282e9404278fd614583a4ff57e65b15":[1,2,5],
@@ -228,6 +236,7 @@ var NAVTREEINDEX1 =
 "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md10":[0,9],
 "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md11":[0,10],
 "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md12":[0,11],
+"md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md13":[0,12],
 "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md2":[0,1],
 "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md3":[0,2],
 "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md4":[0,3],

@@ -21,5 +21,5 @@ var _a_d_c__interface_8h =
     [ "ADC_CHANNEL_6", "group__adc__channels_ga418f0223ea88773157638097391716a5.html#ga418f0223ea88773157638097391716a5", null ],
     [ "ADC_CHANNEL_7", "group__adc__channels_ga03b8138c2d87274f94ba675a7e18e666.html#ga03b8138c2d87274f94ba675a7e18e666", null ],
     [ "MADC_vInit", "_a_d_c__interface_8h_af1a488a0e8573d75ace08adefec357d8.html#af1a488a0e8573d75ace08adefec357d8", null ],
-    [ "MADC_u16ReadChannel", "_a_d_c__interface_8h_a75969c988cc48efe31662eed64d83ea3.html#a75969c988cc48efe31662eed64d83ea3", null ]
+    [ "MADC_u16ReadChannel", "_a_d_c__interface_8h_af577c09e55d7277fbe16352475bd0ae8.html#af577c09e55d7277fbe16352475bd0ae8", null ]
 ];

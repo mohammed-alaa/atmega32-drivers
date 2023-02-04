@@ -110,21 +110,24 @@ $(document).ready(function(){initNavTree('_a_d_c__interface_8h_af1a488a0e8573d75
 <p>This function initializes the ADC peripheral with the given configurations. </p>
 <dl class="section see"><dt>See also</dt><dd><a class="el" href="group__adc__configuration_ga24d371c2aea8afdb1ac95cf50168cfc9.html#ga24d371c2aea8afdb1ac95cf50168cfc9" title="ADC Voltage Reference Selection.">ADC_REF_SELECTION</a> </dd>
 <dd>
-<a class="el" href="group__adc__configuration_gab7fcd5917015b74d37b2dab790d391ce.html#gab7fcd5917015b74d37b2dab790d391ce" title="ADC Result Adjustment.">ADC_RESULT_ADJUSTMENT</a> </dd></dl>
+<a class="el" href="group__adc__configuration_gab7fcd5917015b74d37b2dab790d391ce.html#gab7fcd5917015b74d37b2dab790d391ce" title="ADC Result Adjustment.">ADC_RESULT_ADJUSTMENT</a> </dd>
+<dd>
+<a class="el" href="group__adc__configuration_gab1d0703f6d84b37cbaa587a1a4515dd4.html#gab1d0703f6d84b37cbaa587a1a4515dd4" title="ADC Default Prescaler.">ADC_PRESCALER</a> </dd></dl>
 
 <p class="definition">Definition at line <a class="el" href="_a_d_c__program_8c_source.html#l00017">17</a> of file <a class="el" href="_a_d_c__program_8c_source.html">ADC_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">   18</span>{</div>
 <div class="line"><span class="lineno">   19</span>    <a class="code hl_define" href="group__adc__registers_ga377bb6c1e346a574c45268a4f585784e.html#ga377bb6c1e346a574c45268a4f585784e">ADMUX</a> = (<a class="code hl_define" href="group__adc__configuration_ga24d371c2aea8afdb1ac95cf50168cfc9.html#ga24d371c2aea8afdb1ac95cf50168cfc9">ADC_REF_SELECTION</a> | <a class="code hl_define" href="group__adc__configuration_gab7fcd5917015b74d37b2dab790d391ce.html#gab7fcd5917015b74d37b2dab790d391ce">ADC_RESULT_ADJUSTMENT</a>);</div>
-<div class="line"><span class="lineno">   20</span>    <a class="code hl_define" href="group__adc__registers_ga7fd480e36ca7bd8eb95e2db360ba6b37.html#ga7fd480e36ca7bd8eb95e2db360ba6b37">ADCSRA</a> = 0;</div>
+<div class="line"><span class="lineno">   20</span>    <a class="code hl_define" href="group__adc__registers_ga7fd480e36ca7bd8eb95e2db360ba6b37.html#ga7fd480e36ca7bd8eb95e2db360ba6b37">ADCSRA</a> = (0x80 | <a class="code hl_define" href="group__adc__configuration_gab1d0703f6d84b37cbaa587a1a4515dd4.html#gab1d0703f6d84b37cbaa587a1a4515dd4">ADC_PRESCALER</a>);</div>
 <div class="line"><span class="lineno">   21</span>}</div>
 <div class="ttc" id="agroup__adc__configuration_ga24d371c2aea8afdb1ac95cf50168cfc9_html_ga24d371c2aea8afdb1ac95cf50168cfc9"><div class="ttname"><a href="group__adc__configuration_ga24d371c2aea8afdb1ac95cf50168cfc9.html#ga24d371c2aea8afdb1ac95cf50168cfc9">ADC_REF_SELECTION</a></div><div class="ttdeci">#define ADC_REF_SELECTION</div><div class="ttdoc">ADC Voltage Reference Selection.</div><div class="ttdef"><b>Definition:</b> <a href="_a_d_c__config_8h_source.html#l00030">ADC_config.h:30</a></div></div>
+<div class="ttc" id="agroup__adc__configuration_gab1d0703f6d84b37cbaa587a1a4515dd4_html_gab1d0703f6d84b37cbaa587a1a4515dd4"><div class="ttname"><a href="group__adc__configuration_gab1d0703f6d84b37cbaa587a1a4515dd4.html#gab1d0703f6d84b37cbaa587a1a4515dd4">ADC_PRESCALER</a></div><div class="ttdeci">#define ADC_PRESCALER</div><div class="ttdoc">ADC Default Prescaler.</div><div class="ttdef"><b>Definition:</b> <a href="_a_d_c__config_8h_source.html#l00046">ADC_config.h:46</a></div></div>
 <div class="ttc" id="agroup__adc__configuration_gab7fcd5917015b74d37b2dab790d391ce_html_gab7fcd5917015b74d37b2dab790d391ce"><div class="ttname"><a href="group__adc__configuration_gab7fcd5917015b74d37b2dab790d391ce.html#gab7fcd5917015b74d37b2dab790d391ce">ADC_RESULT_ADJUSTMENT</a></div><div class="ttdeci">#define ADC_RESULT_ADJUSTMENT</div><div class="ttdoc">ADC Result Adjustment.</div><div class="ttdef"><b>Definition:</b> <a href="_a_d_c__config_8h_source.html#l00038">ADC_config.h:38</a></div></div>
 <div class="ttc" id="agroup__adc__registers_ga377bb6c1e346a574c45268a4f585784e_html_ga377bb6c1e346a574c45268a4f585784e"><div class="ttname"><a href="group__adc__registers_ga377bb6c1e346a574c45268a4f585784e.html#ga377bb6c1e346a574c45268a4f585784e">ADMUX</a></div><div class="ttdeci">#define ADMUX</div><div class="ttdoc">ADC Multiplexer Selection Register.</div><div class="ttdef"><b>Definition:</b> <a href="_a_d_c__private_8h_source.html#l00029">ADC_private.h:29</a></div></div>
 <div class="ttc" id="agroup__adc__registers_ga7fd480e36ca7bd8eb95e2db360ba6b37_html_ga7fd480e36ca7bd8eb95e2db360ba6b37"><div class="ttname"><a href="group__adc__registers_ga7fd480e36ca7bd8eb95e2db360ba6b37.html#ga7fd480e36ca7bd8eb95e2db360ba6b37">ADCSRA</a></div><div class="ttdeci">#define ADCSRA</div><div class="ttdoc">ADC Control and Status Register A.</div><div class="ttdef"><b>Definition:</b> <a href="_a_d_c__private_8h_source.html#l00035">ADC_private.h:35</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_a_d_c__config_8h_source.html#l00030">ADC_REF_SELECTION</a>, <a class="el" href="_a_d_c__config_8h_source.html#l00038">ADC_RESULT_ADJUSTMENT</a>, <a class="el" href="_a_d_c__private_8h_source.html#l00035">ADCSRA</a>, and <a class="el" href="_a_d_c__private_8h_source.html#l00029">ADMUX</a>.</p>
+<p class="reference">References <a class="el" href="_a_d_c__config_8h_source.html#l00046">ADC_PRESCALER</a>, <a class="el" href="_a_d_c__config_8h_source.html#l00030">ADC_REF_SELECTION</a>, <a class="el" href="_a_d_c__config_8h_source.html#l00038">ADC_RESULT_ADJUSTMENT</a>, <a class="el" href="_a_d_c__private_8h_source.html#l00035">ADCSRA</a>, and <a class="el" href="_a_d_c__private_8h_source.html#l00029">ADMUX</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="_testing_a_d_c__main_8c_source.html#l00015">vTestingADC()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="_testing_a_d_c__main_8c_source.html#l00016">vTestingADC()</a>, and <a class="el" href="_testing_a_d_c_t_i_m_e_r__main_8c_source.html#l00017">vTestingADCTIMER()</a>.</p>
 
 </div>
 </div>
@@ -134,7 +137,7 @@ $(document).ready(function(){initNavTree('_a_d_c__interface_8h_af1a488a0e8573d75
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_bc167eb24bf90a6af7375a7e20048ea1.html">ADC</a></li><li class="navelem"><a class="el" href="_a_d_c__interface_8h.html">ADC_interface.h</a></li>
-    <li class="footer">Generated on Fri Feb 3 2023 19:48:30 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Sun Feb 5 2023 01:26:18 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['testingtimer2pwm_0',['TestingTIMER2PWM',['../_a_p_p_s__main_8c_ae86656619d20654e2affa860d6649133.html#ae86656619d20654e2affa860d6649133',1,'APPS_main.c']]]
+  ['testing_5fadctimer_0',['TESTING_ADCTIMER',['../_a_p_p_s__main_8c_a7c3fa8ccacbdb82a0c7b0c118046bdca.html#a7c3fa8ccacbdb82a0c7b0c118046bdca',1,'APPS_main.c']]]
 ];
