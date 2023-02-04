@@ -37,6 +37,14 @@
  */
 #define ADC_RESULT_ADJUSTMENT (ADC_RESULT_ADJUSTMENT_RIGHT)
 
+/**
+ * @def ADC_DEFAULT_PRESCALER
+ * @brief ADC Default Prescaler
+ * @details This macro is used to select the default prescaler for the ADC
+ * @see adc_prescalers
+ */
+#define ADC_PRESCALER (ADC_PRESCALER_128)
+
 /** @} */
 
 #endif // _ADC_CONFIG_H_
