@@ -6,12 +6,13 @@
  * @date 2023-02-03
  * @copyright Copyright (c) 2023
  */
+
 #include "../COTS/LIB/LSTD_VALUES.h"
 
 /**
  * @brief Change this to the macro of the desired application to run
  **/
-#define TESTING_ADCTIMER
+#define TESTING_USARTGPIO
 
 #ifdef TESTING_GPIO
 #include "TestingGPIO/TestingGPIO_main.h"
@@ -35,6 +36,8 @@
 #include "TestingTIMER2PWM/TestingTIMER2PWM_main.h"
 #elif defined TESTING_ADCTIMER
 #include "TestingADCTIMER/TestingADCTIMER_main.h"
+#elif defined TESTING_USARTGPIO
+#include "TestingUSARTGPIO/TestingUSARTGPIO_main.h"
 #endif
 
 void vAPPS_main(void)
@@ -61,6 +64,8 @@ void vAPPS_main(void)
     vTestingTIMER2PWM();
 #elif defined TESTING_ADCTIMER
     vTestingADCTIMER();
+#elif defined TESTING_USARTGPIO
+    vTestingUSARTGPIO();
 #endif
 
     while (TRUE)
