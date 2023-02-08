@@ -33,6 +33,10 @@
     "madc_private.h": "c",
     "adc_private.h": "c",
     "adc_config.h": "c",
-    "hlcd_interface.h": "c"
+    "hlcd_interface.h": "c",
+    "usart_interface.h": "c",
+    "usart_private.h": "c",
+    "usart_config.h": "c",
+    "testingusartgpio_main.h": "c"
   }
 }
