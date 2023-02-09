@@ -14,20 +14,42 @@
 #include "../../COTS/MCAL/TIMER/TIMER_interface.h"
 #include "TestingUSARTGPIO_main.h"
 
+void vTurnonLed(void)
+{
+    MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, HIGH);
+}
+
+void vControlReceivedData(u16_t u16ReceivedData)
+{
+    if (u16ReceivedData == 'A')
+    {
+        MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, HIGH);
+    }
+    else
+    {
+        MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
+    }
+
+    MTIMER_vDelaySec(TIMER_CHANNEL_0, 1);
+}
+
 void vTestingUSARTGPIO(void)
 {
-    // u8_t u8ReceivedData = 0;
+    u8_t u8ReceivedData = 0;
     MGPIO_vSetPinDirection(GPIO_PORTD, GPIO_PIN0, INPUT_PULLDOWN);
     MGPIO_vSetPinDirection(GPIO_PORTD, GPIO_PIN1, OUTPUT);
     MGPIO_vSetPinDirection(GPIO_PORTD, GPIO_PIN3, OUTPUT);
     MUSART_vInit();
-    MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, HIGH);
 
     while (TRUE)
     {
-        MUSART_vSyncTransmitData('A');
+        MUSART_vAsyncTransmitData('B', vTurnonLed);
+        MUSART_vAsyncReceiveData(vControlReceivedData);
         MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
-        // MTIMER_vDelayMS(TIMER_CHANNEL_0, 10);
+
+        // MUSART_vSyncTransmitData('A');
+        // MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
+        // MTIMER_vDelayMS(TIMER_CHANNEL_0, 500);
         // MUSART_vSyncReceiveData((u16_t *)&u8ReceivedData);
 
         // if (u8ReceivedData == 'A')
@@ -39,7 +61,7 @@ void vTestingUSARTGPIO(void)
         //     MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
         // }
 
-        // MTIMER_vDelayMS(TIMER_CHANNEL_0, 500);
-        // u8ReceivedData = 0;
+        MTIMER_vDelaySec(TIMER_CHANNEL_0, 1);
+        u8ReceivedData = 0;
     }
 }
