@@ -56,4 +56,56 @@
 
 /** @} */
 
+/**
+ * @defgroup usart_ucsra_bits USART UCSRA Bits
+ * @brief This section contains the USART UCSRA Bits
+ * @{
+ */
+
+/**
+ * @def UDRE
+ * @brief USART Data Register Empty (UDRE)
+ */
+#define UDRE (5)
+
+/**
+ * @def TXC
+ * @brief USART Transmit Complete (TXC)
+ */
+#define TXC (6)
+
+/**
+ * @def RXC
+ * @brief USART Receive Complete (RXC)
+ */
+#define RXC (7)
+
+/** @} */
+
+/**
+ * @defgroup usart_ucsrb_bits USART UCSRB Bits
+ * @brief This section contains the USART UCSRB Bits
+ * @{
+ */
+
+/**
+ * @def TXB8
+ * @brief USART Transmit Data Bit 8 (TXB8)
+ */
+#define TXB8 (0)
+
+/**
+ * @def RXB8
+ * @brief USART Receive Data Bit 8 (RXB8)
+ */
+#define RXB8 (1)
+
+/**
+ * @def UCSZ2
+ * @brief USART Character Size (UCSZ2)
+ */
+#define UCSZ2 (2)
+
+/** @} */
+
 #endif // USART_PRIVATE_H_

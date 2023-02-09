@@ -38,16 +38,16 @@ STATIC bool_t MUSART_vTransmitData(u16_t u16Data)
 {
     bool_t bIsDataTransmitted = FALSE;
 
-    if (GET_BIT(UCSRA, 5))
+    if (GET_BIT(UCSRA, UDRE))
     {
 #if USART_CHARACTER_SIZE == USART_CHARACTER_SIZE_9
         if (GET_BIT(u16Data, 8))
         {
-            SET_BIT(UCSRB, 0);
+            SET_BIT(UCSRB, TXB8);
         }
         else
         {
-            CLEAR_BIT(UCSRB, 0);
+            CLEAR_BIT(UCSRB, TXB8);
         }
 #endif
 
@@ -67,7 +67,7 @@ void MUSART_vInit(void)
     UBRRL = (USART_BAUDRATE);
     UBRRH = (USART_BAUDRATE >> 4);
     UCSRC = (0x80 | USART_OPERATION_MODE | USART_PARITY | USART_STOP_BITS | (0x06 & USART_CHARACTER_SIZE) | USART_CLOCK_POLARITY);
-    UCSRB = (0xD8 | (GET_BIT(USART_CHARACTER_SIZE, 3) << 2));
+    UCSRB = (0xD8 | (GET_BIT(USART_CHARACTER_SIZE, 3) << UCSZ2));
     UCSRA = (USART_SPEED | USART_MULTI_PROCESSOR);
 }
 
@@ -77,9 +77,9 @@ bool_t MUSART_vSyncTransmitData(u16_t u16Data)
 
     if (MUSART_vTransmitData(u16Data))
     {
-        while (!GET_BIT(UCSRA, 6))
+        while (!GET_BIT(UCSRA, TXC))
             ;
-        SET_BIT(UCSRA, 6);
+        SET_BIT(UCSRA, TXC);
         bIsDataTransmitted = TRUE;
     }
     else
@@ -110,7 +110,7 @@ bool_t MUSART_vAsyncTransmitData(u16_t u16Data, P2FUNC(void, pTransmitCallback)(
 
 bool_t MUSART_bIsDataReceived(void)
 {
-    return (GET_BIT(UCSRA, 7));
+    return (GET_BIT(UCSRA, RXC));
 }
 
 void MUSART_vSyncReceiveData(P2VAR(u16_t) u16Data)
@@ -120,12 +120,12 @@ void MUSART_vSyncReceiveData(P2VAR(u16_t) u16Data)
     if (MUSART_bIsDataReceived())
     {
 #if USART_CHARACTER_SIZE == USART_CHARACTER_SIZE_9
-        u16ReceivedValue = (GET_BIT(UCSRB, 1) << 8);
+        u16ReceivedValue = (GET_BIT(UCSRB, RXB8) << 8);
         u16ReceivedValue += UDR;
 #else
         u16ReceivedValue = UDR;
 #endif
-        SET_BIT(UCSRA, 7);
+        SET_BIT(UCSRA, RXC);
     }
     else
     {
@@ -142,7 +142,7 @@ void MUSART_vAsyncReceiveData(P2FUNC(void, pReceiveCallback)(u16_t))
 
 ISR(EXTI_VECT_USART_TXC)
 {
-    SET_BIT(UCSRA, 6);
+    SET_BIT(UCSRA, TXC);
 
     if (GS_pTransmitCallback == NULL)
     {
