@@ -117,3 +117,11 @@ Name: TestingADCTIMER
 Description: Testing the ADC and the Timer peripherals by emitting the LED with a certain value based on the ADC input value
 Activision Macro: TESTING_ADCTIMER
 ```
+
+### TestingUSARTGPIO
+---
+```
+Name: TestingUSARTGPIO
+Description: Testing the USART and the GPIO peripherals by turnning a LED with on/off based on the received value
+Activision Macro: TESTING_USARTGPIO
+```
