@@ -17,6 +17,8 @@
 void vTurnonLed(void)
 {
     MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, HIGH);
+    MTIMER_vDelayMS(TIMER_CHANNEL_0, 500);
+    MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
 }
 
 void vControlReceivedData(u16_t u16ReceivedData)
@@ -43,23 +45,24 @@ void vTestingUSARTGPIO(void)
 
     while (TRUE)
     {
-        MUSART_vAsyncTransmitData('B', vTurnonLed);
-        MUSART_vAsyncReceiveData(vControlReceivedData);
-        MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
-
-        // MUSART_vSyncTransmitData('A');
+        // MUSART_vAsyncTransmitData('A', vTurnonLed);
+        // MTIMER_vDelayMS(TIMER_CHANNEL_0, 50);
+        // MUSART_vAsyncReceiveData(vControlReceivedData);
         // MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
-        // MTIMER_vDelayMS(TIMER_CHANNEL_0, 500);
-        // MUSART_vSyncReceiveData((u16_t *)&u8ReceivedData);
 
-        // if (u8ReceivedData == 'A')
-        // {
-        //     MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, HIGH);
-        // }
-        // else
-        // {
-        //     MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
-        // }
+        MUSART_vSyncTransmitData('B');
+        MTIMER_vDelaySec(TIMER_CHANNEL_0, 1);
+        MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
+        MUSART_vSyncReceiveData((u16_t *)&u8ReceivedData);
+
+        if (u8ReceivedData == 'A')
+        {
+            MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, HIGH);
+        }
+        else
+        {
+            MGPIO_vSetPinValue(GPIO_PORTD, GPIO_PIN3, LOW);
+        }
 
         MTIMER_vDelaySec(TIMER_CHANNEL_0, 1);
         u8ReceivedData = 0;
