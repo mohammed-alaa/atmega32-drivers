@@ -95,65 +95,69 @@ $(document).ready(function(){initNavTree('_a_p_p_s__main_8c_source.html',''); in
 </div><!--header-->
 <div class="contents">
 <a href="_a_p_p_s__main_8c.html">Go to the documentation of this file.</a><div class="fragment"><div class="line"><a id="l00001" name="l00001"></a><span class="lineno">    1</span> </div>
-<div class="line"><a id="l00009" name="l00009"></a><span class="lineno">    9</span><span class="preprocessor">#include &quot;../COTS/LIB/LSTD_VALUES.h&quot;</span></div>
-<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span> </div>
-<div class="line"><a id="l00014" name="l00014"></a><span class="lineno"><a class="line" href="_a_p_p_s__main_8c_a7c3fa8ccacbdb82a0c7b0c118046bdca.html#a7c3fa8ccacbdb82a0c7b0c118046bdca">   14</a></span><span class="preprocessor">#define TESTING_ADCTIMER</span></div>
-<div class="line"><a id="l00015" name="l00015"></a><span class="lineno">   15</span> </div>
-<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span><span class="preprocessor">#ifdef TESTING_GPIO</span></div>
-<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_g_p_i_o__main_8h.html">TestingGPIO/TestingGPIO_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#elif defined TESTING_EXTI</span></div>
-<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_e_x_t_i__main_8h.html">TestingEXTI/TestingEXTI_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#elif defined TESTING_ADC</span></div>
-<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_a_d_c__main_8h.html">TestingADC/TestingADC_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#elif defined TESTING_TIMER0DELAYSYNC</span></div>
-<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r0_delay_sync__main_8h.html">TestingTIMER0DelaySync/TestingTIMER0DelaySync_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#elif defined TESTING_TIMER1DELAYSYNC</span></div>
-<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r1_delay_sync__main_8h.html">TestingTIMER1DelaySync/TestingTIMER1DelaySync_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#elif defined TESTING_TIMER2DELAYSYNC</span></div>
-<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r2_delay_sync__main_8h.html">TestingTIMER2DelaySync/TestingTIMER2DelaySync_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#elif defined TESTING_TIMER0PWM</span></div>
-<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r0_p_w_m__main_8h.html">TestingTIMER0PWM/TestingTIMER0PWM_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#elif defined TESTING_TIMER1APWM</span></div>
-<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r1_a_p_w_m__main_8h.html">TestingTIMER1APWM/TestingTIMER1APWM_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#elif defined TESTING_TIMER1BPWM</span></div>
-<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r1_b_p_w_m__main_8h.html">TestingTIMER1BPWM/TestingTIMER1BPWM_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#elif defined TESTING_TIMER2PWM</span></div>
-<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r2_p_w_m__main_8h.html">TestingTIMER2PWM/TestingTIMER2PWM_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#elif defined TESTING_ADCTIMER</span></div>
-<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_a_d_c_t_i_m_e_r__main_8h.html">TestingADCTIMER/TestingADCTIMER_main.h</a>&quot;</span></div>
-<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span> </div>
-<div class="line"><a id="l00040" name="l00040"></a><span class="lineno"><a class="line" href="_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a.html#a487bd3eb78b9c667f3cac31133204c1a">   40</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a.html#a487bd3eb78b9c667f3cac31133204c1a">vAPPS_main</a>(<span class="keywordtype">void</span>)</div>
-<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span>{</div>
-<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span><span class="preprocessor">#ifdef TESTING_GPIO</span></div>
-<div class="line"><a id="l00043" name="l00043"></a><span class="lineno">   43</span>    <a class="code hl_function" href="_testing_g_p_i_o__main_8c_a67d0b2d1e51b1930bfdd4adc85aefe6d.html#a67d0b2d1e51b1930bfdd4adc85aefe6d">vTestingGPIO</a>();</div>
-<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span><span class="preprocessor">#elif defined TESTING_EXTI</span></div>
-<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span>    <a class="code hl_function" href="_testing_e_x_t_i__main_8c_a0a412d5fe648792f5aba7fc02fb81427.html#a0a412d5fe648792f5aba7fc02fb81427">vTestingEXTI</a>();</div>
-<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span><span class="preprocessor">#elif defined TESTING_ADC</span></div>
-<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span>    <a class="code hl_function" href="_testing_a_d_c__main_8c_abc8e59ee505ce5b7d7dd15b7ae51870c.html#abc8e59ee505ce5b7d7dd15b7ae51870c">vTestingADC</a>();</div>
-<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span><span class="preprocessor">#elif defined TESTING_TIMER0DELAYSYNC</span></div>
-<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span>    <a class="code hl_function" href="_testing_t_i_m_e_r0_delay_sync__main_8c_a88772e46f5e1e87525abcc3a364ea248.html#a88772e46f5e1e87525abcc3a364ea248">vTestingTIMER0DelaySync</a>();</div>
-<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span><span class="preprocessor">#elif defined TESTING_TIMER1DELAYSYNC</span></div>
-<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span>    <a class="code hl_function" href="_testing_t_i_m_e_r1_delay_sync__main_8c_abf26930b452df36e19dd9994ce439956.html#abf26930b452df36e19dd9994ce439956">vTestingTIMER1DelaySync</a>();</div>
-<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span><span class="preprocessor">#elif defined TESTING_TIMER2DELAYSYNC</span></div>
-<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span>    <a class="code hl_function" href="_testing_t_i_m_e_r2_delay_sync__main_8c_a1c07073d6c49022c7acc925c2bace849.html#a1c07073d6c49022c7acc925c2bace849">vTestingTIMER2DelaySync</a>();</div>
-<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span><span class="preprocessor">#elif defined TESTING_TIMER0PWM</span></div>
-<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span>    <a class="code hl_function" href="_testing_t_i_m_e_r0_p_w_m__main_8c_aea4d04dcf46bf53abb4b79d011f14bba.html#aea4d04dcf46bf53abb4b79d011f14bba">vTestingTIMER0PWM</a>();</div>
-<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span><span class="preprocessor">#elif defined TESTING_TIMER1APWM</span></div>
-<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span>    <a class="code hl_function" href="_testing_t_i_m_e_r1_a_p_w_m__main_8c_a32dfbfaf8cd5f1bb115c9c4e9a5a14ec.html#a32dfbfaf8cd5f1bb115c9c4e9a5a14ec">vTestingTIMER1APWM</a>();</div>
-<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span><span class="preprocessor">#elif defined TESTING_TIMER1BPWM</span></div>
-<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span>    <a class="code hl_function" href="_testing_t_i_m_e_r1_b_p_w_m__main_8c_abf0bb38deec81da82f0084e9e42c8e83.html#abf0bb38deec81da82f0084e9e42c8e83">vTestingTIMER1BPWM</a>();</div>
-<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span><span class="preprocessor">#elif defined TESTING_TIMER2PWM</span></div>
-<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span>    <a class="code hl_function" href="_testing_t_i_m_e_r2_p_w_m__main_8c_a625a53a61b57e7efa2c34ad5cbf92246.html#a625a53a61b57e7efa2c34ad5cbf92246">vTestingTIMER2PWM</a>();</div>
-<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span><span class="preprocessor">#elif defined TESTING_ADCTIMER</span></div>
-<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span>    <a class="code hl_function" href="_testing_a_d_c_t_i_m_e_r__main_8c_a05384bd19f42c0ea761f6a08ca7c1e78.html#a05384bd19f42c0ea761f6a08ca7c1e78">vTestingADCTIMER</a>();</div>
-<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span><span class="preprocessor">#endif</span></div>
-<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span> </div>
-<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <span class="keywordflow">while</span> (<a class="code hl_define" href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>)</div>
-<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span>    {</div>
-<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    }</div>
-<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span>}</div>
-<div class="ttc" id="a_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a_html_a487bd3eb78b9c667f3cac31133204c1a"><div class="ttname"><a href="_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a.html#a487bd3eb78b9c667f3cac31133204c1a">vAPPS_main</a></div><div class="ttdeci">void vAPPS_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="_a_p_p_s__main_8c_source.html#l00040">APPS_main.c:40</a></div></div>
+<div class="line"><a id="l00010" name="l00010"></a><span class="lineno">   10</span><span class="preprocessor">#include &quot;../COTS/LIB/LSTD_VALUES.h&quot;</span></div>
+<div class="line"><a id="l00011" name="l00011"></a><span class="lineno">   11</span> </div>
+<div class="line"><a id="l00015" name="l00015"></a><span class="lineno"><a class="line" href="_a_p_p_s__main_8c_a46a4ac42d4b8009e0207b7e24a992348.html#a46a4ac42d4b8009e0207b7e24a992348">   15</a></span><span class="preprocessor">#define TESTING_USARTGPIO</span></div>
+<div class="line"><a id="l00016" name="l00016"></a><span class="lineno">   16</span> </div>
+<div class="line"><a id="l00017" name="l00017"></a><span class="lineno">   17</span><span class="preprocessor">#ifdef TESTING_GPIO</span></div>
+<div class="line"><a id="l00018" name="l00018"></a><span class="lineno">   18</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_g_p_i_o__main_8h.html">TestingGPIO/TestingGPIO_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00019" name="l00019"></a><span class="lineno">   19</span><span class="preprocessor">#elif defined TESTING_EXTI</span></div>
+<div class="line"><a id="l00020" name="l00020"></a><span class="lineno">   20</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_e_x_t_i__main_8h.html">TestingEXTI/TestingEXTI_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00021" name="l00021"></a><span class="lineno">   21</span><span class="preprocessor">#elif defined TESTING_ADC</span></div>
+<div class="line"><a id="l00022" name="l00022"></a><span class="lineno">   22</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_a_d_c__main_8h.html">TestingADC/TestingADC_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00023" name="l00023"></a><span class="lineno">   23</span><span class="preprocessor">#elif defined TESTING_TIMER0DELAYSYNC</span></div>
+<div class="line"><a id="l00024" name="l00024"></a><span class="lineno">   24</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r0_delay_sync__main_8h.html">TestingTIMER0DelaySync/TestingTIMER0DelaySync_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00025" name="l00025"></a><span class="lineno">   25</span><span class="preprocessor">#elif defined TESTING_TIMER1DELAYSYNC</span></div>
+<div class="line"><a id="l00026" name="l00026"></a><span class="lineno">   26</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r1_delay_sync__main_8h.html">TestingTIMER1DelaySync/TestingTIMER1DelaySync_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00027" name="l00027"></a><span class="lineno">   27</span><span class="preprocessor">#elif defined TESTING_TIMER2DELAYSYNC</span></div>
+<div class="line"><a id="l00028" name="l00028"></a><span class="lineno">   28</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r2_delay_sync__main_8h.html">TestingTIMER2DelaySync/TestingTIMER2DelaySync_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00029" name="l00029"></a><span class="lineno">   29</span><span class="preprocessor">#elif defined TESTING_TIMER0PWM</span></div>
+<div class="line"><a id="l00030" name="l00030"></a><span class="lineno">   30</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r0_p_w_m__main_8h.html">TestingTIMER0PWM/TestingTIMER0PWM_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00031" name="l00031"></a><span class="lineno">   31</span><span class="preprocessor">#elif defined TESTING_TIMER1APWM</span></div>
+<div class="line"><a id="l00032" name="l00032"></a><span class="lineno">   32</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r1_a_p_w_m__main_8h.html">TestingTIMER1APWM/TestingTIMER1APWM_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00033" name="l00033"></a><span class="lineno">   33</span><span class="preprocessor">#elif defined TESTING_TIMER1BPWM</span></div>
+<div class="line"><a id="l00034" name="l00034"></a><span class="lineno">   34</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r1_b_p_w_m__main_8h.html">TestingTIMER1BPWM/TestingTIMER1BPWM_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00035" name="l00035"></a><span class="lineno">   35</span><span class="preprocessor">#elif defined TESTING_TIMER2PWM</span></div>
+<div class="line"><a id="l00036" name="l00036"></a><span class="lineno">   36</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_t_i_m_e_r2_p_w_m__main_8h.html">TestingTIMER2PWM/TestingTIMER2PWM_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00037" name="l00037"></a><span class="lineno">   37</span><span class="preprocessor">#elif defined TESTING_ADCTIMER</span></div>
+<div class="line"><a id="l00038" name="l00038"></a><span class="lineno">   38</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_a_d_c_t_i_m_e_r__main_8h.html">TestingADCTIMER/TestingADCTIMER_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00039" name="l00039"></a><span class="lineno">   39</span><span class="preprocessor">#elif defined TESTING_USARTGPIO</span></div>
+<div class="line"><a id="l00040" name="l00040"></a><span class="lineno">   40</span><span class="preprocessor">#include &quot;<a class="code" href="_testing_u_s_a_r_t_g_p_i_o__main_8h.html">TestingUSARTGPIO/TestingUSARTGPIO_main.h</a>&quot;</span></div>
+<div class="line"><a id="l00041" name="l00041"></a><span class="lineno">   41</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00042" name="l00042"></a><span class="lineno">   42</span> </div>
+<div class="line"><a id="l00043" name="l00043"></a><span class="lineno"><a class="line" href="_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a.html#a487bd3eb78b9c667f3cac31133204c1a">   43</a></span><span class="keywordtype">void</span> <a class="code hl_function" href="_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a.html#a487bd3eb78b9c667f3cac31133204c1a">vAPPS_main</a>(<span class="keywordtype">void</span>)</div>
+<div class="line"><a id="l00044" name="l00044"></a><span class="lineno">   44</span>{</div>
+<div class="line"><a id="l00045" name="l00045"></a><span class="lineno">   45</span><span class="preprocessor">#ifdef TESTING_GPIO</span></div>
+<div class="line"><a id="l00046" name="l00046"></a><span class="lineno">   46</span>    <a class="code hl_function" href="_testing_g_p_i_o__main_8c_a67d0b2d1e51b1930bfdd4adc85aefe6d.html#a67d0b2d1e51b1930bfdd4adc85aefe6d">vTestingGPIO</a>();</div>
+<div class="line"><a id="l00047" name="l00047"></a><span class="lineno">   47</span><span class="preprocessor">#elif defined TESTING_EXTI</span></div>
+<div class="line"><a id="l00048" name="l00048"></a><span class="lineno">   48</span>    <a class="code hl_function" href="_testing_e_x_t_i__main_8c_a0a412d5fe648792f5aba7fc02fb81427.html#a0a412d5fe648792f5aba7fc02fb81427">vTestingEXTI</a>();</div>
+<div class="line"><a id="l00049" name="l00049"></a><span class="lineno">   49</span><span class="preprocessor">#elif defined TESTING_ADC</span></div>
+<div class="line"><a id="l00050" name="l00050"></a><span class="lineno">   50</span>    <a class="code hl_function" href="_testing_a_d_c__main_8c_abc8e59ee505ce5b7d7dd15b7ae51870c.html#abc8e59ee505ce5b7d7dd15b7ae51870c">vTestingADC</a>();</div>
+<div class="line"><a id="l00051" name="l00051"></a><span class="lineno">   51</span><span class="preprocessor">#elif defined TESTING_TIMER0DELAYSYNC</span></div>
+<div class="line"><a id="l00052" name="l00052"></a><span class="lineno">   52</span>    <a class="code hl_function" href="_testing_t_i_m_e_r0_delay_sync__main_8c_a88772e46f5e1e87525abcc3a364ea248.html#a88772e46f5e1e87525abcc3a364ea248">vTestingTIMER0DelaySync</a>();</div>
+<div class="line"><a id="l00053" name="l00053"></a><span class="lineno">   53</span><span class="preprocessor">#elif defined TESTING_TIMER1DELAYSYNC</span></div>
+<div class="line"><a id="l00054" name="l00054"></a><span class="lineno">   54</span>    <a class="code hl_function" href="_testing_t_i_m_e_r1_delay_sync__main_8c_abf26930b452df36e19dd9994ce439956.html#abf26930b452df36e19dd9994ce439956">vTestingTIMER1DelaySync</a>();</div>
+<div class="line"><a id="l00055" name="l00055"></a><span class="lineno">   55</span><span class="preprocessor">#elif defined TESTING_TIMER2DELAYSYNC</span></div>
+<div class="line"><a id="l00056" name="l00056"></a><span class="lineno">   56</span>    <a class="code hl_function" href="_testing_t_i_m_e_r2_delay_sync__main_8c_a1c07073d6c49022c7acc925c2bace849.html#a1c07073d6c49022c7acc925c2bace849">vTestingTIMER2DelaySync</a>();</div>
+<div class="line"><a id="l00057" name="l00057"></a><span class="lineno">   57</span><span class="preprocessor">#elif defined TESTING_TIMER0PWM</span></div>
+<div class="line"><a id="l00058" name="l00058"></a><span class="lineno">   58</span>    <a class="code hl_function" href="_testing_t_i_m_e_r0_p_w_m__main_8c_aea4d04dcf46bf53abb4b79d011f14bba.html#aea4d04dcf46bf53abb4b79d011f14bba">vTestingTIMER0PWM</a>();</div>
+<div class="line"><a id="l00059" name="l00059"></a><span class="lineno">   59</span><span class="preprocessor">#elif defined TESTING_TIMER1APWM</span></div>
+<div class="line"><a id="l00060" name="l00060"></a><span class="lineno">   60</span>    <a class="code hl_function" href="_testing_t_i_m_e_r1_a_p_w_m__main_8c_a32dfbfaf8cd5f1bb115c9c4e9a5a14ec.html#a32dfbfaf8cd5f1bb115c9c4e9a5a14ec">vTestingTIMER1APWM</a>();</div>
+<div class="line"><a id="l00061" name="l00061"></a><span class="lineno">   61</span><span class="preprocessor">#elif defined TESTING_TIMER1BPWM</span></div>
+<div class="line"><a id="l00062" name="l00062"></a><span class="lineno">   62</span>    <a class="code hl_function" href="_testing_t_i_m_e_r1_b_p_w_m__main_8c_abf0bb38deec81da82f0084e9e42c8e83.html#abf0bb38deec81da82f0084e9e42c8e83">vTestingTIMER1BPWM</a>();</div>
+<div class="line"><a id="l00063" name="l00063"></a><span class="lineno">   63</span><span class="preprocessor">#elif defined TESTING_TIMER2PWM</span></div>
+<div class="line"><a id="l00064" name="l00064"></a><span class="lineno">   64</span>    <a class="code hl_function" href="_testing_t_i_m_e_r2_p_w_m__main_8c_a625a53a61b57e7efa2c34ad5cbf92246.html#a625a53a61b57e7efa2c34ad5cbf92246">vTestingTIMER2PWM</a>();</div>
+<div class="line"><a id="l00065" name="l00065"></a><span class="lineno">   65</span><span class="preprocessor">#elif defined TESTING_ADCTIMER</span></div>
+<div class="line"><a id="l00066" name="l00066"></a><span class="lineno">   66</span>    <a class="code hl_function" href="_testing_a_d_c_t_i_m_e_r__main_8c_a05384bd19f42c0ea761f6a08ca7c1e78.html#a05384bd19f42c0ea761f6a08ca7c1e78">vTestingADCTIMER</a>();</div>
+<div class="line"><a id="l00067" name="l00067"></a><span class="lineno">   67</span><span class="preprocessor">#elif defined TESTING_USARTGPIO</span></div>
+<div class="line"><a id="l00068" name="l00068"></a><span class="lineno">   68</span>    <a class="code hl_function" href="_testing_u_s_a_r_t_g_p_i_o__main_8c_a8e2130dd6663cd5f61df474d1892ce23.html#a8e2130dd6663cd5f61df474d1892ce23">vTestingUSARTGPIO</a>();</div>
+<div class="line"><a id="l00069" name="l00069"></a><span class="lineno">   69</span><span class="preprocessor">#endif</span></div>
+<div class="line"><a id="l00070" name="l00070"></a><span class="lineno">   70</span> </div>
+<div class="line"><a id="l00071" name="l00071"></a><span class="lineno">   71</span>    <span class="keywordflow">while</span> (<a class="code hl_define" href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>)</div>
+<div class="line"><a id="l00072" name="l00072"></a><span class="lineno">   72</span>    {</div>
+<div class="line"><a id="l00073" name="l00073"></a><span class="lineno">   73</span>    }</div>
+<div class="line"><a id="l00074" name="l00074"></a><span class="lineno">   74</span>}</div>
+<div class="ttc" id="a_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a_html_a487bd3eb78b9c667f3cac31133204c1a"><div class="ttname"><a href="_a_p_p_s__main_8c_a487bd3eb78b9c667f3cac31133204c1a.html#a487bd3eb78b9c667f3cac31133204c1a">vAPPS_main</a></div><div class="ttdeci">void vAPPS_main(void)</div><div class="ttdef"><b>Definition:</b> <a href="_a_p_p_s__main_8c_source.html#l00043">APPS_main.c:43</a></div></div>
 <div class="ttc" id="a_testing_a_d_c__main_8c_abc8e59ee505ce5b7d7dd15b7ae51870c_html_abc8e59ee505ce5b7d7dd15b7ae51870c"><div class="ttname"><a href="_testing_a_d_c__main_8c_abc8e59ee505ce5b7d7dd15b7ae51870c.html#abc8e59ee505ce5b7d7dd15b7ae51870c">vTestingADC</a></div><div class="ttdeci">void vTestingADC(void)</div><div class="ttdef"><b>Definition:</b> <a href="_testing_a_d_c__main_8c_source.html#l00016">TestingADC_main.c:16</a></div></div>
 <div class="ttc" id="a_testing_a_d_c__main_8h_html"><div class="ttname"><a href="_testing_a_d_c__main_8h.html">TestingADC_main.h</a></div><div class="ttdoc">This file contains the prototype of the main function that is responsible for running the ADC testing...</div></div>
 <div class="ttc" id="a_testing_a_d_c_t_i_m_e_r__main_8c_a05384bd19f42c0ea761f6a08ca7c1e78_html_a05384bd19f42c0ea761f6a08ca7c1e78"><div class="ttname"><a href="_testing_a_d_c_t_i_m_e_r__main_8c_a05384bd19f42c0ea761f6a08ca7c1e78.html#a05384bd19f42c0ea761f6a08ca7c1e78">vTestingADCTIMER</a></div><div class="ttdeci">void vTestingADCTIMER(void)</div><div class="ttdef"><b>Definition:</b> <a href="_testing_a_d_c_t_i_m_e_r__main_8c_source.html#l00017">TestingADCTIMER_main.c:17</a></div></div>
@@ -176,6 +180,8 @@ $(document).ready(function(){initNavTree('_a_p_p_s__main_8c_source.html',''); in
 <div class="ttc" id="a_testing_t_i_m_e_r2_delay_sync__main_8h_html"><div class="ttname"><a href="_testing_t_i_m_e_r2_delay_sync__main_8h.html">TestingTIMER2DelaySync_main.h</a></div><div class="ttdoc">This file contains the prototype of the main function that is responsible for running the Timer 2 del...</div></div>
 <div class="ttc" id="a_testing_t_i_m_e_r2_p_w_m__main_8c_a625a53a61b57e7efa2c34ad5cbf92246_html_a625a53a61b57e7efa2c34ad5cbf92246"><div class="ttname"><a href="_testing_t_i_m_e_r2_p_w_m__main_8c_a625a53a61b57e7efa2c34ad5cbf92246.html#a625a53a61b57e7efa2c34ad5cbf92246">vTestingTIMER2PWM</a></div><div class="ttdeci">void vTestingTIMER2PWM(void)</div><div class="ttdef"><b>Definition:</b> <a href="_testing_t_i_m_e_r2_p_w_m__main_8c_source.html#l00018">TestingTIMER2PWM_main.c:18</a></div></div>
 <div class="ttc" id="a_testing_t_i_m_e_r2_p_w_m__main_8h_html"><div class="ttname"><a href="_testing_t_i_m_e_r2_p_w_m__main_8h.html">TestingTIMER2PWM_main.h</a></div><div class="ttdoc">This file contains the prototype of the main function that is responsible for running the Timer 2PWM ...</div></div>
+<div class="ttc" id="a_testing_u_s_a_r_t_g_p_i_o__main_8c_a8e2130dd6663cd5f61df474d1892ce23_html_a8e2130dd6663cd5f61df474d1892ce23"><div class="ttname"><a href="_testing_u_s_a_r_t_g_p_i_o__main_8c_a8e2130dd6663cd5f61df474d1892ce23.html#a8e2130dd6663cd5f61df474d1892ce23">vTestingUSARTGPIO</a></div><div class="ttdeci">void vTestingUSARTGPIO(void)</div><div class="ttdef"><b>Definition:</b> <a href="_testing_u_s_a_r_t_g_p_i_o__main_8c_source.html#l00036">TestingUSARTGPIO_main.c:36</a></div></div>
+<div class="ttc" id="a_testing_u_s_a_r_t_g_p_i_o__main_8h_html"><div class="ttname"><a href="_testing_u_s_a_r_t_g_p_i_o__main_8h.html">TestingUSARTGPIO_main.h</a></div><div class="ttdoc">This file contains the prototype of the main function that is responsible for running the USART &amp; GPI...</div></div>
 <div class="ttc" id="agroup__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d_html_gaa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdoc">Type definition for TRUE.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00024">LSTD_VALUES.h:24</a></div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
@@ -183,7 +189,7 @@ $(document).ready(function(){initNavTree('_a_p_p_s__main_8c_source.html',''); in
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_7c7e30f77f94eb49d4765ef1ba7ecd8e.html">APPS</a></li><li class="navelem"><a class="el" href="_a_p_p_s__main_8c.html">APPS_main.c</a></li>
-    <li class="footer">Generated on Sun Feb 5 2023 01:26:18 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Thu Feb 9 2023 04:56:13 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

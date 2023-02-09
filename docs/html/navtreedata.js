@@ -38,7 +38,8 @@ var NAVTREE =
       [ "### TestingTIMER1APWM", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md10", null ],
       [ "### TestingTIMER1BPWM", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md11", null ],
       [ "### TestingTIMER2PWM", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md12", null ],
-      [ "### TestingADCTIMER", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md13", null ]
+      [ "### TestingADCTIMER", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md13", null ],
+      [ "### TestingUSARTGPIO", "md__d___atmega32__drivers__atmega32__drivers__atmega32__drivers__a_p_p_s__r_e_a_d_m_e.html#autotoc_md14", null ]
     ] ],
     [ "Modules", "modules.html", "modules" ],
     [ "Files", "files.html", [
@@ -57,7 +58,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "_a_d_c__config_8h.html",
-"group__adc__voltage__references_gaed1f921b20c5f30ed286fccc2c61e78f.html#gaed1f921b20c5f30ed286fccc2c61e78f"
+"globals_type.html",
+"group__timsk__bits_gab4c050b8bef1c3a9e3a4925b669db000.html#gab4c050b8bef1c3a9e3a4925b669db000"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

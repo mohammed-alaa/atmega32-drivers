@@ -11,6 +11,7 @@
 #define USART_INTERFACE_H_
 
 #include "../../LIB/LSTD_TYPES.h"
+#include "../../LIB/LSTD_COMPILER.h"
 
 /**
  * @defgroup usart_baudrates_single_speed USART Single Speed Baudrates
@@ -19,7 +20,7 @@
  */
 
 /**
- * @def USART_BAUDRATE_2400
+ * @def USART_BAUDRATE_SINGLE_SPEED_2400
  * @brief This macro is used to set the baudrate to 2400
  */
 #define USART_BAUDRATE_SINGLE_SPEED_2400 (416)
@@ -296,7 +297,7 @@
 
 /**
  * @def USART_CLOCK_POLARITY_RISING_FALLING
- * @brief This macro is used to set the clock polarity to falling/rising
+ * @brief This macro is used to set the clock polarity to rising/falling
  * @details Transmitted data is sampled on the rising edge of the clock, Received data is sampled on the falling edge of the clock
  * @note This is used for synchronous mode only
  */
@@ -329,6 +330,8 @@
  * @brief This macro is used to set the speed to double
  */
 #define USART_SPEED_DOUBLE (0x02)
+
+/** @} */
 
 /**
  * @defgroup usart_multi_processor USART Multi Processor Mode

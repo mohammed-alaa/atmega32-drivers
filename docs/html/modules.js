@@ -42,5 +42,16 @@ var modules =
     [ "Timer 1 Registers", "group__timer__1__registers.html", "group__timer__1__registers" ],
     [ "Timer 2 Registers", "group__timer__2__registers.html", "group__timer__2__registers" ],
     [ "TIMSK Bits", "group__timsk__bits.html", "group__timsk__bits" ],
-    [ "TIFR Bits", "group__tifr__bits.html", "group__tifr__bits" ]
+    [ "TIFR Bits", "group__tifr__bits.html", "group__tifr__bits" ],
+    [ "USART Configurations", "group__usart__configurations.html", "group__usart__configurations" ],
+    [ "USART Single Speed Baudrates", "group__usart__baudrates__single__speed.html", "group__usart__baudrates__single__speed" ],
+    [ "USART Baudrates Double Speed", "group__usart__baudrates__double__speed.html", "group__usart__baudrates__double__speed" ],
+    [ "USART Operation Modes", "group__usart__operation__modes.html", "group__usart__operation__modes" ],
+    [ "USART Parity Modes", "group__usart__parity__modes.html", "group__usart__parity__modes" ],
+    [ "USART Stop Bits", "group__usart__stop__bits.html", "group__usart__stop__bits" ],
+    [ "USART Character Size", "group__usart__character__size.html", "group__usart__character__size" ],
+    [ "USART Clock Polarity", "group__usart__clock__polarity.html", "group__usart__clock__polarity" ],
+    [ "USART Speed", "group__usart__speed.html", "group__usart__speed" ],
+    [ "USART Multi Processor Mode", "group__usart__multi__processor.html", "group__usart__multi__processor" ],
+    [ "USART Registers", "group__usart__registers.html", "group__usart__registers" ]
 ];
