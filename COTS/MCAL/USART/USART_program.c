@@ -12,19 +12,14 @@
 #include "../../LIB/LSTD_BITMATH.h"
 #include "../../LIB/LSTD_COMPILER.h"
 #include "../../LIB/LSTD_VALUES.h"
+#include "../../LIB/L_INTERRUPTS.h"
 #include "USART_private.h"
 #include "USART_interface.h"
 #include "USART_config.h"
 
-#if USART_OPERATION_MODE == USART_OPERATION_MODE_ASYNCHRONOUS
-#include "../../LIB/L_INTERRUPTS.h"
-#endif
-
 /* Global variables */
-#if USART_OPERATION_MODE == USART_OPERATION_MODE_ASYNCHRONOUS
 STATIC P2FUNC(void, GS_pTransmitCallback)(void) = NULL;
 STATIC P2FUNC(void, GS_pReceiveCallback)(u16_t) = NULL;
-#endif
 
 /**
  * @brief This function is used to transmit data through the USART
@@ -64,14 +59,7 @@ void MUSART_vInit(void)
     UBRRL = (USART_BAUDRATE);
     UBRRH = (USART_BAUDRATE >> 4);
     UCSRC = (0x80 | USART_OPERATION_MODE | USART_PARITY | USART_STOP_BITS | (0x06 & USART_CHARACTER_SIZE) | USART_CLOCK_POLARITY);
-
-#if USART_OPERATION_MODE == USART_OPERATION_MODE_ASYNCHRONOUS
-    SET_BIT(SREG, 7);
-    UCSRB = (0xD8 | (GET_BIT(USART_CHARACTER_SIZE, 2) << 2));
-#elif USART_OPERATION_MODE == USART_OPERATION_MODE_SYNC
-    UCSRB = (0x18 | (GET_BIT(USART_CHARACTER_SIZE, 2) << 2));
-#endif
-
+    UCSRB = (0xD8 | (GET_BIT(USART_CHARACTER_SIZE, 3) << 2));
     UCSRA = (USART_SPEED | USART_MULTI_PROCESSOR);
 }
 
@@ -100,17 +88,13 @@ bool_t MUSART_vAsyncTransmitData(u16_t u16Data, P2FUNC(void, pTransmitCallback)(
 
     if (MUSART_vTransmitData(u16Data))
     {
-#if USART_OPERATION_MODE == USART_OPERATION_MODE_ASYNCHRONOUS
         GS_pTransmitCallback = pTransmitCallback;
         bIsDataTransmitted = TRUE;
-#endif
     }
     else
     {
-#if USART_OPERATION_MODE == USART_OPERATION_MODE_ASYNCHRONOUS
         GS_pTransmitCallback = NULL;
         bIsDataTransmitted = FALSE;
-#endif
     }
 
     return bIsDataTransmitted;
@@ -133,6 +117,7 @@ void MUSART_vSyncReceiveData(P2VAR(u16_t) u16Data)
 #else
         u16ReceivedValue = UDR;
 #endif
+        SET_BIT(UCSRA, 7);
     }
     else
     {
@@ -144,12 +129,9 @@ void MUSART_vSyncReceiveData(P2VAR(u16_t) u16Data)
 
 void MUSART_vAsyncReceiveData(P2FUNC(void, pReceiveCallback)(u16_t))
 {
-#if USART_OPERATION_MODE == USART_OPERATION_MODE_ASYNCHRONOUS
     GS_pReceiveCallback = pReceiveCallback;
-#endif
 }
 
-#if USART_OPERATION_MODE == USART_OPERATION_MODE_ASYNCHRONOUS
 ISR(EXTI_VECT_USART_TXC)
 {
     SET_BIT(UCSRA, 6);
@@ -167,8 +149,6 @@ ISR(EXTI_VECT_USART_TXC)
 
 ISR(EXTI_VECT_USART_RXC)
 {
-    SET_BIT(UCSRA, 7);
-
     if (!MUSART_bIsDataReceived() || (GS_pReceiveCallback == NULL))
     {
         /* Do nothing */
@@ -181,5 +161,3 @@ ISR(EXTI_VECT_USART_RXC)
         GS_pReceiveCallback = NULL;
     }
 }
-
-#endif
