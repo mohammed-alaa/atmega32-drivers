@@ -127,31 +127,31 @@ $(document).ready(function(){initNavTree('_u_s_a_r_t__program_8c_a53cbef7cb27a11
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>bool_t TRUE if the data is transmitted successfully, FALSE otherwise </dd></dl>
 
-<p class="definition">Definition at line <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00087">87</a> of file <a class="el" href="_u_s_a_r_t__program_8c_source.html">USART_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">   88</span>{</div>
-<div class="line"><span class="lineno">   89</span>    <a class="code hl_typedef" href="group__typedefs_ga04dd5074964518403bf944f2b240a5f8.html#ga04dd5074964518403bf944f2b240a5f8">bool_t</a> bIsDataTransmitted = <a class="code hl_define" href="group__standardvalues_gaa93f0eb578d23995850d61f7d61c55c1.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><span class="lineno">   90</span> </div>
-<div class="line"><span class="lineno">   91</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="_u_s_a_r_t__program_8c_a5fd53152bb4770f79da592f0fc00d1d2.html#a5fd53152bb4770f79da592f0fc00d1d2">MUSART_vTransmitData</a>(u16Data))</div>
-<div class="line"><span class="lineno">   92</span>    {</div>
-<div class="line"><span class="lineno">   93</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf.html#a5519b48bb40cbdcac51afed3444f93cf">GS_pTransmitCallback</a> = pTransmitCallback;</div>
-<div class="line"><span class="lineno">   94</span>        bIsDataTransmitted = <a class="code hl_define" href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
-<div class="line"><span class="lineno">   95</span>    }</div>
-<div class="line"><span class="lineno">   96</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">   97</span>    {</div>
-<div class="line"><span class="lineno">   98</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf.html#a5519b48bb40cbdcac51afed3444f93cf">GS_pTransmitCallback</a> = <a class="code hl_define" href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><span class="lineno">   99</span>        bIsDataTransmitted = <a class="code hl_define" href="group__standardvalues_gaa93f0eb578d23995850d61f7d61c55c1.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
-<div class="line"><span class="lineno">  100</span>    }</div>
-<div class="line"><span class="lineno">  101</span> </div>
-<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">return</span> bIsDataTransmitted;</div>
-<div class="line"><span class="lineno">  103</span>}</div>
-<div class="ttc" id="a_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf_html_a5519b48bb40cbdcac51afed3444f93cf"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf.html#a5519b48bb40cbdcac51afed3444f93cf">GS_pTransmitCallback</a></div><div class="ttdeci">static void(* GS_pTransmitCallback)(void)</div><div class="ttdoc">This is a pointer-to-function callback to be called when the transmission is finished.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00022">USART_program.c:22</a></div></div>
-<div class="ttc" id="a_u_s_a_r_t__program_8c_a5fd53152bb4770f79da592f0fc00d1d2_html_a5fd53152bb4770f79da592f0fc00d1d2"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a5fd53152bb4770f79da592f0fc00d1d2.html#a5fd53152bb4770f79da592f0fc00d1d2">MUSART_vTransmitData</a></div><div class="ttdeci">static bool_t MUSART_vTransmitData(u16_t u16Data)</div><div class="ttdoc">This function is used to transmit data through the USART.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00031">USART_program.c:31</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00093">93</a> of file <a class="el" href="_u_s_a_r_t__program_8c_source.html">USART_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">   94</span>{</div>
+<div class="line"><span class="lineno">   95</span>    <a class="code hl_typedef" href="group__typedefs_ga04dd5074964518403bf944f2b240a5f8.html#ga04dd5074964518403bf944f2b240a5f8">bool_t</a> bIsDataTransmitted = <a class="code hl_define" href="group__standardvalues_gaa93f0eb578d23995850d61f7d61c55c1.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><span class="lineno">   96</span> </div>
+<div class="line"><span class="lineno">   97</span>    <span class="keywordflow">if</span> (<a class="code hl_function" href="_u_s_a_r_t__program_8c_a5fd53152bb4770f79da592f0fc00d1d2.html#a5fd53152bb4770f79da592f0fc00d1d2">MUSART_vTransmitData</a>(u16Data))</div>
+<div class="line"><span class="lineno">   98</span>    {</div>
+<div class="line"><span class="lineno">   99</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf.html#a5519b48bb40cbdcac51afed3444f93cf">GS_pTransmitCallback</a> = pTransmitCallback;</div>
+<div class="line"><span class="lineno">  100</span>        bIsDataTransmitted = <a class="code hl_define" href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a>;</div>
+<div class="line"><span class="lineno">  101</span>    }</div>
+<div class="line"><span class="lineno">  102</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  103</span>    {</div>
+<div class="line"><span class="lineno">  104</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf.html#a5519b48bb40cbdcac51afed3444f93cf">GS_pTransmitCallback</a> = <a class="code hl_define" href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><span class="lineno">  105</span>        bIsDataTransmitted = <a class="code hl_define" href="group__standardvalues_gaa93f0eb578d23995850d61f7d61c55c1.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a>;</div>
+<div class="line"><span class="lineno">  106</span>    }</div>
+<div class="line"><span class="lineno">  107</span> </div>
+<div class="line"><span class="lineno">  108</span>    <span class="keywordflow">return</span> bIsDataTransmitted;</div>
+<div class="line"><span class="lineno">  109</span>}</div>
+<div class="ttc" id="a_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf_html_a5519b48bb40cbdcac51afed3444f93cf"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf.html#a5519b48bb40cbdcac51afed3444f93cf">GS_pTransmitCallback</a></div><div class="ttdeci">static void(* GS_pTransmitCallback)(void)</div><div class="ttdoc">This is a pointer-to-function callback to be called when the transmission is finished.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00025">USART_program.c:25</a></div></div>
+<div class="ttc" id="a_u_s_a_r_t__program_8c_a5fd53152bb4770f79da592f0fc00d1d2_html_a5fd53152bb4770f79da592f0fc00d1d2"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a5fd53152bb4770f79da592f0fc00d1d2.html#a5fd53152bb4770f79da592f0fc00d1d2">MUSART_vTransmitData</a></div><div class="ttdeci">static bool_t MUSART_vTransmitData(u16_t u16Data)</div><div class="ttdoc">This function is used to transmit data through the USART.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00037">USART_program.c:37</a></div></div>
 <div class="ttc" id="agroup__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4_html_ga070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdoc">Type definition for NULL.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00040">LSTD_VALUES.h:40</a></div></div>
 <div class="ttc" id="agroup__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d_html_gaa8cecfc5c5c054d2875c03e77b7be15d"><div class="ttname"><a href="group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d">TRUE</a></div><div class="ttdeci">#define TRUE</div><div class="ttdoc">Type definition for TRUE.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00024">LSTD_VALUES.h:24</a></div></div>
 <div class="ttc" id="agroup__standardvalues_gaa93f0eb578d23995850d61f7d61c55c1_html_gaa93f0eb578d23995850d61f7d61c55c1"><div class="ttname"><a href="group__standardvalues_gaa93f0eb578d23995850d61f7d61c55c1.html#gaa93f0eb578d23995850d61f7d61c55c1">FALSE</a></div><div class="ttdeci">#define FALSE</div><div class="ttdoc">Type definition for FALSE.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00032">LSTD_VALUES.h:32</a></div></div>
 <div class="ttc" id="agroup__typedefs_ga04dd5074964518403bf944f2b240a5f8_html_ga04dd5074964518403bf944f2b240a5f8"><div class="ttname"><a href="group__typedefs_ga04dd5074964518403bf944f2b240a5f8.html#ga04dd5074964518403bf944f2b240a5f8">bool_t</a></div><div class="ttdeci">unsigned char bool_t</div><div class="ttdoc">Type definition for boolean.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00021">LSTD_TYPES.h:21</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00032">FALSE</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00022">GS_pTransmitCallback</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00031">MUSART_vTransmitData()</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00040">NULL</a>, and <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00024">TRUE</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00032">FALSE</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00025">GS_pTransmitCallback</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00037">MUSART_vTransmitData()</a>, <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00040">NULL</a>, and <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00024">TRUE</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_testing_u_s_a_r_t_g_p_i_o__main_8c_source.html#l00036">vTestingUSARTGPIO()</a>.</p>
 
@@ -163,7 +163,7 @@ $(document).ready(function(){initNavTree('_u_s_a_r_t__program_8c_a53cbef7cb27a11
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_b2c8cac0da042410f43ed82d7c76f533.html">USART</a></li><li class="navelem"><a class="el" href="_u_s_a_r_t__program_8c.html">USART_program.c</a></li>
-    <li class="footer">Generated on Thu Feb 9 2023 05:00:49 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Thu Feb 9 2023 05:02:26 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

@@ -18,9 +18,15 @@
 #include "USART_config.h"
 
 /* Global variables */
-/** @brief This is a pointer-to-function callback to be called when the transmission is finished */
+/**
+ * @brief This is a pointer-to-function callback to be called when the transmission is finished
+ * @details This is a pointer-to-function callback to be called when the transmission is finished
+ */
 STATIC P2FUNC(void, GS_pTransmitCallback)(void) = NULL;
-/** @brief This is a pointer-to-function callback to be called when finished receiving data */
+/**
+ * @brief This is a pointer-to-function callback to be called when finished receiving data
+ * @details This is a pointer-to-function callback to be called when finished receiving data
+ */
 STATIC P2FUNC(void, GS_pReceiveCallback)(u16_t) = NULL;
 
 /**
