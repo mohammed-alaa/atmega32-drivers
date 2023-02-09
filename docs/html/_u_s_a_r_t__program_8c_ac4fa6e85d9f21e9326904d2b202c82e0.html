@@ -107,27 +107,27 @@ $(document).ready(function(){initNavTree('_u_s_a_r_t__program_8c_ac4fa6e85d9f21e
       </table>
 </div><div class="memdoc">
 
-<p class="definition">Definition at line <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00150">150</a> of file <a class="el" href="_u_s_a_r_t__program_8c_source.html">USART_program.c</a>.</p>
-<div class="fragment"><div class="line"><span class="lineno">  151</span>{</div>
-<div class="line"><span class="lineno">  152</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="_u_s_a_r_t__program_8c_a830c6e7aa9557efeeb0a87148fa899dd.html#a830c6e7aa9557efeeb0a87148fa899dd">MUSART_bIsDataReceived</a>() || (<a class="code hl_variable" href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a> == <a class="code hl_define" href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>))</div>
-<div class="line"><span class="lineno">  153</span>    {</div>
-<div class="line"><span class="lineno">  154</span>        <span class="comment">/* Do nothing */</span></div>
-<div class="line"><span class="lineno">  155</span>    }</div>
-<div class="line"><span class="lineno">  156</span>    <span class="keywordflow">else</span></div>
-<div class="line"><span class="lineno">  157</span>    {</div>
-<div class="line"><span class="lineno">  158</span>        <a class="code hl_typedef" href="group__typedefs_gac9b933f433c9cde06e3f0467a098556b.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a> u16Data = 0;</div>
-<div class="line"><span class="lineno">  159</span>        <a class="code hl_function" href="_u_s_a_r_t__program_8c_a8d43601e7f086e3672fce504046ea67a.html#a8d43601e7f086e3672fce504046ea67a">MUSART_vSyncReceiveData</a>(&amp;u16Data);</div>
-<div class="line"><span class="lineno">  160</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a>(u16Data);</div>
-<div class="line"><span class="lineno">  161</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a> = <a class="code hl_define" href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
-<div class="line"><span class="lineno">  162</span>    }</div>
-<div class="line"><span class="lineno">  163</span>}</div>
-<div class="ttc" id="a_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56_html_a6187040cc0da764987c343f0d4b24b56"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a></div><div class="ttdeci">static void(* GS_pReceiveCallback)(u16_t)</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00022">USART_program.c:22</a></div></div>
-<div class="ttc" id="a_u_s_a_r_t__program_8c_a830c6e7aa9557efeeb0a87148fa899dd_html_a830c6e7aa9557efeeb0a87148fa899dd"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a830c6e7aa9557efeeb0a87148fa899dd.html#a830c6e7aa9557efeeb0a87148fa899dd">MUSART_bIsDataReceived</a></div><div class="ttdeci">bool_t MUSART_bIsDataReceived(void)</div><div class="ttdoc">This function is used to check if the data is received.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00103">USART_program.c:103</a></div></div>
-<div class="ttc" id="a_u_s_a_r_t__program_8c_a8d43601e7f086e3672fce504046ea67a_html_a8d43601e7f086e3672fce504046ea67a"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a8d43601e7f086e3672fce504046ea67a.html#a8d43601e7f086e3672fce504046ea67a">MUSART_vSyncReceiveData</a></div><div class="ttdeci">void MUSART_vSyncReceiveData(u16_t *u16Data)</div><div class="ttdoc">This function is used to receive data synchronously.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00108">USART_program.c:108</a></div></div>
+<p class="definition">Definition at line <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00152">152</a> of file <a class="el" href="_u_s_a_r_t__program_8c_source.html">USART_program.c</a>.</p>
+<div class="fragment"><div class="line"><span class="lineno">  153</span>{</div>
+<div class="line"><span class="lineno">  154</span>    <span class="keywordflow">if</span> (!<a class="code hl_function" href="_u_s_a_r_t__program_8c_a830c6e7aa9557efeeb0a87148fa899dd.html#a830c6e7aa9557efeeb0a87148fa899dd">MUSART_bIsDataReceived</a>() || (<a class="code hl_variable" href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a> == <a class="code hl_define" href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>))</div>
+<div class="line"><span class="lineno">  155</span>    {</div>
+<div class="line"><span class="lineno">  156</span>        <span class="comment">/* Do nothing */</span></div>
+<div class="line"><span class="lineno">  157</span>    }</div>
+<div class="line"><span class="lineno">  158</span>    <span class="keywordflow">else</span></div>
+<div class="line"><span class="lineno">  159</span>    {</div>
+<div class="line"><span class="lineno">  160</span>        <a class="code hl_typedef" href="group__typedefs_gac9b933f433c9cde06e3f0467a098556b.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a> u16Data = 0;</div>
+<div class="line"><span class="lineno">  161</span>        <a class="code hl_function" href="_u_s_a_r_t__program_8c_a8d43601e7f086e3672fce504046ea67a.html#a8d43601e7f086e3672fce504046ea67a">MUSART_vSyncReceiveData</a>(&amp;u16Data);</div>
+<div class="line"><span class="lineno">  162</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a>(u16Data);</div>
+<div class="line"><span class="lineno">  163</span>        <a class="code hl_variable" href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a> = <a class="code hl_define" href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a>;</div>
+<div class="line"><span class="lineno">  164</span>    }</div>
+<div class="line"><span class="lineno">  165</span>}</div>
+<div class="ttc" id="a_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56_html_a6187040cc0da764987c343f0d4b24b56"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56">GS_pReceiveCallback</a></div><div class="ttdeci">static void(* GS_pReceiveCallback)(u16_t)</div><div class="ttdoc">This is a pointer-to-function callback to be called when finished receiving data.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00024">USART_program.c:24</a></div></div>
+<div class="ttc" id="a_u_s_a_r_t__program_8c_a830c6e7aa9557efeeb0a87148fa899dd_html_a830c6e7aa9557efeeb0a87148fa899dd"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a830c6e7aa9557efeeb0a87148fa899dd.html#a830c6e7aa9557efeeb0a87148fa899dd">MUSART_bIsDataReceived</a></div><div class="ttdeci">bool_t MUSART_bIsDataReceived(void)</div><div class="ttdoc">This function is used to check if the data is received.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00105">USART_program.c:105</a></div></div>
+<div class="ttc" id="a_u_s_a_r_t__program_8c_a8d43601e7f086e3672fce504046ea67a_html_a8d43601e7f086e3672fce504046ea67a"><div class="ttname"><a href="_u_s_a_r_t__program_8c_a8d43601e7f086e3672fce504046ea67a.html#a8d43601e7f086e3672fce504046ea67a">MUSART_vSyncReceiveData</a></div><div class="ttdeci">void MUSART_vSyncReceiveData(u16_t *u16Data)</div><div class="ttdoc">This function is used to receive data synchronously.</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__program_8c_source.html#l00110">USART_program.c:110</a></div></div>
 <div class="ttc" id="agroup__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4_html_ga070d2ce7b6bb7e5c05602aa8c308d0c4"><div class="ttname"><a href="group__standardvalues_ga070d2ce7b6bb7e5c05602aa8c308d0c4.html#ga070d2ce7b6bb7e5c05602aa8c308d0c4">NULL</a></div><div class="ttdeci">#define NULL</div><div class="ttdoc">Type definition for NULL.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00040">LSTD_VALUES.h:40</a></div></div>
 <div class="ttc" id="agroup__typedefs_gac9b933f433c9cde06e3f0467a098556b_html_gac9b933f433c9cde06e3f0467a098556b"><div class="ttname"><a href="group__typedefs_gac9b933f433c9cde06e3f0467a098556b.html#gac9b933f433c9cde06e3f0467a098556b">u16_t</a></div><div class="ttdeci">unsigned short int u16_t</div><div class="ttdoc">Type definition for 16-bit unsigned int.</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___t_y_p_e_s_8h_source.html#l00045">LSTD_TYPES.h:45</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00022">GS_pReceiveCallback</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00103">MUSART_bIsDataReceived()</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00108">MUSART_vSyncReceiveData()</a>, and <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00040">NULL</a>.</p>
+<p class="reference">References <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00024">GS_pReceiveCallback</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00105">MUSART_bIsDataReceived()</a>, <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00110">MUSART_vSyncReceiveData()</a>, and <a class="el" href="_l_s_t_d___v_a_l_u_e_s_8h_source.html#l00040">NULL</a>.</p>
 
 </div>
 </div>
@@ -137,7 +137,7 @@ $(document).ready(function(){initNavTree('_u_s_a_r_t__program_8c_ac4fa6e85d9f21e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_b2c8cac0da042410f43ed82d7c76f533.html">USART</a></li><li class="navelem"><a class="el" href="_u_s_a_r_t__program_8c.html">USART_program.c</a></li>
-    <li class="footer">Generated on Thu Feb 9 2023 04:56:13 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Thu Feb 9 2023 05:00:49 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>
