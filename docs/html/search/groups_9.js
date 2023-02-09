@@ -10,5 +10,7 @@ var searchData=
   ['usart_20registers_7',['USART Registers',['../group__usart__registers.html',1,'']]],
   ['usart_20single_20speed_20baudrates_8',['USART Single Speed Baudrates',['../group__usart__baudrates__single__speed.html',1,'']]],
   ['usart_20speed_9',['USART Speed',['../group__usart__speed.html',1,'']]],
-  ['usart_20stop_20bits_10',['USART Stop Bits',['../group__usart__stop__bits.html',1,'']]]
+  ['usart_20stop_20bits_10',['USART Stop Bits',['../group__usart__stop__bits.html',1,'']]],
+  ['usart_20ucsra_20bits_11',['USART UCSRA Bits',['../group__usart__ucsra__bits.html',1,'']]],
+  ['usart_20ucsrb_20bits_12',['USART UCSRB Bits',['../group__usart__ucsrb__bits.html',1,'']]]
 ];

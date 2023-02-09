@@ -53,5 +53,7 @@ var modules =
     [ "USART Clock Polarity", "group__usart__clock__polarity.html", "group__usart__clock__polarity" ],
     [ "USART Speed", "group__usart__speed.html", "group__usart__speed" ],
     [ "USART Multi Processor Mode", "group__usart__multi__processor.html", "group__usart__multi__processor" ],
-    [ "USART Registers", "group__usart__registers.html", "group__usart__registers" ]
+    [ "USART Registers", "group__usart__registers.html", "group__usart__registers" ],
+    [ "USART UCSRA Bits", "group__usart__ucsra__bits.html", "group__usart__ucsra__bits" ],
+    [ "USART UCSRB Bits", "group__usart__ucsrb__bits.html", "group__usart__ucsrb__bits" ]
 ];

@@ -112,12 +112,13 @@ $(document).ready(function(){initNavTree('_u_s_a_r_t__program_8c_a830c6e7aa9557e
 
 <p class="definition">Definition at line <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00111">111</a> of file <a class="el" href="_u_s_a_r_t__program_8c_source.html">USART_program.c</a>.</p>
 <div class="fragment"><div class="line"><span class="lineno">  112</span>{</div>
-<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> (<a class="code hl_define" href="group__bitmath_gac283f5feb229aac661c786bcd0593a8a.html#gac283f5feb229aac661c786bcd0593a8a">GET_BIT</a>(<a class="code hl_define" href="group__usart__registers_ga152a205b3e27513efb3282daac08201b.html#ga152a205b3e27513efb3282daac08201b">UCSRA</a>, 7));</div>
+<div class="line"><span class="lineno">  113</span>    <span class="keywordflow">return</span> (<a class="code hl_define" href="group__bitmath_gac283f5feb229aac661c786bcd0593a8a.html#gac283f5feb229aac661c786bcd0593a8a">GET_BIT</a>(<a class="code hl_define" href="group__usart__registers_ga152a205b3e27513efb3282daac08201b.html#ga152a205b3e27513efb3282daac08201b">UCSRA</a>, <a class="code hl_define" href="group__usart__ucsra__bits_gaa9d9341519d46a0d8d474d04a8164c2b.html#gaa9d9341519d46a0d8d474d04a8164c2b">RXC</a>));</div>
 <div class="line"><span class="lineno">  114</span>}</div>
 <div class="ttc" id="agroup__bitmath_gac283f5feb229aac661c786bcd0593a8a_html_gac283f5feb229aac661c786bcd0593a8a"><div class="ttname"><a href="group__bitmath_gac283f5feb229aac661c786bcd0593a8a.html#gac283f5feb229aac661c786bcd0593a8a">GET_BIT</a></div><div class="ttdeci">#define GET_BIT(REG, BITNUM)</div><div class="ttdoc">Return the value of the bit whether it's 1 or 0</div><div class="ttdef"><b>Definition:</b> <a href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00039">LSTD_BITMATH.h:39</a></div></div>
 <div class="ttc" id="agroup__usart__registers_ga152a205b3e27513efb3282daac08201b_html_ga152a205b3e27513efb3282daac08201b"><div class="ttname"><a href="group__usart__registers_ga152a205b3e27513efb3282daac08201b.html#ga152a205b3e27513efb3282daac08201b">UCSRA</a></div><div class="ttdeci">#define UCSRA</div><div class="ttdoc">USART Control and Status Register A (UCSRA)</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__private_8h_source.html#l00031">USART_private.h:31</a></div></div>
+<div class="ttc" id="agroup__usart__ucsra__bits_gaa9d9341519d46a0d8d474d04a8164c2b_html_gaa9d9341519d46a0d8d474d04a8164c2b"><div class="ttname"><a href="group__usart__ucsra__bits_gaa9d9341519d46a0d8d474d04a8164c2b.html#gaa9d9341519d46a0d8d474d04a8164c2b">RXC</a></div><div class="ttdeci">#define RXC</div><div class="ttdoc">USART Receive Complete (RXC)</div><div class="ttdef"><b>Definition:</b> <a href="_u_s_a_r_t__private_8h_source.html#l00081">USART_private.h:81</a></div></div>
 </div><!-- fragment -->
-<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00039">GET_BIT</a>, and <a class="el" href="_u_s_a_r_t__private_8h_source.html#l00031">UCSRA</a>.</p>
+<p class="reference">References <a class="el" href="_l_s_t_d___b_i_t_m_a_t_h_8h_source.html#l00039">GET_BIT</a>, <a class="el" href="_u_s_a_r_t__private_8h_source.html#l00081">RXC</a>, and <a class="el" href="_u_s_a_r_t__private_8h_source.html#l00031">UCSRA</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00158">__vector_13()</a>, and <a class="el" href="_u_s_a_r_t__program_8c_source.html#l00116">MUSART_vSyncReceiveData()</a>.</p>
 
@@ -129,7 +130,7 @@ $(document).ready(function(){initNavTree('_u_s_a_r_t__program_8c_a830c6e7aa9557e
 <div id="nav-path" class="navpath"><!-- id is needed for treeview function! -->
   <ul>
     <li class="navelem"><a class="el" href="dir_d6f295fad42b91af10e375a168f2de53.html">MCAL</a></li><li class="navelem"><a class="el" href="dir_b2c8cac0da042410f43ed82d7c76f533.html">USART</a></li><li class="navelem"><a class="el" href="_u_s_a_r_t__program_8c.html">USART_program.c</a></li>
-    <li class="footer">Generated on Thu Feb 9 2023 05:02:26 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
+    <li class="footer">Generated on Thu Feb 9 2023 17:23:46 for ATMega32 Drivers by <a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.5 </li>
   </ul>
 </div>
 </body>

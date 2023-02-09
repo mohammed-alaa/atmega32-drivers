@@ -144,5 +144,7 @@ var searchData=
   ['timsk_5ftoie1_141',['TIMSK_TOIE1',['../group__timsk__bits_ga1b4b0d7e8cc1ef2ccbdbf1cf38a7cb89.html#ga1b4b0d7e8cc1ef2ccbdbf1cf38a7cb89',1,'TIMER_private.h']]],
   ['timsk_5ftoie2_142',['TIMSK_TOIE2',['../group__timsk__bits_ga8908cd2b4ec19d2ab223efce9ea52f68.html#ga8908cd2b4ec19d2ab223efce9ea52f68',1,'TIMER_private.h']]],
   ['toggle_5fbit_143',['TOGGLE_BIT',['../group__bitmath_gaa9086cf5ab28a8036e901439d324b5ab.html#gaa9086cf5ab28a8036e901439d324b5ab',1,'LSTD_BITMATH.h']]],
-  ['true_144',['TRUE',['../group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d',1,'LSTD_VALUES.h']]]
+  ['true_144',['TRUE',['../group__standardvalues_gaa8cecfc5c5c054d2875c03e77b7be15d.html#gaa8cecfc5c5c054d2875c03e77b7be15d',1,'LSTD_VALUES.h']]],
+  ['txb8_145',['TXB8',['../group__usart__ucsrb__bits_ga42d1e09836a26e73c3447adaac3d83cc.html#ga42d1e09836a26e73c3447adaac3d83cc',1,'USART_private.h']]],
+  ['txc_146',['TXC',['../group__usart__ucsra__bits_gaf3a3e8c2bc926e9ca5c95fb1d18967b9.html#gaf3a3e8c2bc926e9ca5c95fb1d18967b9',1,'USART_private.h']]]
 ];
