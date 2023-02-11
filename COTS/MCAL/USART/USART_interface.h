@@ -360,19 +360,11 @@
 void MUSART_vInit(void);
 
 /**
- * @brief This function is used to transmit data synchronously
+ * @brief This function is used to transmit data
  * @param[in] u16Data The data to be transmitted
  * @return bool_t TRUE if the data is transmitted successfully, FALSE otherwise
  */
-bool_t MUSART_vSyncTransmitData(u16_t u16Data);
-
-/**
- * @brief This function is used to transmit data asynchronously
- * @param[in] u16Data The data to be transmitted
- * @param[in] pTransmitCallback The callback function to be called when the data is transmitted
- * @return bool_t TRUE if the data is transmitted successfully, FALSE otherwise
- */
-bool_t MUSART_vAsyncTransmitData(u16_t u16Data, P2FUNC(void, pTransmitCallback)(void));
+bool_t MUSART_vTransmitData(u16_t u16Data);
 
 /**
  * @brief This function is used to check if the data is received
@@ -381,15 +373,9 @@ bool_t MUSART_vAsyncTransmitData(u16_t u16Data, P2FUNC(void, pTransmitCallback)(
 bool_t MUSART_bIsDataReceived(void);
 
 /**
- * @brief This function is used to receive data synchronously
- * @param[out] u16Data The data to be received
+ * @brief This function is used to receive data
+ * @param[out] pu16Data The data to be received
  */
-void MUSART_vSyncReceiveData(P2VAR(u16_t) u16Data);
-
-/**
- * @brief This function is used to receive data asynchronously
- * @param[in] pReceiveCallback The callback function to be called when the data is received
- */
-void MUSART_vAsyncReceiveData(P2FUNC(void, pReceiveCallback)(u16_t));
+void MUSART_vReceiveData(P2VAR(u16_t) pu16Data);
 
 #endif // USART_INTERFACE_H_

@@ -12,29 +12,20 @@
 #include "../../LIB/LSTD_BITMATH.h"
 #include "../../LIB/LSTD_COMPILER.h"
 #include "../../LIB/LSTD_VALUES.h"
-#include "../../LIB/L_INTERRUPTS.h"
 #include "USART_private.h"
 #include "USART_interface.h"
 #include "USART_config.h"
 
-/* Global variables */
-/**
- * @brief This is a pointer-to-function callback to be called when the transmission is finished
- * @details This is a pointer-to-function callback to be called when the transmission is finished
- */
-STATIC P2FUNC(void, GS_pTransmitCallback)(void) = NULL;
-/**
- * @brief This is a pointer-to-function callback to be called when finished receiving data
- * @details This is a pointer-to-function callback to be called when finished receiving data
- */
-STATIC P2FUNC(void, GS_pReceiveCallback)(u16_t) = NULL;
+void MUSART_vInit(void)
+{
+    UCSRA = (USART_SPEED | USART_MULTI_PROCESSOR);
+    UCSRB = (0x18 | (GET_BIT(USART_CHARACTER_SIZE, 3) << UCSZ2));
+    UCSRC = (0x80 | USART_OPERATION_MODE | USART_PARITY | USART_STOP_BITS | (0x06 & USART_CHARACTER_SIZE) | USART_CLOCK_POLARITY);
+    UBRRH = (USART_BAUDRATE >> 4);
+    UBRRL = (USART_BAUDRATE);
+}
 
-/**
- * @brief This function is used to transmit data through the USART
- * @param[in] u16Data The data to be transmitted
- * @return bool_t TRUE if the data is transmitted successfully, FALSE otherwise
- */
-STATIC bool_t MUSART_vTransmitData(u16_t u16Data)
+bool_t MUSART_vTransmitData(u16_t u16Data)
 {
     bool_t bIsDataTransmitted = FALSE;
 
@@ -50,35 +41,10 @@ STATIC bool_t MUSART_vTransmitData(u16_t u16Data)
             CLEAR_BIT(UCSRB, TXB8);
         }
 #endif
-
-        UDR = (u16Data);
-        bIsDataTransmitted = TRUE;
-    }
-    else
-    {
-        bIsDataTransmitted = FALSE;
-    }
-
-    return bIsDataTransmitted;
-}
-
-void MUSART_vInit(void)
-{
-    UBRRL = (USART_BAUDRATE);
-    UBRRH = (USART_BAUDRATE >> 4);
-    UCSRC = (0x80 | USART_OPERATION_MODE | USART_PARITY | USART_STOP_BITS | (0x06 & USART_CHARACTER_SIZE) | USART_CLOCK_POLARITY);
-    UCSRB = (0xD8 | (GET_BIT(USART_CHARACTER_SIZE, 3) << UCSZ2));
-    UCSRA = (USART_SPEED | USART_MULTI_PROCESSOR);
-}
-
-bool_t MUSART_vSyncTransmitData(u16_t u16Data)
-{
-    bool_t bIsDataTransmitted = FALSE;
-
-    if (MUSART_vTransmitData(u16Data))
-    {
+        UDR = u16Data;
         while (!GET_BIT(UCSRA, TXC))
             ;
+
         SET_BIT(UCSRA, TXC);
         bIsDataTransmitted = TRUE;
     }
@@ -90,30 +56,12 @@ bool_t MUSART_vSyncTransmitData(u16_t u16Data)
     return bIsDataTransmitted;
 }
 
-bool_t MUSART_vAsyncTransmitData(u16_t u16Data, P2FUNC(void, pTransmitCallback)(void))
-{
-    bool_t bIsDataTransmitted = FALSE;
-
-    if (MUSART_vTransmitData(u16Data))
-    {
-        GS_pTransmitCallback = pTransmitCallback;
-        bIsDataTransmitted = TRUE;
-    }
-    else
-    {
-        GS_pTransmitCallback = NULL;
-        bIsDataTransmitted = FALSE;
-    }
-
-    return bIsDataTransmitted;
-}
-
 bool_t MUSART_bIsDataReceived(void)
 {
-    return (GET_BIT(UCSRA, RXC));
+    return (GET_BIT(UCSRA, RXC) ? TRUE : FALSE);
 }
 
-void MUSART_vSyncReceiveData(P2VAR(u16_t) u16Data)
+void MUSART_vReceiveData(P2VAR(u16_t) pu16Data)
 {
     u16_t u16ReceivedValue = 0;
 
@@ -121,51 +69,15 @@ void MUSART_vSyncReceiveData(P2VAR(u16_t) u16Data)
     {
 #if USART_CHARACTER_SIZE == USART_CHARACTER_SIZE_9
         u16ReceivedValue = (GET_BIT(UCSRB, RXB8) << 8);
-        u16ReceivedValue += UDR;
+        u16ReceivedValue |= UDR;
 #else
         u16ReceivedValue = UDR;
 #endif
-        SET_BIT(UCSRA, RXC);
     }
     else
     {
         u16ReceivedValue = 0;
     }
 
-    *u16Data = u16ReceivedValue;
-}
-
-void MUSART_vAsyncReceiveData(P2FUNC(void, pReceiveCallback)(u16_t))
-{
-    GS_pReceiveCallback = pReceiveCallback;
-}
-
-ISR(EXTI_VECT_USART_TXC)
-{
-    SET_BIT(UCSRA, TXC);
-
-    if (GS_pTransmitCallback == NULL)
-    {
-        /* Do nothing */
-    }
-    else
-    {
-        GS_pTransmitCallback();
-        GS_pTransmitCallback = NULL;
-    }
-}
-
-ISR(EXTI_VECT_USART_RXC)
-{
-    if (!MUSART_bIsDataReceived() || (GS_pReceiveCallback == NULL))
-    {
-        /* Do nothing */
-    }
-    else
-    {
-        u16_t u16Data = 0;
-        MUSART_vSyncReceiveData(&u16Data);
-        GS_pReceiveCallback(u16Data);
-        GS_pReceiveCallback = NULL;
-    }
+    *pu16Data = u16ReceivedValue;
 }
