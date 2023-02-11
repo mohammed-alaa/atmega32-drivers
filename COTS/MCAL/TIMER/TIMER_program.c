@@ -196,110 +196,6 @@ STATIC void MTIMER_vStartTimerCTC(u8_t u8Channel, u8_t u8Prescaler, u32_t u32Del
 }
 
 /**
- * @brief This function is used to enable the timer interrupt
- * @param[in] u8Channel The Timer channel to be used @see timer_channels
- * @param[in] u8Mode The Timer mode to be used @see timer_modes
- */
-STATIC void MTIMER_vEnableInterrupt(u8_t u8Channel, u8_t u8Mode)
-{
-    switch (u8Channel)
-    {
-    case TIMER_CHANNEL_0:
-        switch (u8Mode)
-        {
-        case TIMER_MODE_NORMAL:
-            SET_BIT(TIMSK, TIMSK_TOIE2);
-            break;
-        case TIMER_MODE_CTC:
-            SET_BIT(TIMSK, TIMSK_OCIE0);
-            break;
-        default:
-            break;
-        }
-        break;
-    case TIMER_CHANNEL_1A:
-    case TIMER_CHANNEL_1B:
-        switch (u8Mode)
-        {
-        case TIMER_MODE_NORMAL:
-            SET_BIT(TIMSK, TIMSK_TOIE1);
-            break;
-        case TIMER_MODE_CTC:
-            SET_BIT(TIMSK, ((u8Channel == TIMER_CHANNEL_1A) ? TIMSK_OCIE1A : TIMSK_OCIE1B));
-            break;
-        default:
-            break;
-        }
-        break;
-    case TIMER_CHANNEL_2:
-        switch (u8Mode)
-        {
-        case TIMER_MODE_NORMAL:
-            SET_BIT(TIMSK, TIMSK_TOIE2);
-            break;
-        case TIMER_MODE_CTC:
-            SET_BIT(TIMSK, TIMSK_OCIE2);
-            break;
-        }
-        break;
-    default:
-        break;
-    }
-}
-
-/**
- * @brief This function is used to disable the timer interrupt
- * @param[in] u8Channel The Timer channel to be used @see timer_channels
- * @param[in] u8Mode The Timer mode to be used @see timer_modes
- */
-STATIC void MTIMER_vDisableInterrupt(u8_t u8Channel, u8_t u8Mode)
-{
-    switch (u8Channel)
-    {
-    case TIMER_CHANNEL_0:
-        switch (u8Mode)
-        {
-        case TIMER_MODE_NORMAL:
-            CLEAR_BIT(TIMSK, TIMSK_TOIE2);
-            break;
-        case TIMER_MODE_CTC:
-            CLEAR_BIT(TIMSK, TIMSK_OCIE0);
-            break;
-        default:
-            break;
-        }
-        break;
-    case TIMER_CHANNEL_1A:
-    case TIMER_CHANNEL_1B:
-        switch (u8Mode)
-        {
-        case TIMER_MODE_NORMAL:
-            CLEAR_BIT(TIMSK, TIMSK_TOIE1);
-            break;
-        case TIMER_MODE_CTC:
-            CLEAR_BIT(TIMSK, ((u8Channel == TIMER_CHANNEL_1A) ? TIMSK_OCIE1A : TIMSK_OCIE1B));
-            break;
-        default:
-            break;
-        }
-        break;
-    case TIMER_CHANNEL_2:
-        switch (u8Mode)
-        {
-        case TIMER_MODE_NORMAL:
-            CLEAR_BIT(TIMSK, TIMSK_TOIE2);
-            break;
-        case TIMER_MODE_CTC:
-            CLEAR_BIT(TIMSK, TIMSK_OCIE2);
-            break;
-        }
-        break;
-    default:
-        break;
-    }
-}
-
-/**
  * @brief This function is used to initiate the timer with a certain mode
  * @param[in] u8Channel The Timer channel to be used @see timer_channels
  * @param[in] u8Mode The Timer mode to be used @see timer_modes
@@ -315,9 +211,11 @@ STATIC void MTIMER_vInit(u8_t u8Channel, u8_t u8Mode)
         {
         case TIMER_MODE_NORMAL:
             TCCR0 = TIMER_MODE_NORMAL;
+            SET_BIT(TIMSK, TIMSK_TOIE2);
             break;
         case TIMER_MODE_CTC:
             TCCR0 = (TIMER_CFG_TIMER0_CTC_PORT_OUTPUT_MODE | TIMER_MODE_CTC);
+            SET_BIT(TIMSK, TIMSK_OCIE0);
             break;
         case TIMER_MODE_PWM_FAST:
             TCCR0 = (TIMER_CFG_TIMER0_FASTPWM_PORT_OUTPUT_MODE | TIMER_MODE_PWM_FAST);
@@ -336,10 +234,12 @@ STATIC void MTIMER_vInit(u8_t u8Channel, u8_t u8Mode)
         case TIMER_MODE_NORMAL:
             TCCR1A = 0;
             TCCR1B = 0;
+            SET_BIT(TIMSK, TIMSK_TOIE1);
             break;
         case TIMER_MODE_CTC:
             TCCR1A = (((u8Channel == TIMER_CHANNEL_1A) ? TIMER_CFG_TIMER1A_CTC_PORT_OUTPUT_MODE : TIMER_CFG_TIMER1B_CTC_PORT_OUTPUT_MODE) | 0);
             TCCR1B = 0x08;
+            SET_BIT(TIMSK, ((u8Channel == TIMER_CHANNEL_1A) ? TIMSK_OCIE1A : TIMSK_OCIE1B));
             break;
         case TIMER_MODE_PWM_FAST:
             TCCR1A = (((u8Channel == TIMER_CHANNEL_1A) ? TIMER_CFG_TIMER1A_FASTPWM_PORT_OUTPUT_MODE : TIMER_CFG_TIMER1B_FASTPWM_PORT_OUTPUT_MODE) | 0x01);
@@ -358,9 +258,11 @@ STATIC void MTIMER_vInit(u8_t u8Channel, u8_t u8Mode)
         {
         case TIMER_MODE_NORMAL:
             TCCR2 = TIMER_MODE_NORMAL;
+            SET_BIT(TIMSK, TIMSK_TOIE2);
             break;
         case TIMER_MODE_CTC:
             TCCR2 = (TIMER_CFG_TIMER2_CTC_PORT_OUTPUT_MODE | TIMER_MODE_CTC);
+            SET_BIT(TIMSK, TIMSK_OCIE2);
             break;
         case TIMER_MODE_PWM_FAST:
             TCCR2 = (TIMER_CFG_TIMER2_FASTPWM_PORT_OUTPUT_MODE | TIMER_MODE_PWM_FAST);
@@ -528,7 +430,6 @@ void MTIMER_vDelayUS(u8_t u8Channel, u32_t u32Delay)
 {
     u8_t L_u8Prescaler = ((u8Channel == TIMER_CHANNEL_2) ? TIMER_PRESCALER_TIMER2_8 : TIMER_PRESCALER_TIMER01_8);
     MTIMER_vInit(u8Channel, TIMER_MODE_CTC);
-    MTIMER_vDisableInterrupt(u8Channel, TIMER_MODE_CTC);
     MTIMER_vSetInitialCTCModeValue(u8Channel, 2);
     MTIMER_vStartTimerCTC(u8Channel, L_u8Prescaler, u32Delay);
     MTIMER_vStopTimer(u8Channel);
@@ -538,7 +439,6 @@ void MTIMER_vDelayMS(u8_t u8Channel, u32_t u32Delay)
 {
     u8_t L_u8Prescaler = ((u8Channel == TIMER_CHANNEL_2) ? TIMER_PRESCALER_TIMER2_64 : TIMER_PRESCALER_TIMER01_64);
     MTIMER_vInit(u8Channel, TIMER_MODE_CTC);
-    MTIMER_vDisableInterrupt(u8Channel, TIMER_MODE_CTC);
     MTIMER_vSetInitialCTCModeValue(u8Channel, 250);
     MTIMER_vStartTimerCTC(u8Channel, L_u8Prescaler, u32Delay);
     MTIMER_vStopTimer(u8Channel);
@@ -548,7 +448,6 @@ void MTIMER_vDelaySec(u8_t u8Channel, u32_t u32Delay)
 {
     u8_t L_u8Prescaler = ((u8Channel == TIMER_CHANNEL_2) ? TIMER_PRESCALER_TIMER2_1024 : TIMER_PRESCALER_TIMER01_1024);
     MTIMER_vInit(u8Channel, TIMER_MODE_CTC);
-    MTIMER_vDisableInterrupt(u8Channel, TIMER_MODE_CTC);
 
     switch (u8Channel)
     {
