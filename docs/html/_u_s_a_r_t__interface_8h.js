@@ -45,9 +45,7 @@ var _u_s_a_r_t__interface_8h =
     [ "USART_MULTI_PROCESSOR_DISABLED", "group__usart__multi__processor_ga6f9c1b304b8233b41a588d398a56672e.html#ga6f9c1b304b8233b41a588d398a56672e", null ],
     [ "USART_MULTI_PROCESSOR_ENABLED", "group__usart__multi__processor_ga9038e00e25a99300ebed626632a74b45.html#ga9038e00e25a99300ebed626632a74b45", null ],
     [ "MUSART_vInit", "_u_s_a_r_t__interface_8h_ad3d22b20534c282e2c48e97b7306fc7c.html#ad3d22b20534c282e2c48e97b7306fc7c", null ],
-    [ "MUSART_vSyncTransmitData", "_u_s_a_r_t__interface_8h_a6233dd44126115ac4929f020f731f913.html#a6233dd44126115ac4929f020f731f913", null ],
-    [ "MUSART_vAsyncTransmitData", "_u_s_a_r_t__interface_8h_a53cbef7cb27a116fb86b5bc5e227cbbb.html#a53cbef7cb27a116fb86b5bc5e227cbbb", null ],
+    [ "MUSART_vTransmitData", "_u_s_a_r_t__interface_8h_a0a104e6f508224e6b93e41100759db30.html#a0a104e6f508224e6b93e41100759db30", null ],
     [ "MUSART_bIsDataReceived", "_u_s_a_r_t__interface_8h_a830c6e7aa9557efeeb0a87148fa899dd.html#a830c6e7aa9557efeeb0a87148fa899dd", null ],
-    [ "MUSART_vSyncReceiveData", "_u_s_a_r_t__interface_8h_a8d43601e7f086e3672fce504046ea67a.html#a8d43601e7f086e3672fce504046ea67a", null ],
-    [ "MUSART_vAsyncReceiveData", "_u_s_a_r_t__interface_8h_a3c6eff88c303c086950e3d46801e025f.html#a3c6eff88c303c086950e3d46801e025f", null ]
+    [ "MUSART_vReceiveData", "_u_s_a_r_t__interface_8h_adfa65027fa06b8c7a400c5bc14b55ba3.html#adfa65027fa06b8c7a400c5bc14b55ba3", null ]
 ];

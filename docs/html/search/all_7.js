@@ -24,9 +24,7 @@ var searchData=
   ['gpio_5fportd_21',['GPIO_PORTD',['../group__gpio__ports_ga48b89057f978f468d342fcdc2909444d.html#ga48b89057f978f468d342fcdc2909444d',1,'GPIO_interface.h']]],
   ['gpio_5fprivate_2eh_22',['GPIO_private.h',['../_g_p_i_o__private_8h.html',1,'']]],
   ['gpio_5fprogram_2ec_23',['GPIO_program.c',['../_g_p_i_o__program_8c.html',1,'']]],
-  ['gs_5fpreceivecallback_24',['GS_pReceiveCallback',['../_u_s_a_r_t__program_8c_a6187040cc0da764987c343f0d4b24b56.html#a6187040cc0da764987c343f0d4b24b56',1,'USART_program.c']]],
-  ['gs_5fptransmitcallback_25',['GS_pTransmitCallback',['../_u_s_a_r_t__program_8c_a5519b48bb40cbdcac51afed3444f93cf.html#a5519b48bb40cbdcac51afed3444f93cf',1,'USART_program.c']]],
-  ['gsp_5fvextintcallback_5fint0_26',['GSP_vExtIntCallback_Int0',['../_e_x_t_i__program_8c_acd850288d00459321bdd220836956a68.html#acd850288d00459321bdd220836956a68',1,'EXTI_program.c']]],
-  ['gsp_5fvextintcallback_5fint1_27',['GSP_vExtIntCallback_Int1',['../_e_x_t_i__program_8c_a51aa83f2b9ba7b9e5e90532c79bb4f7e.html#a51aa83f2b9ba7b9e5e90532c79bb4f7e',1,'EXTI_program.c']]],
-  ['gsp_5fvextintcallback_5fint2_28',['GSP_vExtIntCallback_Int2',['../_e_x_t_i__program_8c_a6f3b72e08a0f164c21570e5c4434e8b6.html#a6f3b72e08a0f164c21570e5c4434e8b6',1,'EXTI_program.c']]]
+  ['gsp_5fvextintcallback_5fint0_24',['GSP_vExtIntCallback_Int0',['../_e_x_t_i__program_8c_acd850288d00459321bdd220836956a68.html#acd850288d00459321bdd220836956a68',1,'EXTI_program.c']]],
+  ['gsp_5fvextintcallback_5fint1_25',['GSP_vExtIntCallback_Int1',['../_e_x_t_i__program_8c_a51aa83f2b9ba7b9e5e90532c79bb4f7e.html#a51aa83f2b9ba7b9e5e90532c79bb4f7e',1,'EXTI_program.c']]],
+  ['gsp_5fvextintcallback_5fint2_26',['GSP_vExtIntCallback_Int2',['../_e_x_t_i__program_8c_a6f3b72e08a0f164c21570e5c4434e8b6.html#a6f3b72e08a0f164c21570e5c4434e8b6',1,'EXTI_program.c']]]
 ];

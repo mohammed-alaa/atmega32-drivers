@@ -1,15 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"globals_type.html":[2,1,3],
-"globals_u.html":[2,1,0,18],
-"globals_v.html":[2,1,0,19],
-"globals_vars.html":[2,1,2],
-"group__adc__channels.html":[1,10],
-"group__adc__channels_ga03b8138c2d87274f94ba675a7e18e666.html#ga03b8138c2d87274f94ba675a7e18e666":[1,10,7],
-"group__adc__channels_ga3c5075aee5af4eae02f1a72d6216199c.html#ga3c5075aee5af4eae02f1a72d6216199c":[1,10,0],
-"group__adc__channels_ga418f0223ea88773157638097391716a5.html#ga418f0223ea88773157638097391716a5":[1,10,6],
-"group__adc__channels_ga56dba5d35f1f7bcad41e4f9a7da3b125.html#ga56dba5d35f1f7bcad41e4f9a7da3b125":[1,10,3],
-"group__adc__channels_ga66f19737ad81a0a62eb97854d0e41a54.html#ga66f19737ad81a0a62eb97854d0e41a54":[1,10,4],
 "group__adc__channels_ga716f2836f655c753c629de439ce50ecf.html#ga716f2836f655c753c629de439ce50ecf":[1,10,5],
 "group__adc__channels_gad576132ebd78a3429be34f44e474c914.html#gad576132ebd78a3429be34f44e474c914":[1,10,2],
 "group__adc__channels_gaeb119201733a871c94971c51843ffaac.html#gaeb119201733a871c94971c51843ffaac":[1,10,1],
@@ -249,5 +239,15 @@ var NAVTREEINDEX1 =
 "group__timsk__bits_ga1b4b0d7e8cc1ef2ccbdbf1cf38a7cb89.html#ga1b4b0d7e8cc1ef2ccbdbf1cf38a7cb89":[1,41,2],
 "group__timsk__bits_ga5827ef45f483374545f1e5e8b7cdcfd4.html#ga5827ef45f483374545f1e5e8b7cdcfd4":[1,41,0],
 "group__timsk__bits_ga7223d1df389b9cad5013082c936d8bfe.html#ga7223d1df389b9cad5013082c936d8bfe":[1,41,4],
-"group__timsk__bits_ga8908cd2b4ec19d2ab223efce9ea52f68.html#ga8908cd2b4ec19d2ab223efce9ea52f68":[1,41,6]
+"group__timsk__bits_ga8908cd2b4ec19d2ab223efce9ea52f68.html#ga8908cd2b4ec19d2ab223efce9ea52f68":[1,41,6],
+"group__timsk__bits_gab4c050b8bef1c3a9e3a4925b669db000.html#gab4c050b8bef1c3a9e3a4925b669db000":[1,41,3],
+"group__timsk__bits_gac4e89f93c788b5cf42a8f2d9b38d5923.html#gac4e89f93c788b5cf42a8f2d9b38d5923":[1,41,7],
+"group__timsk__bits_gad1a628f757a9605e76f1142c8ab9d84a.html#gad1a628f757a9605e76f1142c8ab9d84a":[1,41,5],
+"group__typedefs.html":[1,4],
+"group__typedefs_ga04dd5074964518403bf944f2b240a5f8.html#ga04dd5074964518403bf944f2b240a5f8":[1,4,0],
+"group__typedefs_ga07906842b175053ae8bc92126c4c81a5.html#ga07906842b175053ae8bc92126c4c81a5":[1,4,2],
+"group__typedefs_ga0c3aba789a99a7cca62e204546c75c9e.html#ga0c3aba789a99a7cca62e204546c75c9e":[1,4,9],
+"group__typedefs_ga3123cc74e9b2376970dc6fafd737eda8.html#ga3123cc74e9b2376970dc6fafd737eda8":[1,4,8],
+"group__typedefs_ga4782c2e0e32746464299989e379e14a8.html#ga4782c2e0e32746464299989e379e14a8":[1,4,3],
+"group__typedefs_ga8127f1441872f9f912b20a65f40d4d24.html#ga8127f1441872f9f912b20a65f40d4d24":[1,4,1]
 };
